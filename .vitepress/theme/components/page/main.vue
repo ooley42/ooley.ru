@@ -12,14 +12,13 @@ const reverseParents = computed(() => [...parents.value].reverse())
 const { site, frontmatter, theme } = useData();
 const route = useRoute();
 
-import pages from "~pages";
+import { pages } from '../../composables/pages.js'
 
 
 </script>
 
 <template lang="pug">
 .min-h-100vh.flex.flex-col.leading-relaxed
-  .p 
   nav-dark.p-4.mr-4.fixed.top-4.right-0.z-90
   nav-scroll.fixed.bottom-8.right-4.p-4.rounded-full.cursor-pointer.z-90
     la-angle-up
@@ -73,10 +72,9 @@ import pages from "~pages";
         .flex-auto(
           style="flex: 1000 1"
         )
-
       .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages && Object.keys(pages).length > 0")
         item-card(
-          v-for="page in pages"
+          v-for="page in pages[route.path.substring(9)]"
           :key= "page.link"
           :page="page"
         )

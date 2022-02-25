@@ -22,7 +22,7 @@ export function extendRoute(route) {
   const page = {
     ...route,
     ...data,
-    content,
+    // content,
   };
 
   // for (let media of publicMedia) {

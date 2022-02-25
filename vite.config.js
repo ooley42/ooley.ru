@@ -9,7 +9,6 @@ import Pages from "vite-plugin-pages";
 import { extendRoute } from "./vitepress-pages";
 
 export default defineConfig({
-  base: "./",
   server: {
     port: 3342,
   },

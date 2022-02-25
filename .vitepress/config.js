@@ -2,7 +2,6 @@ import { defineConfig } from "vitepress";
 
 import { metaData } from "./constants.js";
 import head from "./head.js";
-import getTags from "vitepress-tags";
 
 import mdLinks from "markdown-it-external-links";
 import mdClass from "markdown-it-classy";

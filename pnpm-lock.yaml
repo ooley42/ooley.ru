@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@gun-vue/components': 0.7.4
-  '@iconify/json': ^2.1.0
+  '@iconify/json': ^2.1.7
   '@vueuse/core': 7.6.2
   app-root-path: ^3.0.0
   gray-matter: ^4.0.3
@@ -10,16 +10,16 @@ specifiers:
   markdown-it-container: ^3.0.0
   markdown-it-external-links: ^0.0.6
   pug: 3.0.2
-  unplugin-auto-import: ^0.5.11
-  unplugin-icons: ^0.13.1
-  unplugin-vue-components: ^0.17.18
-  vite: ^2.8.3
+  unplugin-auto-import: ^0.6.1
+  unplugin-icons: ^0.13.2
+  unplugin-vue-components: ^0.17.21
+  vite: ^2.8.4
   vite-aliases: ^0.8.7
   vite-plugin-pages: ^0.20.2
-  vite-plugin-windicss: ^1.7.0
-  vitepress: 0.22.2
-  vitepress-tags: ^0.6.2
+  vite-plugin-windicss: ^1.7.1
+  vitepress: 0.22.3
   vue: ^3.2.31
+  windicss: ^3.4.4
 
 dependencies:
   '@gun-vue/components': 0.7.4
@@ -34,15 +34,15 @@ devDependencies:
   markdown-it-container: 3.0.0
   markdown-it-external-links: 0.0.6
   pug: 3.0.2
-  unplugin-auto-import: 0.5.11_@vueuse+core@7.6.2+vite@2.8.4
+  unplugin-auto-import: 0.6.1_@vueuse+core@7.6.2+vite@2.8.4
   unplugin-icons: 0.13.2_vite@2.8.4
   unplugin-vue-components: 0.17.21_vite@2.8.4+vue@3.2.31
   vite: 2.8.4
   vite-aliases: 0.8.7
   vite-plugin-pages: 0.20.2_vite@2.8.4
   vite-plugin-windicss: 1.7.1_vite@2.8.4
-  vitepress: 0.22.2
-  vitepress-tags: 0.6.2
+  vitepress: 0.22.3
+  windicss: 3.4.4
 
 packages:
 
@@ -1120,10 +1120,6 @@ packages:
     resolution: {integrity: sha1-C+4AUBiusmDQo6865ljdATbsG5k=}
     dev: true
 
-  /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
-    dev: true
-
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -1167,17 +1163,6 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       is-glob: 4.0.3
-    dev: true
-
-  /glob/7.2.0:
-    resolution: {integrity: sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==}
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.1.2
-      once: 1.4.0
-      path-is-absolute: 1.0.1
     dev: true
 
   /grapheme-breaker-mjs/1.0.4:
@@ -1256,15 +1241,9 @@ packages:
     resolution: {integrity: sha1-nbHb0Pr43m++D13V5Wu2BigN5ps=}
     dev: false
 
-  /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
-    dependencies:
-      once: 1.4.0
-      wrappy: 1.0.2
-    dev: true
-
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+    dev: false
 
   /internal-slot/1.0.3:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
@@ -1673,12 +1652,6 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
-    dependencies:
-      wrappy: 1.0.2
-    dev: true
-
   /onetime/5.1.2:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
     engines: {node: '>=6'}
@@ -1718,11 +1691,6 @@ packages:
   /path-exists/4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
-    dev: true
-
-  /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /path-key/3.1.1:
@@ -2105,8 +2073,8 @@ packages:
       tiny-inflate: 1.0.3
     dev: false
 
-  /unplugin-auto-import/0.5.11_@vueuse+core@7.6.2+vite@2.8.4:
-    resolution: {integrity: sha512-MJ3POLe/IysRHF4yd32FkKDoxqSRoiuIHm89ys67B8FLuz2Pvh9poeqTVe6IhJsNxwv0+GSdFfj5Dpq24lhm4g==}
+  /unplugin-auto-import/0.6.1_@vueuse+core@7.6.2+vite@2.8.4:
+    resolution: {integrity: sha512-rSukyyROmSkqL9tjkA88oLhpG4tXYkk2rTpqGaYKjXRNktHEKf03pit8bamPt95KPVfMLjT0+TPKi6ju0toOIw==}
     engines: {node: '>=14'}
     peerDependencies:
       '@vueuse/core': '*'
@@ -2114,7 +2082,7 @@ packages:
       '@vueuse/core':
         optional: true
     dependencies:
-      '@antfu/utils': 0.4.0
+      '@antfu/utils': 0.5.0
       '@rollup/pluginutils': 4.1.2
       '@vueuse/core': 7.6.2_vue@3.2.31
       local-pkg: 0.4.1
@@ -2296,18 +2264,9 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress-tags/0.6.2:
-    resolution: {integrity: sha512-ZToM7LQpqN4f0PNKjA8bY3ZDr72g9sxtPCaAxO785qLq3Qy9MNhBKi7xt1iRGrHFzCojG3cS2C3QwaSNalKgpQ==}
-    dependencies:
-      app-root-path: 3.0.0
-      fast-glob: 3.2.11
-      glob: 7.2.0
-      gray-matter: 4.0.3
-    dev: true
-
-  /vitepress/0.22.2:
-    resolution: {integrity: sha512-L6ykQzBXKzLTSU3zZbILeF1TONO6juV/RrL0DsA9OayomVQjEOoFY7cVdKOpIBb3T5Jy/GAAVxcvWtU/XJ5k4g==}
-    engines: {node: '>=12.0.0'}
+  /vitepress/0.22.3:
+    resolution: {integrity: sha512-Yfvu/rent2vp/TXIDZMutS6ft2TJPn4xngS48PYFWDEbuFI2ccUAXM481lF1qVVnCKxfh4g8e/KPvevSJdg1Bw==}
+    engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.0.0
@@ -2429,10 +2388,6 @@ packages:
     resolution: {integrity: sha1-o9XabNXAvAAI03I0u68b7WMFkQc=}
     engines: {node: '>=0.4.0'}
     dev: false
-
-  /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
-    dev: true
 
   /ws/7.5.7:
     resolution: {integrity: sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==}

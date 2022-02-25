@@ -1,0 +1,36 @@
+{
+  "name": "frkt.ru",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "vitepress dev ",
+    "build": "vitepress build ",
+    "serve": "vitepress serve --port 5055",
+    "deploy": "sh deploy.sh"
+  },
+  "author": "Davay42",
+  "license": "ISC",
+  "dependencies": {
+    "@gun-vue/components": "0.7.4",
+    "@vueuse/core": "7.6.2",
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.1.0",
+    "markdown-it-classy": "^0.2.0",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-external-links": "^0.0.6",
+    "pug": "3.0.2",
+    "unplugin-auto-import": "^0.5.11",
+    "unplugin-icons": "^0.13.1",
+    "unplugin-vue-components": "^0.17.18",
+    "vite": "^2.8.3",
+    "vite-aliases": "^0.8.7",
+    "vite-plugin-pages": "^0.20.2",
+    "vite-plugin-windicss": "^1.7.0",
+    "vitepress": "0.22.2",
+    "vitepress-tags": "^0.6.2",
+    "app-root-path": "^3.0.0",
+    "gray-matter": "^4.0.3"
+  }
+}

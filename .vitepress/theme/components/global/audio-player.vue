@@ -1,0 +1,28 @@
+<script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    default: ''
+  },
+  file: {
+    type: String,
+    default: ''
+  }
+});
+</script>
+
+<template lang="pug">
+.flex.flex-col.items-center.my-8
+  .box
+    .text-xl.pb-4 {{ title }}
+    audio.rounded-xl.mx-auto(
+      controls
+      :src="file"
+    )
+</template>
+
+<style scoped>
+.box {
+  @apply shadow-xl p-4 rounded-xl bg-light-300 dark_bg-dark-200;
+}
+</style>

@@ -9,7 +9,6 @@ import Pages from "vite-plugin-pages";
 import { extendRoute } from "./vitepress-pages";
 
 export default defineConfig({
-  base: "./",
   server: {
     port: 3342,
   },
@@ -23,15 +22,20 @@ export default defineConfig({
       imports: ["vue"],
     }),
     Pages({
-      dirs: "pages",
+      dirs: [
+        { dir: "post", baseRoute: "post" },
+        { dir: "event", baseRoute: "event" },
+        { dir: "page", baseRoute: "page" },
+        { dir: "location", baseRoute: "location" },
+      ],
       extensions: ["vue", "md"],
       extendRoute,
     }),
-    ViteAliases({
-      dir: ".vitepress",
-      deep: false,
-      adjustDuplicates: true,
-    }),
+    // ViteAliases({
+    //   dir: ".vitepress",
+    //   deep: false,
+    //   adjustDuplicates: true,
+    // }),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],
       extensions: ["vue", "ts"],

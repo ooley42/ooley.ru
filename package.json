@@ -1,10 +1,10 @@
 {
-  "name": "frkt.ru",
+  "name": "ooley.ru",
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "dev": "vitepress dev ",
-    "build": "vitepress build ",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
     "serve": "vitepress serve --port 5055",
     "deploy": "sh deploy.sh"
   },

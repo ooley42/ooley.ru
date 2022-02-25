@@ -64,9 +64,3 @@ of tip and tricks, of skills and products, that are aquired during learning, res
 ### +7 (963) 979-02-04
 
 ### [o@ooley.ru](mailto:o@ooley.ru)
-
-\[/vc_column_text\]\[/vc_column\]\[/vc_row\]\[vc_row color_scheme="alternate" content_placement="middle"\]\[vc_column width="1/4"\]\[vc_column_text\]
-
-#### Design:
-
-\[/vc_column_text\]\[/vc_column\]\[vc_column width="3/4"\]\[us_btn label="Project presentation" link="url:https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1NFyoKAIXpQzjf19DVjYnVSqtodMoxhRlBlsLCry0TgU%2Fedit%3Fusp%3Dsharing||target:%20_blank|" style="6" custom_width="200px" css="%7B%22default%22%3A%7B%22font-size%22%3A%2215px%22%7D%7D"\]\[us_btn label="Media kit" link="url:http%3A%2F%2Fooley.ru%2Fdownload%2F5528%2F|||" style="6" custom_width="200px" css="%7B%22default%22%3A%7B%22font-size%22%3A%2215px%22%7D%7D"\]\[/vc_column\]\[/vc_row\]

@@ -7,6 +7,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import { ViteAliases } from "vite-aliases";
 import Pages from "vite-plugin-pages";
 import { extendRoute } from "./vitepress-pages";
+import Inspect from "vite-plugin-inspect";
 
 export default defineConfig({
   server: {
@@ -25,10 +26,13 @@ export default defineConfig({
       dirs: [
         { dir: "post", baseRoute: "post" },
         { dir: "event", baseRoute: "event" },
-        { dir: "page", baseRoute: "page" },
+        { dir: "theory", baseRoute: "theory" },
+        { dir: "overview", baseRoute: "overview" },
+        { dir: "report", baseRoute: "report" },
         { dir: "location", baseRoute: "location" },
         { dir: "project", baseRoute: "project" },
         { dir: "research", baseRoute: "research" },
+        { dir: "world", baseRoute: "world" },
       ],
       extensions: ["vue", "md"],
       extendRoute,

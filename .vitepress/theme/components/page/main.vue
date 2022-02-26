@@ -59,7 +59,8 @@ const parents = computed(()=> getParents(route.path.substring(9)))
             :key= "page.path"
             :href="withBase(page.path)+'/'"
             :class="{ active: route.path.includes(page.path) }"
-           ) {{ page.title }} 
+           ) 
+            h4.text-lg {{ page.title }} 
 
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")
 

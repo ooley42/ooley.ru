@@ -9,10 +9,6 @@ const publicMedia = ["icon", "cover"];
 const mediaFolder = "media_files";
 
 export function extendRoute(route) {
-  if (route.path === "/") {
-    // Index is unauthenticated.
-    return route;
-  }
   const pageDir = path.join(root, route.component);
   const fileContent = fs.readFileSync(pageDir, { encoding: "utf8" });
   const frontmatter = matter(fileContent);

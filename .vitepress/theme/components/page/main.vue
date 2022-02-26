@@ -3,16 +3,17 @@ import { watch, ref, computed, onMounted } from 'vue'
 import { useData, useRoute, withBase } from 'vitepress'
 import { getMediaPath } from '../../composables/media.js'
 
-import { useParents, useSiblings } from '../../composables/links.js'
-
-const parents = useParents();
-const siblings = useSiblings();
 const reverseParents = computed(() => [...parents.value].reverse())
 
 const { site, frontmatter, theme } = useData();
 const route = useRoute();
 
-import { pages } from '../../composables/pages.js'
+import { pages, getSiblings, getParents, trailing } from '../../composables/pages.js'
+
+const siblings = computed(()=> getSiblings(route.path.substring(9)))
+
+const parents = computed(()=> getParents(route.path.substring(9)))
+
 
 
 </script>
@@ -25,7 +26,7 @@ import { pages } from '../../composables/pages.js'
   .flex.flex-wrap.flex-1.bg-cover.bg-fixed.z-10
     header.bg-light-200.bg-opacity-90.z-2.dark_bg-dark-200.dark_bg-opacity-90(
       style="flex: 1 1 320px"
-      )
+      ) 
       .sticky.top-0.flex.flex-col.items-center.text-center
         a.no-underline.p-4(:href="withBase('/')")
           img.w-12rem(:src="theme.logo")
@@ -38,7 +39,7 @@ import { pages } from '../../composables/pages.js'
         .flex.flex-wrap.items-stretch.w-full(v-if="parents")
           a.link.p-4(
             style="flex: 1 1 auto;"
-            v-for="page in parents", :key="page.title" :href="withBase(page.link)") {{ page.title }}
+            v-for="page in parents", :key="page.title" :href="withBase(trailing(page.path))") {{ page.title }}
               .flex-1
               la-angle-up
         h1.w-full.text-xl.font-bold.mb-2.p-4.bg-light-600.dark_bg-dark-500.shadow-lg {{ frontmatter.title }}
@@ -47,10 +48,9 @@ import { pages } from '../../composables/pages.js'
             img.max-h-60vh.rounded-3xl(:src="getMediaPath(route.path, frontmatter.icon)")
           .p-4.flex-auto(v-if="frontmatter.subtitle")
             .text-md {{ frontmatter.subtitle }}
+          .text-xs {{ parents }} 
           a.p-2.flex-auto.underline.text-xl(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
           p {{ frontmatter.start_date }}
-
-          
 
 
         .flex.flex-col.w-full(v-else)
@@ -63,9 +63,7 @@ import { pages } from '../../composables/pages.js'
 
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")
 
-      .flex.flex-col(
-        style="flex: 100 1 300px"
-      )
+      .flex.flex-col(style="flex: 100 1 300px")
         img.w-full.max-w-100vw(v-if="frontmatter.cover" :src="getMediaPath(route.path, frontmatter.cover)") 
         content.content
         //- component.content(:is="route.component")
@@ -75,17 +73,17 @@ import { pages } from '../../composables/pages.js'
       .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages && Object.keys(pages).length > 0")
         item-card(
           v-for="page in pages[route.path.substring(9)]"
-          :key= "page.link"
+          :key= "page.path"
           :page="page"
-        )
+          )
 
     .flex-auto(style="flex:100")
 
     .flex.flex-wrap.items-stretch.justify-stretch.w-full(v-if="siblings")
-      a.link.px-4.py-8(style="flex:1 1 auto" v-if="siblings.prev" :href="withBase(siblings.prev.link)") 
+      a.link.px-4.py-8(style="flex:1 1 auto" v-if="siblings.prev" :href="withBase(siblings.prev.path)+'/'") 
         la-angle-left.mr-2
         span {{ siblings.prev.title }}
-      a.link.justify-end.px-4.py-8(style="flex:1 1 auto" v-if="siblings.next" :href="withBase(siblings.next.link)") 
+      a.link.justify-end.px-4.py-8(style="flex:1 1 auto" v-if="siblings.next" :href="withBase(siblings.next.path)+'/'") 
         span {{ siblings.next.title }}
         la-angle-right.ml-2
 

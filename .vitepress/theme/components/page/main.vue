@@ -14,8 +14,6 @@ const siblings = computed(()=> getSiblings(route.path.substring(9)))
 
 const parents = computed(()=> getParents(route.path.substring(9)))
 
-
-
 </script>
 
 <template lang="pug">

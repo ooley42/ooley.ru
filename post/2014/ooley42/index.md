@@ -3,7 +3,6 @@ title: "OOLEY42 — экспериментальная передвижная о
 date: "2014-10-30"
 categories:
   - "international"
-  - "projects"
 tags:
   - "ooley42-2"
   - "pritsep"

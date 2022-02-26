@@ -1,14 +1,10 @@
-const isProd = process.env.NODE_ENV === "production";
-
-const site = isProd ? "https://defucc.github.io" : "http://localhost:3000";
-
 export const metaData = {
-  title: "Фонд ФРУКТ",
-  description: "Фонд Развития Универсализации, Кооперации и Творчества",
-  site,
+  title: "OOLEY",
+  description: "Центр открытых мастерских",
+  site: "https://ooley42.github.io/ooley.ru",
   locale: "ru",
-  icon: "/media/logo/sq-round.svg",
-  logo: "/media/logo/logo_stencil.svg",
+  icon: "/logo/circleo.svg",
+  logo: "/logo/pill.svg",
   author: "Davay",
-  tags: "фонд, развитие, универсализация, кооперация, творчество, дарономика, социокультурные проекты",
+  tags: "мастерская, коворкинг, каталог, карта, творчество, проекты, общественная мастерская, открытая мастерская, свободное творчество",
 };

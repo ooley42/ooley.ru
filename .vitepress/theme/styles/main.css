@@ -10,9 +10,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.2;
-  font-family: 'Commissioner', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #333;
@@ -24,6 +21,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @apply transition-colors break-words;
 }
+
+#app {
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family: var(--font-family-heading);
+ font-size: 1.62rem;
+}
+
 
 .dark body {
   background-color: #222;

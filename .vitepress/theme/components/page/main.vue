@@ -33,22 +33,24 @@ const parents = computed(()=> getParents(route.path.substring(9)))
         a.link.p-4.w-full(
           v-if="route.path != '/'"
           style="flex: 1 1 auto;"
-          :href="withBase('/')") {{ site.title }}
+          :href="withBase('/')") 
+            h4.text-lg {{ site.title }}
             .flex-1
             la-angle-up
         .flex.flex-wrap.items-stretch.w-full(v-if="parents")
           a.link.p-4(
             style="flex: 1 1 auto;"
-            v-for="page in parents", :key="page.title" :href="withBase(trailing(page.path))") {{ page.title }}
+            v-for="page in parents", :key="page.title" :href="withBase(trailing(page.path))") 
+              h4.text-lg {{ page.title }}
               .flex-1
               la-angle-up
-        h1.w-full.text-xl.font-bold.mb-2.p-4.bg-light-600.dark_bg-dark-500.shadow-lg {{ frontmatter.title }}
+        h1.w-full.text-2xl.font-bold.mb-4.p-4.bg-light-600.dark_bg-dark-500.shadow-lg {{ frontmatter.title }}
         .p-4.flex.flex-wrap(v-if="route.path != '/'")
           .p-2(style="flex: 1 1 120px" v-if="frontmatter.icon")
             img.max-h-60vh.rounded-3xl(:src="getMediaPath(route.path, frontmatter.icon)")
           .p-4.flex-auto(v-if="frontmatter.subtitle")
             .text-md {{ frontmatter.subtitle }}
-          .text-xs {{ parents }} 
+          .text-xs 
           a.p-2.flex-auto.underline.text-xl(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
           p {{ frontmatter.start_date }}
 

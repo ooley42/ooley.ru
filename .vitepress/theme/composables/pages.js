@@ -36,7 +36,6 @@ export function getParents(route) {
   const url = route.split("/").filter(Boolean);
   for (let i in url) {
     const path = "/" + url.slice(0, -i).join("/");
-    console.log(path);
     parents.push(
       routes.find((r) => {
         return r.path == path;

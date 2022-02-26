@@ -43,7 +43,7 @@ const parents = computed(()=> getParents(route.path.substring(9)))
               .flex-1
               la-angle-up
         h1.w-full.text-2xl.font-bold.mb-4.p-4.bg-light-600.dark_bg-dark-500.shadow-lg {{ frontmatter.title }}
-        .p-4.flex.flex-wrap(v-if="route.path != '/'")
+        .p-4.flex.flex-wrap(v-if="route.path.substring(9) != '/'")
           .p-2(style="flex: 1 1 120px" v-if="frontmatter.icon")
             img.max-h-60vh.rounded-3xl(:src="getMediaPath(route.path, frontmatter.icon)")
           .p-4.flex-auto(v-if="frontmatter.subtitle")
@@ -53,12 +53,12 @@ const parents = computed(()=> getParents(route.path.substring(9)))
           p {{ frontmatter.start_date }}
 
 
-        .flex.flex-col.w-full(v-else)
-          //- a.link.p-4.no-underline.transition-all.duration-300.text-xl.justify-center.w-full(
-            v-for="page in pages"
-            :key= "page.link"
-            :href="page.link"
-            :class="{ active: route.path.includes(page.link) }"
+        .flex.flex-col.w-full(v-else) 
+          a.link.p-4.no-underline.transition-all.duration-300.text-xl.justify-center.w-full(
+            v-for="page in pages[route.path.substring(9)]"
+            :key= "page.path"
+            :href="withBase(page.path)+'/'"
+            :class="{ active: route.path.includes(page.path) }"
            ) {{ page.title }} 
 
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")

@@ -27,6 +27,8 @@ export default defineConfig({
         { dir: "event", baseRoute: "event" },
         { dir: "page", baseRoute: "page" },
         { dir: "location", baseRoute: "location" },
+        { dir: "project", baseRoute: "project" },
+        { dir: "research", baseRoute: "research" },
       ],
       extensions: ["vue", "md"],
       extendRoute,

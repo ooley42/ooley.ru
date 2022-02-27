@@ -24,8 +24,6 @@ const page = computed(() => routes.find(p => {
   .flex.flex-wrap.flex-1.bg-cover.bg-fixed.z-10
     page-header
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")
-      .p-4 {{page}}
-
       .flex.flex-col(style="flex: 100 1 300px")
         .sticky.top-0
           img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")

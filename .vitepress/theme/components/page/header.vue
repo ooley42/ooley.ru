@@ -4,7 +4,13 @@ import { useData, useRoute } from 'vitepress'
 const { site, frontmatter, theme } = useData();
 const route = useRoute();
 
-import { pages,  trailing, getMediaPath } from '../../composables/pages.js'
+import { pages, routes, trailing, getMediaPath } from '../../composables/pages.js'
+
+
+const page = computed(() => routes.find(p => {
+  return trailing(p.path) == route.path
+})
+)
 </script>
 
 <template lang='pug'>
@@ -13,17 +19,23 @@ header
     a.no-underline.p-4(href="/")
       img.w-12rem(:src="theme.logo")
     page-parents
-    h1 {{ frontmatter.title }}
-    .p-4.flex.flex-wrap(v-if="route.path != '/'")
-      .p-2(style="flex: 1 1 120px" v-if="frontmatter.icon")
-        //- img.max-h-60vh.rounded-3xl(:src="getMediaPath(route.path, frontmatter.icon)")
-      .p-4.flex-auto(v-if="frontmatter.subtitle")
-        .text-md {{ frontmatter.subtitle }}
-      .text-xs 
-      a.p-2.flex-auto.underline.text-xl(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
-      p {{ frontmatter.start_date }}
+    .info
+      img.max-w-42.rounded-3xl.mb-4(v-if="page?.icon" :src="page.icon")
+      h1.text-2xl.font-bold {{ frontmatter.title }}
+      .text-lg(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
+      .font-bold.text-lg {{page.city}}
+      .text-md {{page.address}}
+      .font-bold.flex.items-center(v-if="page.place") 
+        mdi-map-marker-radius.text-2xl
+        .text-sm {{page.place}}
+      a.p-2.underline.text-lg(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
+      a.p-2(v-if="page.tel" :href="`tel://${page.tel}`") {{page.tel}}
+      item-status(:status="page.status")
+      
 
-    .flex.flex-wrap.w-full(v-else) 
+
+
+    .flex.flex-wrap.w-full(v-if="route.path == '/'") 
       a.link.no-underline.transition-all.duration-300.text-xl.justify-center.w-full(
         v-for="page in pages[route.path]"
         :key= "page.path"
@@ -40,7 +52,10 @@ header {
     @apply p-4;
   }
 }
-h1 {
-  @apply w-full text-2xl font-bold mb-4 p-4 bg-light-600 dark_bg-dark-500 shadow-lg;
+.info {
+  @apply flex flex-col items-center gap-2 w-full mb-4 p-4 bg-light-600 dark_bg-dark-500 shadow-lg;
+  & * {
+    @apply py-1
+  }
 }
 </style>

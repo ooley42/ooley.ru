@@ -29,8 +29,8 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
     :src="page.icon"
     )
   .flex-auto
-  .info.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-80.dark_bg-opacity-80.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
-    :style="{ marginTop: page.cover ? '120px' : '0' }"
+  .info.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-90.dark_bg-opacity-90.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
+    :style="{ marginTop: page.cover && !page.icon ? '120px' : '0' }"
   )
     .flex.w-full
       .flex.flex-col
@@ -39,6 +39,7 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
       .flex-1
       //- .font-bold(v-if="countPages > 0") {{ countPages }} 
     .text-md.mt-2.line-clamp-4(v-if="page.subtitle") {{ page.subtitle }}
+    item-status(:status="page.status")
   .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
     ic-round-update.mr-1
     .p-0 {{ getDate(page.date) }}

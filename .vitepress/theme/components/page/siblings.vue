@@ -25,9 +25,5 @@ const siblings = computed(() => getSiblings(route.path.substring(9)))
 </template>
 
 <style lang="postcss" scoped>
-.link {
-  flex:1 1 auto;
-  @apply flex-auto px-4 py-8 relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark_(bg-dark-100/10) hover_(bg-light-100 dark_bg-dark-100);
 
-}
 </style>

@@ -9,6 +9,16 @@ for (let route of routes) {
   pages[folder].push(route);
 }
 
+for (let folder in pages) {
+  pages[folder].sort((a, b) => {
+    if (a?.date && b?.date) {
+      return a.date > b.date ? -1 : 1;
+    } else {
+      return 1;
+    }
+  });
+}
+
 export { pages };
 
 export function getSiblings(route) {
@@ -47,4 +57,17 @@ export function getParents(route) {
 
 export function trailing(url) {
   return (url += url.endsWith("/") ? "" : "/");
+}
+
+export function getPath(path) {
+  path = path.match(/(^.*[\\\/]|^[^\\\/].*)/i);
+  if (path != null) {
+    return path[0];
+  } else {
+    return false;
+  }
+}
+
+export function getMediaPath(path, file) {
+  return "/media_files" + getPath(path) + file;
 }

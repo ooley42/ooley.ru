@@ -21,33 +21,29 @@ export function extendRoute(route) {
     // content,
   };
 
-  // for (let media of publicMedia) {
-  //   if (data[media]) {
-  //     let fileName = data[media];
-  //     const filePath = path.join(route.path, fileName);
-  //     // const from = path.join(root, fileDir);
-  //     // const webDir = path.join("public/media/", fileDir);
-  //     // const to = path.join(root, webDir);
-  //     const publicPath = path.join(
-  //       root,
-  //       "public",
-  //       mediaFolder,
-  //       "images",
-  //       filePath
-  //     );
-  //     const dirs = path.dirname(publicPath);
-  //     // if (!fs.existsSync(dirs)) {
-  //     //   fs.mkdirSync(dirs, {
-  //     //     recursive: true,
-  //     //   });
-  //     // }
-  //     page[media] = path.join("/", mediaFolder, filePath);
-  //     // fs.copyFileSync(
-  //     //   filePath,
-  //     //   path.join(root, "public", mediaFolder, filePath)
-  //     // );
-  //   }
-  // }
+  for (let media of publicMedia) {
+    if (data[media]) {
+      let file = data[media];
+      const filePath = path.join(route.path, file);
+      const fileName = filePath.split("/").filter(Boolean).join("-");
+      // const from = path.join(root, fileDir);
+      // const webDir = path.join("public/media/", fileDir);
+      // const to = path.join(root, webDir);
+      const publicPath = path.join(root, "public", mediaFolder, media);
+
+      if (!fs.existsSync(publicPath)) {
+        fs.mkdirSync(publicPath, {
+          recursive: true,
+        });
+      }
+      page[media] = path.join("/", mediaFolder, media, fileName);
+
+      fs.copyFileSync(
+        path.join(root, filePath),
+        path.join(publicPath, fileName)
+      );
+    }
+  }
 
   return page;
 }

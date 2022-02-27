@@ -1,5 +1,4 @@
 <script setup>
-import { watch, ref, computed, onMounted } from 'vue'
 import { useData, useRoute, withBase } from 'vitepress'
 
 const { site, frontmatter, theme } = useData();

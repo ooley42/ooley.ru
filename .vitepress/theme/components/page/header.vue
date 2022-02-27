@@ -29,10 +29,16 @@ header
       .text-md {{page?.address}}
 
       a.underline.text-lg(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
-      a.underline(v-if="page?.email" :href="`mailto:${page.email}`") {{page.email}}
       a(v-if="page?.tel" :href="`tel://${page.tel}`") {{page.tel}}
-      
-      .text-sm(v-if="page?.hours") 
+      .flex.flex-wrap.text-2xl.gap-2.my-1
+        a(v-if="page?.email" :href="`mailto:${page.email}`") 
+          ion-at
+        a(v-if="page?.vk" :href="`https://vk.com/${page.vk}`" target="_blank")
+          ion-logo-vk
+        a(v-if="page?.instagram" :href="`https://instagram.com/${page.instagram}`" target="_blank")
+          ion-logo-instagram
+
+      .text-sm.my-1(v-if="page?.hours") 
         .font-bold Режим работы
         p {{page.hours}}
 

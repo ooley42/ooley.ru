@@ -41,7 +41,7 @@ date: "2015-08-17"
 
 ### Передвижная мастерская OOLEY42
 
-![](/images/zdaniya-02.png)
+![](/images/build/zdaniya-02.png)
 
 [**OOLEY42**](http://ooley.ru/ooley42/) – это компактная передвижная универсальная мастерская, помещающаяся в прицеп-автодом и разворачивающаяся в любом подходящем пространстве. Это наша экспериментальная площадка, позволяющая на практике изучать основы творчества и обнаруживать действенные подходы к продуктивному сотрудничеству. Мы открыты к предложениям проведения лекций, выездных мастер-классов и воркшопов, создания всевозможных арт-объектов и совместных архитектурных и дизайн-проектов.
 
@@ -69,9 +69,9 @@ date: "2015-08-17"
 
 https://www.youtube.com/watch?v=5aSf6ik05aY
 
-- Вокал: **Анна Старова**
-- Видеосъемка и монтаж: **Александр Кривов**
-- Слова песни, музыка и графика: **Денис Старов**
+* Вокал: **Анна Старова**
+* Видеосъемка и монтаж: **Александр Кривов**
+* Слова песни, музыка и графика: **Денис Старов**
 
 ## Свободный мастер — идеал творческого самосовершенствования человека
 
@@ -135,7 +135,7 @@ https://github.com/ooley42
 
 Понравился проект? Хотите поучаствовать, но не знаете как? Можете поддержать нас добровольным вкладом, который пойдёт на развитие и углубление наших исследований.
 
-<iframe src="https://promo-money.ru/quickpay/shop-widget?writer=seller&amp;targets=%D0%92%D0%BD%D0%B5%D1%81%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%B2%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D1%85%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8&amp;targets-hint=&amp;default-sum=200&amp;button-text=11&amp;payment-type-choice=on&amp;mobile-payment-type-choice=on&amp;fio=on&amp;comment=on&amp;hint=%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D1%8C%D1%82%D0%B5%20%D0%BB%D1%8E%D0%B1%D0%BE%D0%B9%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%20%D0%B5%D1%81%D0%BB%D0%B8%20%D1%85%D0%BE%D1%82%D0%B8%D1%82%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%D0%B1%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2&amp;successURL=https%3A%2F%2Fooley.ru%2Fspasibo%2F&amp;quickpay=shop&amp;account=410012521440954" width="423" height="343" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://promo-money.ru/quickpay/shop-widget?writer=seller&amp;targets=%D0%92%D0%BD%D0%B5%D1%81%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%B2%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D1%85%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8&amp; targets-hint=&amp; default-sum=200&amp; button-text=11&amp; payment-type-choice=on&amp; mobile-payment-type-choice=on&amp; fio=on&amp; comment=on&amp; hint=%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D1%8C%D1%82%D0%B5%20%D0%BB%D1%8E%D0%B1%D0%BE%D0%B9%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%20%D0%B5%D1%81%D0%BB%D0%B8%20%D1%85%D0%BE%D1%82%D0%B8%D1%82%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%D0%B1%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2&amp; successURL=https%3A%2F%2Fooley.ru%2Fspasibo%2F&amp; quickpay=shop&amp; account=410012521440954" width="423" height="343" frameborder="0" scrolling="no"></iframe>
 
 #### Материалы
 

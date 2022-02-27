@@ -38,8 +38,9 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
         h4.text-2xl.font-bold.md_text-2xl {{ page.title }} 
       .flex-1
       //- .font-bold(v-if="countPages > 0") {{ countPages }} 
-    .text-md.mt-2.line-clamp-4(v-if="page.subtitle") {{ page.subtitle }}
-    item-status(:status="page.status")
+    .text-md.mt-2.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
+    .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
+    item-status.absolute.top-2.left-2(:status="page.status")
   .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
     ic-round-update.mr-1
     .p-0 {{ getDate(page.date) }}

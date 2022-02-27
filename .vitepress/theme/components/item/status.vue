@@ -25,7 +25,7 @@ const state = computed(() => props.statuses[props.status])
 </script>
 
 <template lang='pug'>
-.m-1.px-3.rounded-full.bg-light-900.flex.items-center.max-w-min(
+.px-3.rounded-full.bg-light-900.flex.items-center.max-w-min(
   v-if="state"
   :style="{ backgroundColor: isDark ? state.dark : state.light }"
   ) {{ state.text }}

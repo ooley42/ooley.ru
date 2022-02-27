@@ -10,6 +10,7 @@ place: Фрунзенский район
 url: https://drevrika.ru
 email: drevrika.ws.office@gmail.com
 instagram: open_drevrika
+telegram: Open_drevrika
 tel: +7 (902) 524-03-16 
 coord: [43.131009895174245, 131.89502116929847]
 status: open

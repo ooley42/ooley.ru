@@ -37,7 +37,8 @@ header
           ion-logo-vk
         a(v-if="page?.instagram" :href="`https://instagram.com/${page.instagram}`" target="_blank")
           ion-logo-instagram
-
+        a(v-if="page?.telegram" :href="`https://t.me/${page.instagram}`" target="_blank")
+          mdi-telegram
       .text-sm.my-1(v-if="page?.hours") 
         .font-bold Режим работы
         p {{page.hours}}

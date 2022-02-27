@@ -9,6 +9,11 @@ const props = defineProps({
         text: 'Закрыто',
         light: 'hsla(0,80%,80%,1)',
         dark: 'hsla(0,80%,30%,1)'
+      },
+      open: {
+        text: 'Открыто',
+        light: 'hsla(100,80%,80%,1)',
+        dark: 'hsla(100,80%,30%,1)'
       }
     }
   }

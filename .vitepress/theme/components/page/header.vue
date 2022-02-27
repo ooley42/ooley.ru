@@ -20,20 +20,18 @@ header
       img.w-12rem(:src="theme.logo")
     page-parents
     .info
-      img.max-w-42.rounded-3xl.mb-4(v-if="page?.icon" :src="page.icon")
+      img.max-w-42.rounded-lg.mb-4(v-if="page?.icon" :src="page.icon")
       h1.text-2xl.font-bold {{ frontmatter.title }}
       .text-lg(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
-      .font-bold.text-lg {{page.city}}
-      .text-md {{page.address}}
-      .font-bold.flex.items-center(v-if="page.place") 
-        mdi-map-marker-radius.text-2xl
-        .text-sm {{page.place}}
-      a.p-2.underline.text-lg(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
-      a.p-2(v-if="page.tel" :href="`tel://${page.tel}`") {{page.tel}}
-      item-status(:status="page.status")
+      .font-bold.text-lg {{page?.city}}
+      .font-bold.flex.items-center(v-if="page?.place") 
+        .text-sm {{page?.place}}
+      .text-md {{page?.address}}
+
+      a.underline.text-lg(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
+      a(v-if="page?.tel" :href="`tel://${page.tel}`") {{page.tel}}
+      item-status(:status="page?.status")
       
-
-
 
     .flex.flex-wrap.w-full(v-if="route.path == '/'") 
       a.link.no-underline.transition-all.duration-300.text-xl.justify-center.w-full(
@@ -54,8 +52,5 @@ header {
 }
 .info {
   @apply flex flex-col items-center gap-2 w-full mb-4 p-4 bg-light-600 dark_bg-dark-500 shadow-lg;
-  & * {
-    @apply py-1
-  }
 }
 </style>

@@ -34,7 +34,7 @@ export default defineConfig({
         { dir: "research", baseRoute: "research" },
         { dir: "world", baseRoute: "world" },
       ],
-      extensions: ["vue", "md"],
+      extensions: ["md"],
       extendRoute,
     }),
     // ViteAliases({

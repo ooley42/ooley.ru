@@ -1,24 +1,24 @@
 <script setup>
-import {  useRoute, withBase } from 'vitepress'
+import {  useRoute,  } from 'vitepress'
 
 const route = useRoute()
 
 import { getSiblings, trailing } from '../../composables/pages.js'
 
-const siblings = computed(() => getSiblings(route.path.substring(9)))
+const siblings = computed(() => getSiblings(route.path))
 </script>
 
 <template lang='pug'>
 .flex.flex-wrap.items-stretch.justify-stretch.w-full(v-if="siblings")
   a.link(
     v-if="siblings.prev" 
-    :href="trailing(withBase(siblings.prev.path))"
+    :href="trailing(siblings.prev.path)"
     ) 
     la-angle-left.mr-2
     h4.text-lg {{ siblings.prev.title }}
   a.link.justify-end(
     v-if="siblings.next" 
-    :href="trailing(withBase(siblings.next.path))"
+    :href="trailing(siblings.next.path)"
     ) 
     h4.text-lg {{ siblings.next.title }}
     la-angle-right.ml-2

@@ -1,11 +1,18 @@
 <script setup>
-import { useData, useRoute, withBase } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
 
 const { site, frontmatter, theme } = useData();
 const route = useRoute();
 
-import { pages,  trailing, getMediaPath } from '../../composables/pages.js'
+import { routes, pages, trailing, getMediaPath } from '../../composables/pages.js'
 
+const page = computed(() => routes.find(p => {
+  return trailing(p.path) == route.path
+})
+)
+
+//  const filePath = route?.path.split("/").filter(Boolean).join("-");
+//  let p = `/media_files/${media}/${filePath}-${route?.data?.[media]}`;
 
 </script>
 
@@ -17,16 +24,18 @@ import { pages,  trailing, getMediaPath } from '../../composables/pages.js'
   .flex.flex-wrap.flex-1.bg-cover.bg-fixed.z-10
     page-header
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")
+      .p-4 {{page}}
 
       .flex.flex-col(style="flex: 100 1 300px")
-        img.w-full.max-w-100vw(v-if="frontmatter.cover" :src="frontmatter.cover") 
+        .sticky.top-0
+          img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
         content.content
         .flex-auto(
           style="flex: 1000 1"
-        )
+        ) 
       .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages && Object.keys(pages).length > 0")
         item-card(
-          v-for="page in pages[route.path.substring(9)]"
+          v-for="page in pages[route.path]"
           :key= "page.path"
           :page="page"
           )

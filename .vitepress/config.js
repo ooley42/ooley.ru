@@ -8,7 +8,6 @@ import mdClass from "markdown-it-classy";
 import mdContainer from "markdown-it-container";
 
 export default defineConfig({
-  base: "/ooley.ru/",
   title: metaData.title,
   description: metaData.description,
   lang: metaData.locale,

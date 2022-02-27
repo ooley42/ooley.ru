@@ -1,12 +1,12 @@
 <script setup>
-import { useData, useRoute, withBase } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
 
 const { site } = useData();
 const route = useRoute();
 
 import { getParents, trailing } from '../../composables/pages.js'
 
-const parents = computed(() => getParents(route.path.substring(9)))
+const parents = computed(() => getParents(route.path))
 </script>
 
 <template lang='pug'>  
@@ -14,14 +14,14 @@ const parents = computed(() => getParents(route.path.substring(9)))
   //- a.link.p-4.w-full(
   //-   v-if="route.path != '/'"
   //-   style="flex: 1 1 auto;"
-  //-   :href="withBase('/')"
+  //-   href="/"
   //-   ) 
   //-     h4.text-lg {{ site.title }}
   //-     .flex-1
   //-     la-angle-up
   a.link.p-4(
     style="flex: 1 1 auto;"
-    v-for="page in parents", :key="page.title" :href="withBase(trailing(page.path))") 
+    v-for="page in parents", :key="page.title" :href="trailing(page.path)") 
       h4.text-lg {{ page.title }}
       .flex-1
       la-angle-up

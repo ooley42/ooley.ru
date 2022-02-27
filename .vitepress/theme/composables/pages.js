@@ -19,7 +19,7 @@ for (let folder in pages) {
   });
 }
 
-export { pages };
+export { routes, pages };
 
 export function getSiblings(route) {
   const siblings = {
@@ -59,15 +59,11 @@ export function trailing(url) {
   return (url += url.endsWith("/") ? "" : "/");
 }
 
-export function getPath(path) {
-  path = path.match(/(^.*[\\\/]|^[^\\\/].*)/i);
-  if (path != null) {
-    return path[0];
-  } else {
-    return false;
-  }
-}
+export function getMediaPath(media, route) {
+  // console.log(route);
 
-export function getMediaPath(path, file) {
-  return "/media_files" + getPath(path) + file;
+  const filePath = route?.path.split("/").filter(Boolean).join("-");
+  let p = `/media_files/${media}/${filePath}-${route?.data?.[media]}`;
+  console.log(p);
+  return p;
 }

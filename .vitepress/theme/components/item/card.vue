@@ -1,5 +1,5 @@
 <script setup>
-import { useData, useRoute, withBase } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
 
 const { site, frontmatter, theme } = useData();
 
@@ -19,7 +19,7 @@ function getDate(timestamp) {
 <template lang="pug">
 a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
   style="flex: 1 1 280px;"
-  :href="withBase(page.path+'/')"
+  :href="page.path+'/'"
   :style="{ backgroundImage: page.cover ? `url(${page.cover})` : '' }"
 ) 
   .flex-auto

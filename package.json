@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@gun-vue/components": "0.7.4",
-    "@vueuse/core": "7.6.2",
+    "@vueuse/core": "7.7.0",
     "vue": "^3.2.31"
   },
   "devDependencies": {
@@ -30,8 +30,8 @@
     "vite-aliases": "^0.8.7",
     "vite-plugin-inspect": "^0.4.3",
     "vite-plugin-pages": "^0.20.2",
-    "vite-plugin-windicss": "^1.7.1",
+    "vite-plugin-windicss": "^1.8.1",
     "vitepress": "0.22.3",
-    "windicss": "^3.4.4"
+    "windicss": "^3.5.0"
   }
 }

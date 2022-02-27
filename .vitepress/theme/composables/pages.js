@@ -14,7 +14,7 @@ for (let folder in pages) {
     if (a?.date && b?.date) {
       return a.date > b.date ? -1 : 1;
     } else {
-      return 1;
+      return 0;
     }
   });
 }

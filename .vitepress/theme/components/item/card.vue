@@ -39,10 +39,9 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
       .flex-1
       //- .font-bold(v-if="countPages > 0") {{ countPages }} 
     .text-md.mt-2.line-clamp-4(v-if="page.subtitle") {{ page.subtitle }}
-    .text-xs {{page.path}}
   .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
     ic-round-update.mr-1
-    .p-0 {{ getDate(page.lastModified) }}
+    .p-0 {{ getDate(page.date) }}
 </template>
 
 

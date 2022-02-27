@@ -1,13 +1,7 @@
 ---
-title: "Изготовление книжек умений ЛОМ v.1"
+title: "Книжки умений ЛОМ v.1"
+subtitle: Печать и сборка прототипов
 date: "2017-12-13"
-categories:
-  - "dev"
-tags:
-  - "knizhka-umenij"
-  - "lom"
-  - "pechat"
-  - "poligrafiya"
 cover: Pasted-Graphic.jpg
 vimeo: https://vimeo.com/247502745
 ---

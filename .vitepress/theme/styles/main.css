@@ -57,7 +57,7 @@ h6 {
     @apply max-w-2xl mx-auto leading-relaxed my-4;
   }
   a {
-    @apply underline
+    @apply underline font-bold
   }
   em {
     @apply not-italic text-dark-100/60 dark_text-light-100/60;

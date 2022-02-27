@@ -10,20 +10,48 @@ const siblings = computed(() => getSiblings(route.path))
 
 <template lang='pug'>
 .flex.flex-wrap.items-stretch.justify-stretch.w-full(v-if="siblings")
-  a.link(
+  a.link.px-4.pt-28.pb-4(
     v-if="siblings.prev" 
     :href="trailing(siblings.prev.path)"
+    :style="{backgroundImage: `url(${siblings.prev.cover})`}"
     ) 
-    la-angle-left.mr-2
-    h4.text-lg {{ siblings.prev.title }}
-  a.link.justify-end(
+    .panel
+      la-angle-left.mr-2
+      h4.text-lg {{ siblings.prev.title }}
+  a.link.justify-end.px-4.pt-28.pb-4(
     v-if="siblings.next" 
     :href="trailing(siblings.next.path)"
+    :style="{backgroundImage: `url(${siblings.next.cover})`}"
     ) 
-    h4.text-lg {{ siblings.next.title }}
-    la-angle-right.ml-2
+    .panel
+      h4.text-lg {{ siblings.next.title }}
+      la-angle-right.ml-2
 </template>
 
 <style lang="postcss" scoped>
+.link .panel {
+  @apply z-10 p-4 m-2 bg-light-200 bg-opacity-80 dark_bg-dark-200 dark_bg-opacity-80 rounded flex items-center flex-wrap;
+}
+
+.link::before {
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+  backdrop-filter: blur(6px);
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: hsla(0,0%,100%,0.3);
+}
+.dark .link::before {
+  background-color: hsla(0,0%,0%,0.3);
+}
+
+.link:hover::before {
+  backdrop-filter: blur(0px);
+  background-color: hsla(0,0%,0%,0);
+}
 
 </style>

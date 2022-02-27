@@ -2,11 +2,6 @@
 title: "Идея OOLEY"
 subtitle: Краткая формулировка центральной идеи проекта
 date: "2014-11-14"
-categories:
-  - "dev"
-tags:
-  - "ideya"
-  - "kratko"
 cover: "Bold-3D.jpg"
 ---
 

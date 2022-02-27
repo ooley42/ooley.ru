@@ -1,14 +1,15 @@
 ---
 title: "Грани творчества"
+subtitle: Три вида мотивации созидательной деятельности человека
 date: "2018-03-27"
 categories:
-  - "theory"
+  + "theory"
 tags:
-  - "grani"
-  - "iskusstvo"
-  - "masterstvo"
-  - "remeslo"
-  - "creativity"
+  + "grani"
+  + "iskusstvo"
+  + "masterstvo"
+  + "remeslo"
+  + "creativity"
 cover: "edges.jpg"
 ---
 

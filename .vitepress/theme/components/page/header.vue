@@ -29,7 +29,7 @@ header
         :key= "page.path"
         :href="page.path+'/'"
         :class="{ active: route.path.includes(page.path) }"
-        ) 
+        )
         h4.text-lg {{ page.title }} 
 </template>
 <style lang="postcss" scoped>

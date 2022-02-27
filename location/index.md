@@ -15,3 +15,4 @@ email:
 tel: 
 coord: []
 status: 
+hours:

@@ -36,6 +36,10 @@ h6 {
  font-size: 1.62rem;
 }
 
+a:hover {
+  @apply underline
+}
+
 
 .dark body {
   background-color: #222;
@@ -43,7 +47,7 @@ h6 {
 }
 
 .content {
-  @apply hyphens-auto break-words p-4 md_p-6 xl_p-8;
+  @apply hyphens-auto break-words p-4 md_p-6 xl_p-8 leading-relaxed ;
   & * {
     @apply max-w-full;
   }
@@ -52,9 +56,8 @@ h6 {
   h3,
   h4,
   h5,
-  h6,
-  p {
-    @apply max-w-2xl mx-auto leading-relaxed my-4;
+  h6 {
+    @apply relative flex items-center;
   }
   a {
     @apply underline font-bold
@@ -63,25 +66,31 @@ h6 {
     @apply not-italic text-dark-100/60 dark_text-light-100/60;
   }
   .header-anchor {
-    @apply text-lg absolute -mx-5 opacity-20;
+    @apply text-lg absolute -left-3 opacity-10  transition duration-200ms ease;
+  }
+  h1:hover .header-anchor,
+  h2:hover .header-anchor,
+  h3:hover .header-anchor,
+  h4:hover .header-anchor {
+    @apply opacity-100;
   }
   & h1 {
-    @apply font-bold text-5xl my-4 p-1;
+    @apply font-bold text-4xl my-4 p-1;
   }
   & h2 {
-    @apply font-bold text-4xl p-1 my-2;
-  }
-  & h3 {
     @apply font-bold text-3xl p-1 my-2;
   }
+  & h3 {
+    @apply font-bold text-2xl p-1 my-2;
+  }
   & h4 {
-    @apply font-bold text-xl p-1 my-2;
+    @apply font-bold text-xl mt-2;
   }
   ul, ol {
-    @apply p-4;
+    @apply pl-4;
   }
   li {
-    @apply leading-relaxed py-2;
+    @apply leading-relaxed;
   }
   hr {
     @apply my-16 bg-dark-100/50 h-1px dark_bg-light-100/50 max-w-xl;

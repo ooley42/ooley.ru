@@ -30,20 +30,30 @@ header
 
       a.underline.text-lg(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
       a(v-if="page?.tel" :href="`tel://${page.tel}`") {{page.tel}}
-      .flex.flex-wrap.text-2xl.gap-2.my-1
+      .flex.flex-wrap.text-2xl.gap-3.my-1
         a(v-if="page?.email" :href="`mailto:${page.email}`") 
           ion-at
+        a(v-if="page?.facebook" :href="`https://facebook.com/${page.facebook}`" target="_blank")
+          ion-logo-facebook
         a(v-if="page?.vk" :href="`https://vk.com/${page.vk}`" target="_blank")
           ion-logo-vk
         a(v-if="page?.instagram" :href="`https://instagram.com/${page.instagram}`" target="_blank")
           ion-logo-instagram
         a(v-if="page?.telegram" :href="`https://t.me/${page.instagram}`" target="_blank")
           mdi-telegram
+      item-status(:status="page?.status")
       .text-sm.my-1(v-if="page?.hours") 
-        .font-bold Режим работы
+        .font-bold.mb-2 Режим работы
         p {{page.hours}}
 
-      item-status(:status="page?.status")
+
+    .toc.flex.flex-col.w-full.p-4.text-left.gap-1(v-if="page?.toc")
+      a.flex.items-center.font-bold(v-for="header in route.data.headers"
+        :href="`#${header.slug}`"
+        ) 
+        p(v-for="level in header.level-1") ・
+        .ml-1 {{header.title}}
+      
       
 
     .flex.flex-wrap.w-full(v-if="route.path == '/'") 

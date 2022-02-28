@@ -25,13 +25,14 @@ const page = computed(() => routes.find(p => {
     page-header
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")
       .flex.flex-col(style="flex: 100 1 300px")
-        .sticky.top-0
-          img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
-        content.content
+        youtube-embed.mb-8.shadow-lg(v-if="page?.youtube" :link="page?.youtube")
+        img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
+        
+        content.content.bg-light-200
         .flex-auto(
           style="flex: 1000 1"
         ) 
-      .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages && Object.keys(pages).length > 0")
+      .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
         item-card(
           v-for="page in pages[route.path]"
           :key= "page.path"

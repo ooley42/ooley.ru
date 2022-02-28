@@ -28,7 +28,7 @@ const page = computed(() => routes.find(p => {
         youtube-embed.mb-8.shadow-lg(v-if="page?.youtube" :link="page?.youtube")
         img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
         
-        content.content.bg-light-200
+        content.content.bg-light-200.dark_bg-dark-300
         .flex-auto(
           style="flex: 1000 1"
         ) 
@@ -48,6 +48,4 @@ const page = computed(() => routes.find(p => {
 a.link {
   @apply bg-cover bg-center  flex-auto relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark_(bg-dark-100/10) hover_(bg-light-100 dark_bg-dark-100);
 }
-
-
 </style>

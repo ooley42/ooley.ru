@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.2;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #333;
   background-color: #dfdfdf;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .content {
-  @apply hyphens-auto break-words p-4 md_p-6 xl_p-8 leading-relaxed ;
+  @apply hyphens-auto break-words p-6 md_p-8 lg_p-12 leading-relaxed ;
   & * {
     @apply max-w-full;
   }
@@ -58,6 +58,9 @@ a:hover {
   h5,
   h6 {
     @apply relative flex items-center;
+  }
+  p {
+    @apply my-4;
   }
   a {
     @apply underline font-bold

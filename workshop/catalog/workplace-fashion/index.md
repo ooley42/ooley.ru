@@ -13,6 +13,7 @@ instagram: workplace.fashion
 telegram: workplacefashion
 facebook: workplace.fashion
 url: https://workplace.fashion/
+status: open
 ---
 
 ## Швейный коворкинг, аренда рабочего пространства для дизайнера одежды

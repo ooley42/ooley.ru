@@ -29,7 +29,7 @@ export default defineConfig({
         { dir: "theory", baseRoute: "theory" },
         { dir: "overview", baseRoute: "overview" },
         { dir: "report", baseRoute: "report" },
-        { dir: "location", baseRoute: "location" },
+        { dir: "workshop", baseRoute: "workshop" },
         { dir: "project", baseRoute: "project" },
         { dir: "research", baseRoute: "research" },
         { dir: "world", baseRoute: "world" },

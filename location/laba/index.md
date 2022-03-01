@@ -15,6 +15,7 @@ vk: labaspace
 instagram: labaspace
 telegram: laba_space
 hours: по предварительной записи
+coord: [55.763899810876985, 37.63429645608736]
 ---
 
 ## Что такое Лаба?

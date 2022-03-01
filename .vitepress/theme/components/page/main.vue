@@ -25,10 +25,9 @@ const page = computed(() => routes.find(p => {
     page-header
     .flex.flex-wrap.overflow-hidden.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95.max-w-3xl(style="flex: 1000 1 420px")
       .flex.flex-col(style="flex: 100 1 300px")
+        img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
         youtube-embed(v-if="page?.youtube" :link="page?.youtube")
         vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
-        img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
-        
         content.content.bg-light-200.dark_bg-dark-300
         .flex-auto(
           style="flex: 1000 1"

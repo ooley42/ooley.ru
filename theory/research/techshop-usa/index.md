@@ -1,12 +1,8 @@
 ---
 title: "TechShop, USA"
 date: "2014-10-31"
-categories:
-  - "international"
-tags:
-  - "cnc"
-  - "usa"
-coverImage: "techshop_workingphoto.jpg"
+cover: "techshop.jpg"
+youtube: http://www.youtube.com/watch?v=ls9xwt6F3mo
 ---
 
 [www.techshop.ws](http://www.techshop.ws)
@@ -15,7 +11,7 @@ coverImage: "techshop_workingphoto.jpg"
 
 > Get access to over $1 million dollars worth of advanced machines and tools, sophisticated 2D and 3D design software, and other professional equipment for a very low monthly membership fee.
 
-![Примерный план TechShop](./images/floor_plan_082008.png)
+![Примерный план TechShop](./floor.png)
 
 ### 8 филиалов по всей стране
 
@@ -31,8 +27,6 @@ coverImage: "techshop_workingphoto.jpg"
 - TechShop Los Angeles _In Planning_
 
 На конец 2014 года индивидуальное членство в компании, позволяющее получать неограниченный доступ к оборудованию и инструментам, рабочим станциям для дизайна и работы со специализированными программами любого из филиалов TechShop обходится в $120 — $175  в месяц в зависимости от срока оплаты (1 месяц, подписка или готовой абонемент). Плюс программы скидок для членов семьи и для студентов и сотрудников военной сферы.
-
-http://www.youtube.com/watch?v=ls9xwt6F3mo
 
 И небольшая выдержка из раздела FAQ с сайта techshop.ws:
 
@@ -52,4 +46,4 @@ http://www.youtube.com/watch?v=ls9xwt6F3mo
 
 **В:** Могу я забронировать время работы на оборудовании? **О:** Да! При наличии активного членства вы можете забронировать время на любом оборудовании до своего прихода, позвонив в приемную Тэкшопа.
 
-http://www.youtube.com/watch?v=hHAzPIsYj8M
+<youtube-embed link="http://www.youtube.com/watch?v=hHAzPIsYj8M" />

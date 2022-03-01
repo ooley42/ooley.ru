@@ -30,7 +30,7 @@ export default defineConfig({
         { dir: "overview", baseRoute: "overview" },
         { dir: "report", baseRoute: "report" },
         { dir: "workshop", baseRoute: "workshop" },
-        { dir: "project", baseRoute: "project" },
+        { dir: "practice", baseRoute: "practice" },
         { dir: "research", baseRoute: "research" },
         { dir: "world", baseRoute: "world" },
       ],

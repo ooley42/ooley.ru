@@ -23,14 +23,14 @@ header
       img.max-w-42.rounded-lg.mb-4(v-if="page?.icon" :src="page.icon")
       h1.text-2xl.font-bold {{ frontmatter.title }}
       .text-lg(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
-      .font-bold.text-lg {{page?.city}}
+      .font-bold.text-lg(v-if="page?.city") {{page.city}}
       .font-bold.flex.items-center(v-if="page?.place") 
         .text-sm {{page?.place}}
-      .text-md {{page?.address}}
+      .text-md(v-if="page?.address") {{page.address}}
 
       a.underline.text-lg(v-if="frontmatter.url" :href="frontmatter.url" target="_blank") {{ frontmatter.url.replace(/^https?:\/\//, '') }}
       a(v-if="page?.tel" :href="`tel://${page.tel}`") {{page.tel}}
-      .flex.flex-wrap.text-2xl.gap-3.my-1
+      .flex.flex-wrap.text-2xl.gap-3
         a(v-if="page?.email" :href="`mailto:${page.email}`") 
           ion-at
         a(v-if="page?.facebook" :href="`https://facebook.com/${page.facebook}`" target="_blank")

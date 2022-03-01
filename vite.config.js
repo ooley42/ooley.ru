@@ -32,7 +32,7 @@ export default defineConfig({
         { dir: "workshop", baseRoute: "workshop" },
         { dir: "practice", baseRoute: "practice" },
         { dir: "research", baseRoute: "research" },
-        { dir: "world", baseRoute: "world" },
+        { dir: "contact", baseRoute: "contact" },
       ],
       extensions: ["md"],
       extendRoute,

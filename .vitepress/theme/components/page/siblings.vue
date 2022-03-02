@@ -43,10 +43,10 @@ const siblings = computed(() => getSiblings(route.path))
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: hsla(0,0%,100%,0.3);
+  background-color: hsla(0,0%,100%,0.6);
 }
 .dark .link::before {
-  background-color: hsla(0,0%,0%,0.3);
+  background-color: hsla(0,0%,0%,0.6);
 }
 
 .link:hover::before {

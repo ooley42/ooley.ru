@@ -23,14 +23,15 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
   :style="{ backgroundImage: page.cover ? `url(${page.cover})` : '' }"
 ) 
   .flex-auto
-  img.rounded-xl.w-36(
+  img.rounded-xl.w-36.z-22(
     style="margin:  1rem 0"
     v-if="page.icon"
     :src="page.icon"
     )
+  ic-baseline-play-circle.play.transition.absolute.top-4.text-6em.z-20.opacity-40.text-white(v-if="page?.vimeo || page?.youtube")
   .flex-auto
-  .info.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-90.dark_bg-opacity-90.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
-    :style="{ marginTop: page.cover && !page.icon ? '120px' : '0' }"
+  .info.z-20.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-90.dark_bg-opacity-90.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
+    :style="{ marginTop: page.cover && !page.icon ? '240px' : '0' }"
   )
     .flex.w-full
       .flex.flex-col
@@ -53,5 +54,29 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
   &:hover .info {
     @apply bg-light-100 dark_bg-dark-100;
   }
+  &:hover .play {
+    @apply opacity-90 z-30;
+  }
+}
+
+.card::before {
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+  backdrop-filter: blur(3px);
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: hsla(0,0%,100%,0.5);
+}
+.dark .card::before {
+  background-color: hsla(0,0%,0%,0.5);
+}
+
+.card:hover::before {
+  backdrop-filter: blur(0px);
+  background-color: hsla(0,0%,0%,0);
 }
 </style>

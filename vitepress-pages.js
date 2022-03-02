@@ -10,16 +10,17 @@ const mediaFolder = "media_files";
 
 export function extendRoute(route) {
   const pageDir = path.join(root, route.component);
-  const fileContent = fs.readFileSync(pageDir, { encoding: "utf8" });
-  const frontmatter = matter(fileContent);
-  const data = frontmatter.data;
-  const content = frontmatter.content;
-
+  const frontmatter = matter.read(pageDir, { excerpt: true });
+  const { data, excerpt, content } = frontmatter;
   const page = {
     ...route,
     ...data,
-    // content,
+    excerpt,
   };
+
+  if (data.type == "block") {
+    page.content = content;
+  }
 
   for (let media of publicMedia) {
     if (data[media]) {

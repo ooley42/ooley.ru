@@ -1,7 +1,7 @@
 import "virtual:windi.css";
 import "./styles/index.css";
 import "./styles/main.css";
-import "@gun-vue/components/dist/style.css";
+import "./styles/transitions.css";
 
 import Layout from "./layout.vue";
 import NotFound from "./not-found.vue";

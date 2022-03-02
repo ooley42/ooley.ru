@@ -17,7 +17,7 @@ function getDate(timestamp) {
 </script>
 
 <template lang="pug">
-a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
+a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.relative(
   style="flex: 1 1 280px;"
   :href="page.path+'/'"
   :style="{ backgroundImage: page.cover ? `url(${page.cover})` : '' }"
@@ -40,7 +40,7 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center(
       //- .font-bold(v-if="countPages > 0") {{ countPages }} 
     .text-md.mt-2.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
     .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
-    item-status.absolute.top-2.left-2(:status="page.status")
+    
   .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
     ic-round-update.mr-1
     .p-0 {{ getDate(page.date) }}

@@ -4,10 +4,8 @@ import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import WindiCSS from "vite-plugin-windicss";
 import AutoImport from "unplugin-auto-import/vite";
-import { ViteAliases } from "vite-aliases";
 import Pages from "vite-plugin-pages";
 import { extendRoute } from "./vitepress-pages";
-import Inspect from "vite-plugin-inspect";
 
 export default defineConfig({
   server: {
@@ -37,11 +35,6 @@ export default defineConfig({
       extensions: ["md"],
       extendRoute,
     }),
-    // ViteAliases({
-    //   dir: ".vitepress",
-    //   deep: false,
-    //   adjustDuplicates: true,
-    // }),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],
       extensions: ["vue", "ts"],
@@ -69,5 +62,8 @@ export default defineConfig({
   ],
   optimizeDeps: {
     include: ["vue", "@vueuse/core"],
+  },
+  ssr: {
+    noExternal: ["ol"],
   },
 });

@@ -11,9 +11,9 @@
   "author": "Davay42",
   "license": "ISC",
   "dependencies": {
-    "@gun-vue/components": "0.7.4",
     "@vueuse/core": "7.7.0",
-    "vue": "^3.2.31"
+    "vue": "^3.2.31",
+    "ol": "^6.13.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.7",
@@ -27,8 +27,6 @@
     "unplugin-icons": "^0.13.2",
     "unplugin-vue-components": "^0.17.21",
     "vite": "^2.8.4",
-    "vite-aliases": "^0.8.7",
-    "vite-plugin-inspect": "^0.4.3",
     "vite-plugin-pages": "^0.20.2",
     "vite-plugin-windicss": "^1.8.1",
     "vitepress": "0.22.3",

@@ -8,8 +8,9 @@ import { routes, pages, trailing, getMediaPath } from '../../composables/pages.j
 
 const page = computed(() => routes.find(p => {
   return trailing(p.path) == route.path
-})
+  })
 )
+
 
 </script>
 
@@ -25,6 +26,7 @@ const page = computed(() => routes.find(p => {
         img.w-full.max-w-100vw(v-if="page?.cover" :src="page?.cover")
         youtube-embed(v-if="page?.youtube" :link="page?.youtube")
         vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
+        map-ol(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
         content.content.bg-light-200.dark_bg-dark-300
         .flex-auto(style="flex: 1000 1") 
       .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")

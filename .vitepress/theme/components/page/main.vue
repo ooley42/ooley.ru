@@ -11,9 +11,6 @@ const page = computed(() => routes.find(p => {
 })
 )
 
-//  const filePath = route?.path.split("/").filter(Boolean).join("-");
-//  let p = `/media_files/${media}/${filePath}-${route?.data?.[media]}`;
-
 </script>
 
 <template lang="pug">
@@ -29,9 +26,7 @@ const page = computed(() => routes.find(p => {
         youtube-embed(v-if="page?.youtube" :link="page?.youtube")
         vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
         content.content.bg-light-200.dark_bg-dark-300
-        .flex-auto(
-          style="flex: 1000 1"
-        ) 
+        .flex-auto(style="flex: 1000 1") 
       .flex.flex-wrap.gap-8.p-8.w-full(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
         item-card(
           v-for="page in pages[route.path]"
@@ -41,7 +36,7 @@ const page = computed(() => routes.find(p => {
     .flex-auto(style="flex:100")
     page-siblings
     page-parents
-  page-footer
+  page-footer 
 </template>
 
 <style lang="postcss">

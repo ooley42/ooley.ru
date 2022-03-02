@@ -11,20 +11,18 @@ const parents = computed(() => getParents(route.path))
 
 <template lang='pug'>  
 .flex.flex-wrap.items-stretch.w-full(v-if="parents")
-  //- a.link.p-4.w-full(
-  //-   v-if="route.path != '/'"
-  //-   style="flex: 1 1 auto;"
-  //-   href="/"
-  //-   ) 
-  //-     h4.text-lg {{ site.title }}
-  //-     .flex-1
-  //-     la-angle-up
-  a.link.p-4(
-    style="flex: 1 1 auto;"
-    v-for="page in parents", :key="page.title" :href="trailing(page.path)") 
-      h4.text-lg {{ page.title }}
-      .flex-1
-      la-angle-up
+  a.link.p-4.w-full(
+    v-if="route.path != '/'"
+    style="flex: 1 1 auto"
+    href="/"
+    ) 
+    h4.text-lg Начало
+    .flex-1
+    la-angle-up
+  a.link.p-4(style="flex: 1 1 auto" v-for="page in parents" :key="page.title" :href="trailing(page.path)") 
+    h4.text-lg {{ page.title }}
+    .flex-1
+    la-angle-up
 </template>
 
 

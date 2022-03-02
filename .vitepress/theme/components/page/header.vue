@@ -57,7 +57,7 @@ header
       
 
     .flex.flex-wrap.w-full(v-if="route.path == '/'") 
-      a.link.no-underline.transition-all.duration-300.text-xl.justify-center.w-full(
+      a.link.no-underline.transition-all.duration-300.text-xl.justify-center(
         v-for="page in pages[route.path]"
         :key= "page.path"
         :href="page.path+'/'"

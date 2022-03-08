@@ -5,3 +5,4 @@ dist
 .temp
 _dist
 public/media_files
+public/sitemap.xml

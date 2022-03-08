@@ -16,6 +16,7 @@ export function extendRoute(route) {
     ...route,
     ...data,
     excerpt,
+    empty: !content,
   };
 
   if (data.type == "block") {

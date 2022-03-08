@@ -12,8 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@vueuse/core": "7.7.0",
-    "vue": "^3.2.31",
-    "ol": "^6.13.0"
+    "ol": "^6.13.0",
+    "vue": "^3.2.31"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.7",
@@ -28,6 +28,7 @@
     "unplugin-vue-components": "^0.17.21",
     "vite": "^2.8.4",
     "vite-plugin-pages": "^0.20.2",
+    "vite-plugin-pages-sitemap": "^1.1.11",
     "vite-plugin-windicss": "^1.8.1",
     "vitepress": "0.22.3",
     "windicss": "^3.5.0"

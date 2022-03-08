@@ -6,6 +6,7 @@ import WindiCSS from "vite-plugin-windicss";
 import AutoImport from "unplugin-auto-import/vite";
 import Pages from "vite-plugin-pages";
 import { extendRoute } from "./vitepress-pages";
+import generateSitemap from 'vite-plugin-pages-sitemap'
 
 export default defineConfig({
   server: {
@@ -34,6 +35,7 @@ export default defineConfig({
       ],
       extensions: ["md"],
       extendRoute,
+      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://new.ooley.ru/' })),
     }),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],

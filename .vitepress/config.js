@@ -16,6 +16,13 @@ export default defineConfig({
   themeConfig: {
     repo: "",
     logo: metaData.logo,
+    social: {
+      tel: '+7 (963) 979-02-04',
+      email: 'o@ooley.ru',
+      vk: 'ooley42',
+      instagram: 'ooley42',
+      github: 'ooley42'
+    }
   },
   vite: {
     build: {

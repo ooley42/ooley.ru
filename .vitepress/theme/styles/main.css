@@ -47,7 +47,7 @@ a:hover {
 }
 
 .content {
-  @apply hyphens-auto break-words p-6 md_p-8 lg_p-12 leading-relaxed ;
+  @apply hyphens-auto break-words p-6 md_p-8 lg_p-12 leading-relaxed max-w-3xl;
   & * {
     @apply max-w-full;
   }
@@ -113,7 +113,7 @@ a:hover {
       @apply bg-dark-100/10 dark_bg-light-100/10;
     }
   }
-  pre, code, {
+  pre, code {
     @apply overflow-x-scroll max-w-full
   }
 }

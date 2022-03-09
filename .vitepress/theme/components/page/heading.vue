@@ -15,7 +15,6 @@ const page = computed(() => routes.find(p => {
 
 <template lang='pug'>
 .info
-  img.max-w-62.rounded-lg.my-8(v-if="page?.icon" :src="page.icon")
   h1.text-4xl.mt-4.mb-6.font-bold {{ frontmatter.title }}
   .text-xl(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
        

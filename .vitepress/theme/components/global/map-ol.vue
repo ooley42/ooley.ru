@@ -15,14 +15,19 @@ import Stamen from 'ol/source/Stamen';
 
 
 const props = defineProps({
-  lines: Boolean,
+  showLines: Boolean,
+  showCenter: Boolean,
   center: { type: Array, default: [37.72265776708658, 55.79885477019039] },
   routes: { type: Array, default: [] },
-  route: { type: String }
+  route: { type: String },
+  page: { type: Object },
 })
+
+const sel = ref(props.page)
 
 const places = computed(() => {
   const pl = []
+  if (props.showCenter) pl.push(props.page)
   for (let r of props.routes) {
     if (r.path.includes(props.route) && r.coord) {
       pl.push(r)
@@ -32,8 +37,6 @@ const places = computed(() => {
 })
 
 const place = computed(() => places.value.find(el => el.path == sel.value))
-
-const sel = ref()
 
 onMounted(() => {
   const cities = places.value.map((city, c) => {
@@ -122,14 +125,14 @@ onMounted(() => {
     pointLayer,
   ]
 
-  if (props.lines) {
+  if (props.showLines) {
     layers.push(linesLayer)
   }
 
   const map = new Map({
     layers,
     view: new View({
-      center: fromLonLat([45, 55]),
+      center: fromLonLat(props.center),
       zoom: 4,
     }),
     target: 'map',
@@ -166,7 +169,7 @@ onMounted(() => {
 </script>
 
 <template lang="pug">
-div.relative
+div.relative 
   #map.h-420px.overflow-hidden.cursor-pointer(tabindex="1")
   transition(name="fade" mode="out-in")
     a.flex.flex-wrap.absolute.bottom-0.z-2.bg-light-200.w-full.bg-opacity-80.dark_bg-dark-200.dark_bg-opacity-80.backdrop-filter.backdrop-blur-sm(v-if="place" :key="place" :href="place.path+'/'") 

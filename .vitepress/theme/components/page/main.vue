@@ -20,17 +20,17 @@ const page = computed(() => routes.find(p => {
   nav-scroll.fixed.bottom-8.right-4.p-4.rounded-full.cursor-pointer.z-90
     la-angle-up
   page-header.w-full.sticky.top-0
-  main.flex.flex-col.items-center.flex-1.w-full
-    .cover.flex-auto.h-50vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover")
+  main.flex.flex-col.items-center.flex-1.w-full.shadow-xl
+    .cover.flex-auto.h-50vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover || page?.icon")
       img.w-full.fixed(:src="page?.cover")
+    img.max-w-62.rounded-lg.my-8.absolute.mt-42(v-if="page?.icon" :src="page.icon")
     page-heading.max-w-3xl.w-full.shadow-lg
     .flex.flex-col.w-full.backdrop-filter.backdrop-blur-lg.items-center.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95(style="flex: 1000 1 420px")
       map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
-      
       .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
 
-
-        page-sidebar
+        page-info
+        //- map-ol.w-full(v-if="page?.coord" :showCenter="true" :page="page" :center="page?.coord" :route="route.path" :key="route.path")
         youtube-embed(v-if="page?.youtube" :link="page?.youtube")
         vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
         .toc.flex.flex-col.w-full.p-4.text-left.gap-1(v-if="page?.toc")
@@ -60,7 +60,7 @@ main .cover img {
 }
 
 main:hover .cover img {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 a.link {

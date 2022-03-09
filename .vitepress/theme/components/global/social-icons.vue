@@ -19,5 +19,7 @@ const props = defineProps({
   a(v-if="links?.facebook" :href="`https://facebook.com/${links.facebook}`" target="_blank")
     ion-logo-facebook
   a(v-if="links?.github" :href="`https://github.com/${links.github}`" target="_blank")
-    la-github
+    ion-logo-github
+  a(v-if="links?.['youtube-channel']" :href="`https://youtube.com/channel/${links['youtube-channel']}`" target="_blank")
+    ion-logo-youtube
 </template>

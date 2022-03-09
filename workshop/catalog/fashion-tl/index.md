@@ -7,7 +7,7 @@ icon: logo.png
 city: Москва
 address: Нижняя Сыромятническая ул., 11 к.2, 2 этаж, офис 9
 place: м. Курская
-url: https://www.fashiontl.ru
+url: https://fashiontl.ru
 email: info@fashiontl.ru
 vk: fashiontl
 instagram: fashiontl.ru

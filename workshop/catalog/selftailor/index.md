@@ -8,7 +8,7 @@ subtitle: Школа кройки и шитья
 city: Москва
 address: ул. Электрозаводская 21, 4 проходная, 4 этаж, офис 413
 place: м. Электрозаводская
-url: https://selftailor.ru/
+url: https://selftailor.ru
 email: info@selftailor.ru
 tel: +7 (903) 397-78-57
 facebook: selftailor

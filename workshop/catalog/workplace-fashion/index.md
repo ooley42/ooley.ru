@@ -13,7 +13,7 @@ youtube: https://youtu.be/O511QDbqQ3I
 instagram: workplace.fashion
 telegram: workplacefashion
 facebook: workplace.fashion
-url: https://workplace.fashion/
+url: https://workplace.fashion
 status: open
 ---
 

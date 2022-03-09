@@ -6,7 +6,7 @@ subtitle: Открытая мастерская
 icon: logo.jpg
 city: Уфа
 address: ул. 50 лет СССР, 39/11
-url: https://www.vkulibine.ru/
+url: https://vkulibine.ru
 vk: kulibinworkshop
 instagram: kulibinworkshop
 facebook: kulibinworkshop

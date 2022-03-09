@@ -10,7 +10,11 @@ address: ул. Электрозаводская 21, 4 проходная, 4 эт
 place: м. Электрозаводская
 url: https://selftailor.ru/
 email: info@selftailor.ru
-tel: +7(903)397-78-57
+tel: +7 (903) 397-78-57
+facebook: selftailor
+vk: selftailor
+instagram: selftailor
+youtube-channel: UCzApMFGnx7A2qKrl8JRe9Zg
 coord: [55.78832578855972, 37.7045292003834]
 status: open
 youtube: https://youtu.be/-aMpt0rbepU

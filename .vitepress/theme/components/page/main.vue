@@ -15,24 +15,24 @@ const page = computed(() => routes.find(p => {
 </script>
 
 <template lang="pug">
-.min-h-100vh.flex.flex-col.leading-relaxed
+.min-h-100vh.flex.flex-col.items-center.leading-relaxed
   nav-dark.p-4.mr-4.fixed.bottom-22.right-0.z-90
   nav-scroll.fixed.bottom-8.right-4.p-4.rounded-full.cursor-pointer.z-90
     la-angle-up
   page-header.w-full.sticky.top-0
-  main.flex.flex-col.items-center.flex-1
-    .flex-auto.h-50vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover")
-      img.w-full.opacity-50.fixed(:src="page?.cover")
-    page-sidebar.max-w-3xl.w-full.shadow-lg
-    .flex.flex-col.w-full.backdrop-filter.backdrop-blur-md.items-center.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95(style="flex: 1000 1 420px")
+  main.flex.flex-col.items-center.flex-1.w-full
+    .cover.flex-auto.h-50vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover")
+      img.w-full.fixed(:src="page?.cover")
+    page-heading.max-w-3xl.w-full.shadow-lg
+    .flex.flex-col.w-full.backdrop-filter.backdrop-blur-lg.items-center.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95(style="flex: 1000 1 420px")
       map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
       
       .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
 
+
+        page-sidebar
         youtube-embed(v-if="page?.youtube" :link="page?.youtube")
         vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
-        
-        
         .toc.flex.flex-col.w-full.p-4.text-left.gap-1(v-if="page?.toc")
           a.flex.items-center.font-bold(v-for="header in route.data.headers"
             :href="`#${header.slug}`"
@@ -49,14 +49,24 @@ const page = computed(() => routes.find(p => {
       .max-w-3xl.w-full
         page-siblings
         page-parents
+        nav-bar
   page-footer 
 </template>
 
 <style lang="postcss">
+main .cover img {
+  opacity: 0.1;
+  transition: all 400ms ease-out;
+}
+
+main:hover .cover img {
+  opacity: 1;
+}
+
 a.link {
   @apply bg-cover bg-center flex-auto relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark_(bg-dark-100/10) hover_(bg-light-100 dark_bg-dark-100);
   &.active {
-    @apply bg-light-100 bg-opacity-70 z-2 dark_bg-dark-200 dark_bg-opacity-70
+    @apply bg-light-100 bg-opacity-70 z-2 dark_bg-dark-200 dark_bg-opacity-70;
   }
 }
 </style>

@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   hyphens: auto;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   background-color: #dfdfdf;
   direction: ltr;
   font-synthesis: none;
+  overscroll-behavior-y: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -40,7 +40,7 @@ const page = computed(() => routes.find(p => {
             p(v-for="level in header.level-1") ・
             .ml-1 {{header.title}}
         content.content.bg-light-200.dark_bg-dark-300(v-if="!page?.empty")
-      .flex.flex-wrap.gap-8.p-8.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
+      .flex.flex-wrap.gap-8.my-10.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
         item-card(
           v-for="page in pages[route.path]"
           :key= "page.path"

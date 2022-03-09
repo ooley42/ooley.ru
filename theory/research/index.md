@@ -1,5 +1,5 @@
 ---
 title: Исследования
 date: 2018-01-02
-cover: utencils.jpg
+cover: jj-ying.jpg
 ---

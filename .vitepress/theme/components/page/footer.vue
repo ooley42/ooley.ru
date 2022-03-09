@@ -11,7 +11,7 @@ footer.w-full.sticky.bottom-0.flex.flex-col.pb-4.px-4.pt-8.justify-center.transi
 </template>
 
 <style lang="postcss" scoped>
-footer {
+/* footer {
   background-color: #f9a02c55;
-}
+} */
 </style>

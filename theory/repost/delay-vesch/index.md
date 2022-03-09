@@ -1,15 +1,15 @@
 ---
-title: "Перепост: «Общественная мастерская — это и школа, и столярный коворкинг»"
+title: "Общественная мастерская — это и школа, и столярный коворкинг"
 date: "2016-01-07"
 categories:
   - "international"
 tags:
   - "perepost"
   - "sergej-tsaryov"
-coverImage: "sergey_carev_berlogos_interview_19.jpg"
+cover: "cover.jpg"
 ---
 
-![](./images/250cd6ca448766bce8d4c447b356a2a8-150x150.jpg)
+![](./images/250cd6ca448766bce8d4c447b356a2a8.jpg)
 
 Интервью с Сергеем Царевым, креативным директором общественной столярной мастерской «Делай Вещь!» для интернет-журнала BERLOGOS.
 

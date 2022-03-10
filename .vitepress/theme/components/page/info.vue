@@ -14,7 +14,6 @@ const page = computed(() => routes.find(p => {
 </script>
 
 <template lang='pug'>
-
 .bg-light-700.dark_bg-dark-400.p-6.border-dark-200.dark_border-light-400.rounded-lg.flex.flex-col.gap-2.items-center(
   v-if="page?.city || page?.place || page?.address || page?.tel || page?.status || page?.hours || frontmatter?.url"
 )

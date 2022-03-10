@@ -32,9 +32,27 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       // md.use(mdClass);
-      md.use(mdContainer, "card");
       md.use(mdLinks, {
         internalDomains: ["localhost", "frkt.ru"],
+      });
+
+      md.use(mdContainer, "slides", {
+        render: function (tokens, idx) {
+          var m = tokens[idx].info.trim().match(/^stanza\s+(.*)$/);
+
+          if (tokens[idx].nesting === 1) {
+            let text = md.utils.escapeHtml(m?.[1] || "");
+            let tag = "";
+            if (text)
+              tag = `<a href="#s${text}" id="s${text}" class="num" >${text}</a>`;
+            // opening tag
+            return `<div class="slides">${tag}
+            `;
+          } else {
+            // closing tag
+            return "</div>\n";
+          }
+        },
       });
     },
   },

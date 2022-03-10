@@ -119,3 +119,13 @@ a:hover {
     @apply overflow-x-scroll max-w-full
   }
 }
+
+
+.slides p {
+  /* scroll-snap-type: x mandatory;   */
+  -webkit-overflow-scrolling: touch;
+  @apply flex  overflow-x-scroll ;
+  & > img {
+    /* scroll-snap-align: middle; */
+  }
+}

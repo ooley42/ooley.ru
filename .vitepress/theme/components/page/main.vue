@@ -68,6 +68,9 @@ a.link {
   @apply bg-cover bg-center flex-auto relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark_(bg-dark-100/10) hover_(bg-light-100 dark_bg-dark-100);
   &.active {
     @apply bg-light-100 bg-opacity-70 z-2 dark_bg-dark-200 dark_bg-opacity-70;
+    &:hover {
+      @apply bg-opacity-100 dark_bg-opacity-100;
+    }
   }
 }
 </style>

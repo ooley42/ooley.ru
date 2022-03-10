@@ -24,7 +24,6 @@ const parents = computed(() => getParents(route.path))
     v-for="(page, p) in parents" 
     :key="page.title" 
     :href="trailing(page.path)"
-    v-show="p > 0"
     ) 
     h4.text-lg {{ page.title }}
     .flex-1

@@ -9,7 +9,7 @@ const siblings = computed(() => getSiblings(route.path))
 </script>
 
 <template lang='pug'>
-.flex.flex-wrap.items-stretch.justify-stretch.w-full(v-if="siblings")
+.flex.flex-wrap.gap-4.items-stretch.justify-stretch.w-full(v-if="siblings")
   a.link.px-4.pt-28.pb-4(
     v-if="siblings.prev" 
     :href="trailing(siblings.prev.path)"

@@ -2,4 +2,5 @@
 title: Видеообзоры
 subtitle: Ролики про наши посещения мастерских
 date: 2020-01-01
+cover: jakob-owens.jpg
 ---

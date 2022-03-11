@@ -4,7 +4,7 @@ const { theme } = useData();
 </script>
 
 <template lang='pug'>
-footer.max-w-3xl.w-full.sticky.bottom-0.flex.flex-col.justify-center.transition-all.duration-600.backdrop-filter.backdrop-blur-2xl.bg-dark-50.bg-opacity-30.dark_bg-opacity-30.items-center.dark_bg-dark-600
+footer.pt-8.max-w-3xl.w-full.sticky.bottom-0.flex.flex-col.justify-center.transition-all.duration-600.backdrop-filter.backdrop-blur-2xl.bg-dark-50.bg-opacity-30.dark_bg-opacity-30.items-center.dark_bg-dark-600
   slot
   a.no-underline.mb-2(href="/")
     img.w-12rem(:src="theme.logo")

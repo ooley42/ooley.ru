@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import appRoot from "app-root-path";
 import matter from "gray-matter";
+import sharp from 'sharp'
 
 const root = appRoot.toString();
 
@@ -40,10 +41,18 @@ export function extendRoute(route) {
       }
       page[media] = path.join("/", mediaFolder, media, fileName);
 
-      fs.copyFileSync(
-        path.join(root, filePath),
-        path.join(publicPath, fileName)
-      );
+      sharp(path.join(root, filePath))
+        .resize({
+          width: media == 'icon' ? 300 : 1200,
+          height: media == 'icon' ? 300 : 1200,
+          fit: 'inside'
+        })
+        .toFile(path.join(publicPath, fileName))
+
+      // fs.copyFileSync(
+      //   path.join(root, filePath),
+      //   path.join(publicPath, fileName)
+      // );
     }
   }
 

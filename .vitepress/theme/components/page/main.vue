@@ -46,12 +46,12 @@ const page = computed(() => routes.find(p => {
           :key= "page.path"
           :page="page"
           )
-      .max-w-3xl.w-full.flex.flex-col.gap-4
-        page-siblings.mb-6
-        page-parents.mb-6
-        
+      .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
+        page-siblings
+        page-parents
+        nav-bar.w-full
   page-footer
-    nav-bar.mb-6.w-full
+    
 </template>
 
 <style lang="postcss">

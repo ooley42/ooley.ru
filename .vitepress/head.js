@@ -14,7 +14,7 @@ const head = [
   ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
   ["meta", { name: "HandheldFriendly", content: "True" }],
   ["meta", { name: "MobileOptimized", content: "320" }],
-  ["meta", { name: "theme-color", content: "#0ea5e9" }],
+  ["meta", { name: "theme-color", content: "#f9a02c" }],
 
   ["meta", { name: "twitter:card", content: "summary_large_image" }],
   ["meta", { name: "twitter:site", content: metaData?.site }],

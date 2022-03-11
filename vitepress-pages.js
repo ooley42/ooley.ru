@@ -29,17 +29,16 @@ export function extendRoute(route) {
       let file = data[media];
       const filePath = path.join(route.path, file);
       const fileName = filePath.split("/").filter(Boolean).join("-");
-      // const from = path.join(root, fileDir);
-      // const webDir = path.join("public/media/", fileDir);
-      // const to = path.join(root, webDir);
       const publicPath = path.join(root, "public", mediaFolder, media);
+      const url = path.join("/", mediaFolder, media, fileName)
+
+      page[media] = url;
 
       if (!fs.existsSync(publicPath)) {
         fs.mkdirSync(publicPath, {
           recursive: true,
         });
       }
-      page[media] = path.join("/", mediaFolder, media, fileName);
 
       sharp(path.join(root, filePath))
         .resize({
@@ -49,10 +48,6 @@ export function extendRoute(route) {
         })
         .toFile(path.join(publicPath, fileName))
 
-      // fs.copyFileSync(
-      //   path.join(root, filePath),
-      //   path.join(publicPath, fileName)
-      // );
     }
   }
 

@@ -19,7 +19,7 @@ const parents = computed(() => getParents(route.path))
   //-   h4.text-lg Начало
   //-   .flex-1
   //-   la-angle-up
-  a.link.p-4.active.relative.text-center.flex-auto(
+  a.link.p-4.active.relative.text-center.flex-auto.shadow-lg(
     style="flex: 1 1 auto" 
     v-for="(page, p) in parents" 
     :key="page.title" 

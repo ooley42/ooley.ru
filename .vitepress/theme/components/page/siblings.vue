@@ -10,27 +10,27 @@ const siblings = computed(() => getSiblings(route.path))
 
 <template lang='pug'>
 .flex.flex-wrap.gap-4.items-stretch.justify-stretch.w-full(v-if="siblings")
-  a.link.px-4.pt-28.pb-4(
+  a.link.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.prev" 
     :href="trailing(siblings.prev.path)"
     :style="{backgroundImage: `url(${siblings.prev.cover})`}"
     ) 
     .panel
-      la-angle-left.mr-2
+      la-angle-left.mr-2.text-xl
       h4.text-lg {{ siblings.prev.title }}
-  a.link.justify-end.px-4.pt-28.pb-4(
+  a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
     :href="trailing(siblings.next.path)"
     :style="{backgroundImage: `url(${siblings.next.cover})`}"
     ) 
     .panel
       h4.text-lg {{ siblings.next.title }}
-      la-angle-right.ml-2
+      la-angle-right.ml-2.text-xl
 </template>
 
 <style lang="postcss" scoped>
 .link .panel {
-  @apply z-10 p-4 m-2 bg-light-200 bg-opacity-80 dark_bg-dark-200 dark_bg-opacity-80 rounded flex items-center flex-wrap;
+  @apply z-10 p-4 m-2 shadow-md bg-light-200 bg-opacity-90 dark_bg-dark-200 dark_bg-opacity-90 rounded flex items-center flex-wrap;
 }
 
 .link::before {

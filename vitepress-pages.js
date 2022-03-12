@@ -46,7 +46,11 @@ export function extendRoute(route) {
           height: media == 'icon' ? 300 : 1200,
           fit: 'inside'
         })
-        .toFile(path.join(publicPath, fileName))
+        .toFile(path.join(publicPath, fileName), (err, info) => {
+          if (err) {
+            console.log(err)
+          }
+        })
 
     }
   }

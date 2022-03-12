@@ -5,7 +5,7 @@ const route = useRoute()
 
 <template lang="pug">
 transition(name="fade" mode="out-in")
-  page-main(:key="route.path")
+  page-main
 </template>
 
 <style lang="postcss" scoped>

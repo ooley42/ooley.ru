@@ -20,33 +20,34 @@ const page = computed(() => routes.find(p => {
   nav-scroll.fixed.bottom-8.right-4.p-4.rounded-full.cursor-pointer.z-90
     la-angle-up
   page-header.w-full.sticky.top-0
-  main.flex.flex-col.items-center.flex-1.w-full.shadow-xl
-    .cover.flex-auto.h-40vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover || page?.icon")
-      img.w-full.fixed(:src="page?.cover")
-    img.max-w-62.rounded-lg.my-8.absolute.mt-6(v-if="page?.icon" :src="page.icon")
-    page-heading.max-w-3xl.w-full.shadow-lg
-    .relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95(style="flex: 1000 1 420px")
-      map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
-      page-toc(v-if="page?.toc")
-      .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
+  transition(name="fade" mode="out-in")
+    main.flex.flex-col.items-center.flex-1.w-full.shadow-xl(:key="route.path")
+      .cover.flex-auto.h-40vh.w-full.-z-30.flex.flex-col.items-center(v-if="frontmatter?.cover || frontmatter?.icon")
+        img.w-full.fixed(:src="page?.cover || frontmatter?.cover")
+      img.max-w-62.rounded-lg.my-8.absolute.mt-6(v-if="page?.icon" :src="page.icon")
+      page-heading.max-w-3xl.w-full.shadow-lg
+      .relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95(style="flex: 1000 1 420px")
+        map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
+        page-toc(v-if="page?.toc")
+        .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
 
-        page-info
-        //- map-ol.w-full(v-if="page?.coord" :showCenter="true" :page="page" :center="page?.coord" :route="route.path" :key="route.path")
-        youtube-embed(v-if="page?.youtube" :link="page?.youtube")
-        vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
-        
-        content.content.bg-light-200.dark_bg-dark-300(v-if="!page?.empty")
-      .flex.flex-wrap.gap-8.my-10.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
-        item-card(
-          v-for="page in pages[route.path]"
-          :key= "page.path"
-          :page="page"
-          )
-      .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
-        page-siblings
-        page-parents
-        nav-bar.w-full
-  page-footer
+          page-info
+          //- map-ol.w-full(v-if="page?.coord" :showCenter="true" :page="page" :center="page?.coord" :route="route.path" :key="route.path")
+          youtube-embed(v-if="page?.youtube" :link="page?.youtube")
+          vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
+          
+          content.content.bg-light-200.dark_bg-dark-300(v-if="!page?.empty")
+        .flex.flex-wrap.gap-8.my-10.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
+          item-card(
+            v-for="page in pages[route.path]"
+            :key= "page.path"
+            :page="page"
+            )
+        .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
+          page-siblings
+          page-parents
+          nav-bar.w-full
+      page-footer
     
 </template>
 

@@ -1,13 +1,7 @@
 ---
 title: "Принципы и правила Минского хакерспейса"
 date: "2018-08-30"
-categories: 
-  - "international"
-tags: 
-  - "pravila"
-  - "printsipy"
-  - "hakerspejs"
-coverImage: "unVRaEUOLJo.jpg"
+cover: "unVRaEUOLJo.jpg"
 ---
 
 # Наши принципы
@@ -50,6 +44,8 @@ coverImage: "unVRaEUOLJo.jpg"
     - И про пол вокруг
     - Вымой все кружки, что остались, это несложно
     - Заодно проверь, не пора ли вынести мусор
+
+![](./unVRaEUOLJo.jpg)
 
 ## Стеллажи
 

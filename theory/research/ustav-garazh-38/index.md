@@ -1,14 +1,7 @@
 ---
 title: "Устав общественной некоммерческой веломастерской"
 date: "2015-05-28"
-categories: 
-  - "international"
-tags: 
-  - "velo"
-  - "velokuhnya"
-  - "minsk"
-  - "ustav"
-coverImage: "cibwruhs20eo26tvuj9xk8q6cd9hyl-org.jpg"
+cover: "cibwruhs20eo26tvuj9xk8q6cd9hyl-org.jpg"
 ---
 
 Подробный и продуманный устав активно работающей некоммерческой общественной мастерской. Полезные наработки Белорусских коллег (перевод автоматический с корректировкой).

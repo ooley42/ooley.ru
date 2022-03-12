@@ -62,7 +62,7 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
 .card::before {
   z-index: 1;
   transition: all 200ms ease-in-out;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   content: "";
   position: absolute;
   top: 0px;

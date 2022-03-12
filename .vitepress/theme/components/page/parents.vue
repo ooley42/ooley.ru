@@ -24,11 +24,36 @@ const parents = computed(() => getParents(route.path))
     v-for="(page, p) in parents" 
     :key="page.title" 
     :href="trailing(page.path)"
-    ) 
-    h4.text-lg.w-full {{ page.title }}
-    octicon-chevron-up.absolute.right-4.text-2xl
+    :style="{ backgroundImage: `url(${page?.cover})` }"
+    )
+    .panel.flex
+      h4.text-lg.w-full {{ page.title }}
+      octicon-chevron-up.right-4.text-2xl
 </template>
 
 
 <style lang="postcss" scoped>
+.link .panel {
+  @apply z-10 p-4 m-2 shadow-md bg-light-200 bg-opacity-90 dark_bg-dark-200 dark_bg-opacity-90 rounded flex items-center;
+}
+.link::before {
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+  backdrop-filter: blur(6px);
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+.dark .link::before {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.link:hover::before {
+  backdrop-filter: blur(0px);
+  background-color: hsla(0, 0%, 0%, 0);
+}
 </style>

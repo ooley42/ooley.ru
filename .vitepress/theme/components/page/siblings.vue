@@ -16,7 +16,7 @@ const siblings = computed(() => getSiblings(route.path))
     :style="{backgroundImage: `url(${siblings.prev.cover})`}"
     ) 
     .panel
-      la-angle-left.mr-2.text-xl
+      octicon-chevron-left.mr-2.text-xl
       h4.text-lg {{ siblings.prev.title }}
   a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
@@ -25,7 +25,7 @@ const siblings = computed(() => getSiblings(route.path))
     ) 
     .panel
       h4.text-lg {{ siblings.next.title }}
-      la-angle-right.ml-2.text-xl
+      octicon-chevron-right.ml-2.text-xl
 </template>
 
 <style lang="postcss" scoped>

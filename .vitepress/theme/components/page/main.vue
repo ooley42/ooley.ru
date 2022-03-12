@@ -26,7 +26,7 @@ const page = computed(() => routes.find(p => {
         img.w-full.fixed(:src="page?.cover || frontmatter?.cover")
       img.max-w-62.rounded-lg.my-8.absolute.mt-6(v-if="page?.icon" :src="page.icon")
       page-heading.max-w-3xl.w-full.shadow-lg
-      .relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.z-20.bg-light-500.bg-opacity-95.z-2.dark_bg-dark-500.dark_bg-opacity-95(style="flex: 1000 1 420px")
+      .relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.z-20.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
         map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
         page-toc(v-if="page?.toc")
         .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
@@ -45,7 +45,7 @@ const page = computed(() => routes.find(p => {
             )
         .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
           page-siblings
-          page-parents
+          page-parents.gap-4
           nav-bar.w-full
       page-footer
     

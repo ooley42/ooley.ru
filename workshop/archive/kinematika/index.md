@@ -1,7 +1,16 @@
 ---
 title: "Кинематика"
+subtitle: Механообрабатывающий коворкинг
 date: "2018-10-28"
-coverImage: "UTF-8D09AD0B8D0BDD0B5D0BCD0B0D182D0B8D0BAD0B0.png"
+icon: logo.png
+cover: cover.jpg
+vk: kinematics_ekb
+instagram: kinematika_re
+address: улица Луначарского, 31
+city: Екатеринбург
+place: ост. «Протезно-ортопедическое предприятие»
+tel: +7 (343) 243-63-40 
+status: closed
 ---
 
 Первый в России механообрабатывающий коворкинг для работы по металлу. В вашем распоряжении промышленные токарные и фрезерные станки по металлу.
@@ -24,4 +33,4 @@ coverImage: "UTF-8D09AD0B8D0BDD0B5D0BCD0B0D182D0B8D0BAD0B0.png"
 - Фрезерный станок по металлу Вм127м
 - Заточные станки
 
-![](./images/lkUFUkEVzA8.jpg)
+

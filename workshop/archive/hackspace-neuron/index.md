@@ -1,7 +1,21 @@
 ---
 title: "Нейрон"
+subtitle: Хакспейс
 date: "2015-04-26"
-coverImage: "G5xZ4RHik2M.jpg"
+icon: "G5xZ4RHik2M.jpg"
+cover: IMG_0103.jpg
+email: neuron@hackspace.ru
+url: https://neuronspace.ru
+address: Хохловский пер., 7/9с2
+place: м. Китай-город
+city: Москва
+tel: +7 (495) 008-13-37
+vk: neuronspace
+youtube-channel: UCmJNyrEsnoDCJghI-5BXrTw
+status: closed
+telegram: neuronspace
+instagram: neuronspace
+facebook: neuronspace
 ---
 
 Хакспейс Neuron – независимая некоммерческая организация, полностью управляемая её членами. Первый хакспейс в России, существует с июля 2011 года.
@@ -41,7 +55,6 @@ coverImage: "G5xZ4RHik2M.jpg"
 
 ## Мероприятия
 
-[![](http://neuronspace.ru/wp/wp-content/uploads/2013/03/650x488ximage007_1-650x488.jpg.pagespeed.ic.r0AvHDsH8N.webp)](http://neuronspace.ru/wp/wp-content/uploads/2013/03/image007_1.jpg)
 
 Хакспейс Neuron – это идеальное место для проведения семинаров, meetup’ов и мини-конференций по любым **гиковским, хакерским и интересным околоайтишной аудитории темам (важна специфика)**. Если вам не хочется делать мероприятие в кафе или просить какую-нибудь компанию вас приютить – приходите к нам. Мы не будем накладывать на ваше мероприятие корпоративные ограничения и утруждать прочими глупостями.
 
@@ -59,3 +72,7 @@ coverImage: "G5xZ4RHik2M.jpg"
 - 2 беспроводных микрофона (2.5″ или 3.5″ jack)
 - динамики (3.5″ jack)
 - вёб-камера на штативе (HD, USB)
+
+[Статья про Нейрон на Хабре](https://habr.com/ru/company/neuronspace/blog/494128/)
+[Статья на Xakep.ru](https://xakep.ru/2012/10/26/hack-space-neuron/)
+[Статья в Теплице социальных технологий](https://te-st.ru/2014/08/06/hakspeys-neuron-russia/)

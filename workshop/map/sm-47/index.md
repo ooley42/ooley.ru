@@ -5,7 +5,7 @@ icon: "logo-black.png"
 cover: "place.webp"
 subtitle: Открытая столярная мастерская
 city: Москва
-address: проспю Мира, 119, строение 47
+address: просп. Мира, 119, строение 47
 place: ВДНХ
 url: https://www.sm-47.ru
 email: info@sm-47.ru

@@ -27,7 +27,7 @@ const parents = computed(() => getParents(route.path))
     :style="{ backgroundImage: `url(${page?.cover})` }"
     )
     .panel.flex
-      h4.text-lg.w-full {{ page.title }}
+      h4.text-lg.w-full.-mt-1 {{ page.title }}
       octicon-chevron-up.right-4.text-2xl
 </template>
 
@@ -39,7 +39,7 @@ const parents = computed(() => getParents(route.path))
 .link::before {
   z-index: 1;
   transition: all 200ms ease-in-out;
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */
   content: "";
   position: absolute;
   top: 0px;

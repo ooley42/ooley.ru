@@ -1,17 +1,7 @@
 ---
 title: "Пополнение в Crafts Station"
 date: "2015-04-07"
-categories: 
-  - "tools"
-tags: 
-  - "crafts-station"
-  - "niidar"
-  - "sverlilnyj-stanok"
-  - "tortsovka"
-  - "tochilnyj-stanok"
-  - "frezer"
-  - "shlifmashinka"
-coverImage: "IMG_9650.jpg"
+cover: "IMG_9650.jpg"
 ---
 
 Коворкинг для мастеров [Crafts Station](http://ooley.ru/places/crafts-station/ "Коворкинг для мастеров Crafts Station") открылся совсем недавно и активно пополняет свой парк инструментов и станков.
@@ -27,4 +17,11 @@ coverImage: "IMG_9650.jpg"
 
 Скоро планируются новые пополнения.
 
-\[gallery link="file" size="medium" ids="2120,2122,2123,2124,2125,2127"\]
+
+![](./images/IMG_9644.jpg)
+![](./images/IMG_9645.jpg)
+![](./images/IMG_9646.jpg)
+![](./images/IMG_9647.jpg)
+![](./images/IMG_9648.jpg)
+![](./images/IMG_9649.jpg)
+![](./images/IMG_9651.jpg)

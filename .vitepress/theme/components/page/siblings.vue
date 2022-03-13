@@ -17,14 +17,14 @@ const siblings = computed(() => getSiblings(route.path))
     ) 
     .panel
       octicon-chevron-left.mr-2.text-xl
-      h4.text-lg {{ siblings.prev.title }}
+      h4.text-lg.-mt-1 {{ siblings.prev.title }}
   a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
     :href="trailing(siblings.next.path)"
     :style="{backgroundImage: `url(${siblings.next.cover})`}"
     ) 
     .panel
-      h4.text-lg {{ siblings.next.title }}
+      h4.text-lg.-mt-1 {{ siblings.next.title }}
       octicon-chevron-right.ml-2.text-xl
 </template>
 
@@ -36,7 +36,7 @@ const siblings = computed(() => getSiblings(route.path))
 .link::before {
   z-index: 1;
   transition: all 200ms ease-in-out;
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */
   content: "";
   position: absolute;
   top: 0px;

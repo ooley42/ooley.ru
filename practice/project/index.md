@@ -1,5 +1,6 @@
 ---
 title: Проекты
+subtitle: Пройденные пути от идей до их воплощения
 date: 2019-01-01
 cover: utencils.jpg
 ---

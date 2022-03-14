@@ -1,10 +1,16 @@
 ---
 title: "Sandler"
+subtitle: Craft Training Center 
 date: "2016-12-22"
-coverImage: "logo2016-.png"
+icon: "logo2016-.png"
+cover: 002.jpg
+city: Нарва
+address: A. Pushkin Str. 11 - М1 
+place: Нарвский замок
+url: http://www.sctc.eu
+tel: +372 35 91200 
+status: closed
 ---
-
-![](./images/002.jpg)
 
 **Sandler Craft Training Center (Sandler Koolituskeskus MTÜ) - это творческая мастерская. Здесь проходят мастер-классы, курсы и прочие не менее интересные мероприятия.**
 

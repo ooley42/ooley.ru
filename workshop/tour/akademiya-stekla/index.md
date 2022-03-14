@@ -88,7 +88,6 @@ cover: "IMG_9998.jpg"
 ![](./images/IMG_0142.jpg)
 ![](./images/IMG_0143.jpg)
 ![](./images/IMG_0144.jpg)
-![](./images/IMG_0076.jpg)
 ![](./images/IMG_0145.jpg)
 ![](./images/IMG_0146.jpg)
 ![](./images/IMG_0147.jpg)

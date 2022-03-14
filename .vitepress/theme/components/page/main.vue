@@ -8,7 +8,7 @@ import { routes, pages, trailing, getMediaPath } from '../../composables/pages.j
 
 const page = computed(() => routes.find(p => {
   return trailing(p.path) == route.path
-  })
+})
 )
 
 
@@ -22,8 +22,8 @@ const page = computed(() => routes.find(p => {
   page-header.w-full.sticky.top-0
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full.lg_pb-16vh(:key="route.path")
-      .cover.flex-auto.h-40vh.w-full.-z-30.flex.flex-col.items-center(v-if="frontmatter?.cover || frontmatter?.icon")
-        img.w-full.fixed(:src="page?.cover || frontmatter?.cover")
+      .cover.flex-auto.h-40vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover || page?.icon")
+        img.w-full.fixed(:src="page?.cover")
       img.max-w-62.rounded-lg.mb-8.absolute.mt-18(v-if="page?.icon" :src="page.icon")
       page-heading.max-w-3xl.w-full.shadow-lg.sticky.top-0.z-2
       .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
@@ -35,7 +35,7 @@ const page = computed(() => routes.find(p => {
           //- map-ol.w-full(v-if="page?.coord" :showCenter="true" :page="page" :center="page?.coord" :route="route.path" :key="route.path")
           youtube-embed(v-if="page?.youtube" :link="page?.youtube")
           vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
-          
+
           content.content.bg-light-200.dark_bg-dark-300(v-if="!page?.empty")
         .flex.flex-wrap.gap-8.my-10.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
           item-card(

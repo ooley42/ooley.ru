@@ -2,7 +2,7 @@
 title: "Папа Карло"
 subtitle: Артель
 date: "2018-01-23"
-icon: logo2.jpg
+icon: logo2.png
 telegram: artel_papa_karlo
 instagram: artel_karlo
 vk: artel_karlo

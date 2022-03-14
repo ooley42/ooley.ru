@@ -1,7 +1,7 @@
 ---
 title: "GRASSER"
 date: "2019-04-26"
-icon: KnQntM_SlOg.jpgs
+icon: KnQntM_SlOg.jpg
 cover: 10.jpg
 address: ул. Гатчинская, д.26
 place: м. Чкаловская, БЦ Печатный двор

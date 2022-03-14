@@ -48,7 +48,7 @@ export function extendRoute(route) {
         })
         .toFile(path.join(publicPath, fileName), (err, info) => {
           if (err) {
-            console.log(err)
+            console.log(err, filePath)
           }
         })
 

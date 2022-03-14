@@ -16,6 +16,7 @@ const page = computed(() => routes.find(p => {
 
 <template lang="pug">
 .min-h-100vh.flex.flex-col.items-center.leading-relaxed
+  nav-search
   nav-dark.p-4.mr-4.fixed.bottom-22.right-0.z-90
   nav-scroll.fixed.bottom-8.right-4.p-4.rounded-full.cursor-pointer.z-90
     la-angle-up
@@ -44,8 +45,8 @@ const page = computed(() => routes.find(p => {
             :page="page"
             )
         .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
-          page-siblings
-          page-parents.gap-4
+          nav-siblings
+          nav-parents.gap-4
           nav-bar.w-full
       page-footer
     

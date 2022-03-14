@@ -67,3 +67,11 @@ export function getMediaPath(media, route) {
   console.log(p);
   return p;
 }
+
+
+import Fuse from "fuse.js";
+export const fuse = new Fuse(routes, {
+  includeScore: true,
+  ignoreLocation: true,
+  keys: ["title", 'subtitle'],
+});

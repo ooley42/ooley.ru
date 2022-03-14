@@ -4,6 +4,7 @@ specifiers:
   '@iconify/json': ^2.1.14
   '@vueuse/core': 8.0.0
   app-root-path: ^3.0.0
+  fuse.js: ^6.5.3
   gray-matter: ^4.0.3
   markdown-it-classy: ^0.2.0
   markdown-it-container: ^3.0.0
@@ -24,6 +25,7 @@ specifiers:
 
 dependencies:
   '@vueuse/core': 8.0.0_vue@3.2.31
+  fuse.js: 6.5.3
   ol: 6.13.0
   vue: 3.2.31
 
@@ -1074,6 +1076,11 @@ packages:
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
     dev: true
+
+  /fuse.js/6.5.3:
+    resolution: {integrity: sha512-sA5etGE7yD/pOqivZRBvUBd/NaL2sjAu6QuSaFoe1H2BrJSkH/T/UXAJ8CdXdw7DvY3Hs8CXKYkDWX7RiP5KOg==}
+    engines: {node: '>=10'}
+    dev: false
 
   /gauge/2.7.4:
     resolution: {integrity: sha1-LANAXHU4w51+s3sxcCLjJfsBi/c=}

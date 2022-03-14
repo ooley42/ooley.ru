@@ -1,6 +1,6 @@
 ---
 title: Карта
-subtitle: Каталог открытых мастерских
+subtitle: Каталог открытых мастерских России и ближнего зарубежья
 date: 2022-02-03
 map: true
 cover: waldemar-brandt.jpg

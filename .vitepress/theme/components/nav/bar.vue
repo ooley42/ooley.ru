@@ -11,6 +11,7 @@ const page = computed(() => routes.find(p => {
   return trailing(p.path) == route.path
 })
 )
+
 </script>
 
 <template lang='pug'>

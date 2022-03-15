@@ -17,11 +17,16 @@ function getDate(timestamp) {
 </script>
 
 <template lang="pug">
-a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.relative(
+a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
   style="flex: 1 1 280px;"
   :href="page.path + '/'"
-  :style="{ backgroundImage: page.cover ? `url(${page.cover})` : '' }"
 ) 
+  img.absolute.top-0.min-w-full.flex-1(
+    :src="page?.cover"
+    v-if="page.cover"
+    loading="lazy"
+    alt="cover"
+  )
   .flex-auto
   img.rounded-xl.w-36.z-22(
     style="margin:  1rem 0"
@@ -32,16 +37,17 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
     )
   ic-baseline-play-circle.play.transition.absolute.top-4.text-6em.z-20.opacity-40.text-white(v-if="page?.vimeo || page?.youtube")
   .flex-auto
-  .info.z-20.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-90.dark_bg-opacity-90.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
+  .relative.info.z-20.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-90.dark_bg-opacity-90.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
     :style="{ marginTop: page.cover && !page.icon ? '240px' : '0' }"
   )
+    .date.absolute.-top-2.right-2px.rounded-xl.bg-light-700.dark_bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs {{ page?.date.slice(0, 10) }}
     .flex.w-full
       .flex.flex-col
         item-type(:type="page.data?.type")
         h3.text-2xl.font-bold.md_text-2xl {{ page.title }} 
       .flex-1
       //- .font-bold(v-if="countPages > 0") {{ countPages }} 
-    .text-md.mt-2.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
+    .text-md.mt-1.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
     .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
 
   .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
@@ -52,7 +58,7 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
 
 <style lang="postcss" scoped>
 .card {
-  @apply rounded-md shadow-md overflow-hidden bg-light-700 dark_(bg-dark-100) transition-all duration-200  no-underline hover_(bg-light-900 shadow-lg dark_(bg-dark-400));
+  @apply overflow-hidden rounded-md shadow-md overflow-hidden bg-light-700 dark_(bg-dark-100) transition-all duration-200  no-underline hover_(bg-light-900 shadow-lg dark_(bg-dark-400));
   &:hover .info {
     @apply bg-light-100 dark_bg-dark-100;
   }
@@ -80,5 +86,9 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
 .card:hover::before {
   backdrop-filter: blur(0px);
   background-color: hsla(0, 0%, 0%, 0);
+}
+
+.card:hover .date {
+  @apply opacity-100;
 }
 </style>

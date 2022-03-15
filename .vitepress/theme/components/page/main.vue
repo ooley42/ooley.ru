@@ -6,10 +6,7 @@ const route = useRoute();
 
 import { routes, pages, trailing, getMediaPath } from '../../composables/pages.js'
 
-const page = computed(() => routes.find(p => {
-  return trailing(p.path) == route.path
-})
-)
+const page = computed(() => routes.find(p => trailing(p.path) == route.path))
 
 
 </script>
@@ -23,7 +20,7 @@ const page = computed(() => routes.find(p => {
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full.lg_pb-16vh(:key="route.path")
       .cover.flex-auto.h-40vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover || page?.icon")
-        img.w-full.fixed(:src="page?.cover" alt="Page cover")
+        img.w-full.fixed(:src="page?.cover" v-if="page?.cover" alt="Page cover")
       img.max-w-62.rounded-lg.mb-8.absolute.mt-18(v-if="page?.icon" :src="page.icon" alt="Page icon")
       page-heading.max-w-3xl.w-full.shadow-lg.sticky.top-0.z-2
       .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
@@ -57,7 +54,7 @@ main .cover img {
 }
 
 main:hover .cover img {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 a.link {

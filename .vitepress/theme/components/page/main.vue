@@ -19,19 +19,17 @@ const page = computed(() => routes.find(p => {
   nav-search
   nav-dark.p-4.mr-4.fixed.bottom-22.right-0.z-90
   nav-scroll.fixed.bottom-8.right-4.p-4.rounded-full.cursor-pointer.z-90
-    la-angle-up
   page-header.w-full.sticky.top-0
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full.lg_pb-16vh(:key="route.path")
       .cover.flex-auto.h-40vh.w-full.-z-30.flex.flex-col.items-center(v-if="page?.cover || page?.icon")
-        img.w-full.fixed(:src="page?.cover")
-      img.max-w-62.rounded-lg.mb-8.absolute.mt-18(v-if="page?.icon" :src="page.icon")
+        img.w-full.fixed(:src="page?.cover" alt="Page cover")
+      img.max-w-62.rounded-lg.mb-8.absolute.mt-18(v-if="page?.icon" :src="page.icon" alt="Page icon")
       page-heading.max-w-3xl.w-full.shadow-lg.sticky.top-0.z-2
       .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
         map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
         page-toc(v-if="page?.toc")
         .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
-
           page-info
           //- map-ol.w-full(v-if="page?.coord" :showCenter="true" :page="page" :center="page?.coord" :route="route.path" :key="route.path")
           youtube-embed(v-if="page?.youtube" :link="page?.youtube")

@@ -31,7 +31,9 @@ const head = [
   //@ts-ignore
   ["meta", { property: "og:image", content: metaData?.image }],
   ["meta", { property: "og:description", content: metaData.description }],
-
+  ['link', { rel: 'preload', as: 'font', type: "font/woff2", href: "/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff2" }],
+  ['link', { rel: 'preload', as: 'font', type: "font/woff2", href: "/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff2" }],
+  ['link', { rel: 'preload', as: 'font', type: "font/woff2", href: "/fonts/Lineatura.woff2" }],
   // ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
   // ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
   // ['link', { href: 'https://fonts.googleapis.com/css2?family=Commissioner:wght@200;400;500;600&display=swap', rel: 'stylesheet' }],

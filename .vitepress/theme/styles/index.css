@@ -14,6 +14,7 @@
 
 /* commissioner-regular - latin_cyrillic-ext_cyrillic */
 @font-face {
+  font-display: swap;
   font-family: 'Commissioner';
   font-style: normal;
   font-weight: 400;
@@ -27,6 +28,7 @@
 
 /* commissioner-700 - latin_cyrillic-ext_cyrillic */
 @font-face {
+  font-display: swap;
   font-family: 'Commissioner';
   font-style: normal;
   font-weight: 700;
@@ -41,6 +43,7 @@
 
 /* commissioner-regular - latin_cyrillic-ext_cyrillic */
 @font-face {
+  font-display: swap;
   font-family: 'Lineatura';
   font-style: normal;
   font-weight: 400;

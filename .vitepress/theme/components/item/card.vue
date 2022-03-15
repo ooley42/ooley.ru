@@ -19,7 +19,7 @@ function getDate(timestamp) {
 <template lang="pug">
 a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.relative(
   style="flex: 1 1 280px;"
-  :href="page.path+'/'"
+  :href="page.path + '/'"
   :style="{ backgroundImage: page.cover ? `url(${page.cover})` : '' }"
 ) 
   .flex-auto
@@ -27,6 +27,8 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
     style="margin:  1rem 0"
     v-if="page.icon"
     :src="page.icon"
+    alt="Icon"
+    loading="lazy"
     )
   ic-baseline-play-circle.play.transition.absolute.top-4.text-6em.z-20.opacity-40.text-white(v-if="page?.vimeo || page?.youtube")
   .flex-auto
@@ -36,12 +38,12 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
     .flex.w-full
       .flex.flex-col
         item-type(:type="page.data?.type")
-        h4.text-2xl.font-bold.md_text-2xl {{ page.title }} 
+        h3.text-2xl.font-bold.md_text-2xl {{ page.title }} 
       .flex-1
       //- .font-bold(v-if="countPages > 0") {{ countPages }} 
     .text-md.mt-2.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
     .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
-    
+
   .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
     ic-round-update.mr-1
     .p-0 {{ getDate(page.date) }}
@@ -69,14 +71,14 @@ a.card.flex.flex-col.justify-between.items-center.relative.bg-cover.bg-center.re
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: hsla(0,0%,100%,0.5);
+  background-color: hsla(0, 0%, 100%, 0.5);
 }
 .dark .card::before {
-  background-color: hsla(0,0%,0%,0.5);
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .card:hover::before {
   backdrop-filter: blur(0px);
-  background-color: hsla(0,0%,0%,0);
+  background-color: hsla(0, 0%, 0%, 0);
 }
 </style>

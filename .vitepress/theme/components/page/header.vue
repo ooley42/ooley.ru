@@ -16,8 +16,8 @@ const page = computed(() => routes.find(p => {
 <template lang='pug'>
 header
   .flex.flex-col.items-center
-    a.no-underline.p-4.flex-auto.flex.items-center.justify-center(href="/")
-      img.w-14rem(:src="theme.logo")
+    a.no-underline.p-4.flex-auto.flex.items-center.justify-center(href="/" title="Go home")
+      img.w-14rem(:src="theme.logo" alt="OOLEY logo")
     .flex.flex-col.w-full.justify-center.max-w-3xl
 
       nav-bar

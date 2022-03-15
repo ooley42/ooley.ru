@@ -25,7 +25,7 @@ onClickOutside(target, (event) => open.value = false)
 
 <template lang='pug'>
 .fixed.top-6.right-6.z-200
-  button.absolute.right-0.top-0.z-400(@mousedown="toggle()")
+  button.absolute.right-0.top-0.z-400(@mousedown="toggle()" aria-label="Search")
     la-search.text-2xl
   button.absolute.right-8.top-1.z-400(v-if="open && input" @click="input = ''")
     la-times.text-lg

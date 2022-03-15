@@ -1,7 +1,19 @@
 ---
 title: "Академия"
+subtitle: ЦМИТ
 date: "2015-05-28"
-coverImage: "0xIthmYyUaU.jpg"
+icon: logo.jpg
+cover: place.jpg
+youtube: http://www.youtube.com/embed/vNszF2akk4Y
+url: http://academylab.ru
+email: info@academylab.ru
+vk: kids_a
+tel: +7 (929) 592-05-91
+hours: сб, вс 15:00 — 20:00
+city: Москва
+address: ул. Удальцова д.6
+place: м. Проспект Вернадского
+status: closed
 ---
 
 Основная цель создания **Центра молодежного инновационного творчества** "Академия" (ЦМИТ "Академия") - пробудить интерес детей и молодежи к естественным наукам и современным технологиям, научно-исследовательской и инновационной деятельности.
@@ -12,14 +24,4 @@ coverImage: "0xIthmYyUaU.jpg"
 
 Все это происходит под присмотром и контролем стажеров и сотрудников Центра.
 
-![Наш центр](./images/iepyM64Hlqc.jpg)
-
-Посмотрите это видео, оно поможет Вам проникнуться нашей атмосферой:
-
-<iframe src="http://www.youtube.com/embed/vNszF2akk4Y" width="520" height="343"></iframe>
-
-
-
-Очень много свежей и интересной информации о деятельности нашего центра Вы можете найти в нашей группе Вконтакте: [vk.com/kids_a](http://academylab.ru/vk.com/kids_a "ЦМИТ Академия Вконтакте")
-
-![ЦМИТ Академия](./images/TGWQJKLlwVg.jpg)
+![ЦМИТ Академия](./TGWQJKLlwVg.jpg)

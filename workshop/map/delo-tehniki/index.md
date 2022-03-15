@@ -14,6 +14,7 @@ hours: пн-вс 11:00-20:00
 telegram: delotechspace
 instagram: delotech.space
 coord: [55.80462729753416, 37.584709498857706]
+status: open
 ---
 
 

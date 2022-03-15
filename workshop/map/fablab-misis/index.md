@@ -15,6 +15,7 @@ url: https://www.fablab77.online
 email: fablab@misis.ru
 youtube-channel: UCLjbMRbS_1uQAt2UHZgdGFw
 youtube: https://youtu.be/aBoicG5mDfs
+status: open
 ---
 
 ## Что такое ФАБЛАБ

@@ -27,6 +27,7 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
     loading="lazy"
     alt="cover"
   )
+  item-status.status.opacity-20.absolute.right-1.top-2.text-sm.transition.ease-out(:status="page?.status")
   .flex-auto
   img.rounded-xl.w-36.z-22(
     style="margin:  1rem 0"
@@ -40,7 +41,8 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
   .relative.info.z-20.w-full.flex.flex-col.p-4.bg-light-400.bg-opacity-90.dark_bg-opacity-90.dark_bg-dark-200.transition-all.duration-300.backdrop-filter.backdrop-blur-sm(
     :style="{ marginTop: page.cover && !page.icon ? '240px' : '0' }"
   )
-    .date.absolute.-top-2.right-2px.rounded-xl.bg-light-700.dark_bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs {{ page?.date.slice(0, 10) }}
+
+    .date.absolute.bottom-2.right-1.rounded-lg.bg-light-300.dark_bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs(v-if="page?.date") {{ page?.date.slice(0, 10) }}
     .flex.w-full
       .flex.flex-col
         item-type(:type="page.data?.type")
@@ -88,7 +90,8 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
   background-color: hsla(0, 0%, 0%, 0);
 }
 
-.card:hover .date {
-  @apply opacity-100;
+.card:hover .date,
+.card:hover .status {
+  @apply opacity-80;
 }
 </style>

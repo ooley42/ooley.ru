@@ -13,6 +13,7 @@ address: Волгоградский проспект, дом 42к5
 coord: [55.710384234435615, 37.725180385361]
 vk: cmitcopter
 youtube: https://youtu.be/J8K1uDLf8R4
+status: open
 ---
 
 ### О нас

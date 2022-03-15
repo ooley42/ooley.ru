@@ -12,6 +12,7 @@ coord: [55.779616721139675, 37.69016647186852]
 facebook: piranesilab
 instagram: piranesilab
 vk: piranesilab
+status: open
 ---
 
 - Площадка для профессионалов и поклонников художественной ручной печати.

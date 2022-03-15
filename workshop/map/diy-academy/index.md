@@ -13,6 +13,7 @@ city: Москва
 coord: [55.784906234562854, 37.70755917002208]
 facebook: diyacademybosch
 instagram: diyacademy
+status: open
 ---
 
 

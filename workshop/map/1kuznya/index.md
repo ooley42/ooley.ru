@@ -3,6 +3,7 @@ title: "Первая кузня"
 date: "2019-05-12"
 icon: "11249764_500.png"
 youtube: https://youtu.be/o6MH-fb6234
+status: open
 ---
 
 ### О кузне на Флаконе

@@ -14,7 +14,7 @@ const page = computed(() => routes.find(p => {
 </script>
 
 <template lang='pug'>
-header
+header#start
   .flex.flex-col.items-center
     a.no-underline.p-4.flex-auto.flex.items-center.justify-center(href="/" title="Go home")
       img.w-14rem(:src="theme.logo" alt="OOLEY logo")
@@ -28,7 +28,7 @@ header
 <style lang="postcss" scoped>
 header {
   flex: 1 1 100%;
-  background-color: #f9a02c;
+  background-color: v-bind(theme.color);
   @apply flex flex-col z-2 shadow-lg;
 }
 .info {

@@ -1,7 +1,7 @@
 ---
 title: "Мейкеры. Церковь свидетелей прогресса"
 date: "2015-05-19"
-
+toc: true
 cover: "2013-03_TechShop_SanFrancisco.jpg"
 ---
 

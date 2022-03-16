@@ -118,6 +118,9 @@ a:hover {
   pre, code {
     @apply overflow-x-scroll max-w-full
   }
+  blockquote {
+    @apply bg-light-600 p-4 m-2 rounded-lg dark_bg-dark-600
+  }
 }
 
 

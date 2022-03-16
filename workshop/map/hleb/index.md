@@ -3,6 +3,7 @@ title: "Хлебъ"
 subtitle: Фабрика
 date: "2018-01-16"
 icon: "pjFgjahtTzA-e1516136230378.jpg"
+cover: a0zDk5rBtHc.jpg
 vk: hlebfabrika
 instagram: hleb_fabrika_kostroma
 facebook: hleb44
@@ -10,7 +11,7 @@ city: Кострома
 place: Остановка Маслозавод
 address: Воскресенский пер., 14
 tel: 7 (4942) 30-14-13
-hours: вт — вс 10:00-20:00, пн — выходной 
+hours: вт — вс 10:00-20:00, пн — выходной
 coord: [57.75355119574586, 40.95197718356626]
 status: open
 ---

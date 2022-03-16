@@ -5,8 +5,9 @@ import IconsResolver from "unplugin-icons/resolver";
 import WindiCSS from "vite-plugin-windicss";
 import AutoImport from "unplugin-auto-import/vite";
 import Pages from "vite-plugin-pages";
-import { extendRoute } from "./vitepress-pages";
-import generateSitemap from 'vite-plugin-pages-sitemap'
+import { generatePages } from "./.vitepress/pages";
+
+
 
 export default defineConfig({
   server: {
@@ -21,7 +22,8 @@ export default defineConfig({
       ],
       imports: ["vue"],
     }),
-    Pages({
+    Pages(generatePages({
+      hostname: 'https://ooley.ru/',
       dirs: [
         { dir: "post", baseRoute: "post" },
         { dir: "event", baseRoute: "event" },
@@ -33,10 +35,7 @@ export default defineConfig({
         { dir: "research", baseRoute: "research" },
         { dir: "contact", baseRoute: "contact" },
       ],
-      extensions: ["md"],
-      extendRoute,
-      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://new.ooley.ru/' })),
-    }),
+    })),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],
       extensions: ["vue", "ts"],

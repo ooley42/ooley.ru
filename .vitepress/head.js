@@ -1,4 +1,4 @@
-import { metaData } from "./constants";
+import { metaData } from "./constants.js";
 
 const head = [
   ["meta", { name: "author", content: metaData?.author }],

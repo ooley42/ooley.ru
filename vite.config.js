@@ -5,7 +5,7 @@ import IconsResolver from "unplugin-icons/resolver";
 import WindiCSS from "vite-plugin-windicss";
 import AutoImport from "unplugin-auto-import/vite";
 import Pages from "vite-plugin-pages";
-import { generatePages } from "./.vitepress/pages";
+import { generatePages } from "./.vitepress/pages.js";
 
 
 

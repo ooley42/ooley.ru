@@ -20,7 +20,7 @@ const page = computed(() => routes.find(p => trailing(p.path) == route.path))
   page-header.w-full
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full(:key="route.path")
-      .flex-auto.w-full.-z-30.flex.flex-col.items-center.bg-contain.bg-center.bg-fixed(
+      .cover(
         :style="{ backgroundImage: page?.cover ? `url(${page.cover})` : 'none' }"
       )
         //- img.w-full.fixed.top-0(:src="page?.cover" v-if="page?.cover" alt="Page cover")
@@ -44,13 +44,24 @@ const page = computed(() => routes.find(p => trailing(p.path) == route.path))
             )
         .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
           nav-siblings
-          nav-parents.gap-4
+          nav-parents.gap-4.flex-row-reverse
           nav-bar.w-full
       page-footer
     
 </template>
 
 <style lang="postcss">
+.cover {
+  @apply flex-auto w-full -z-30 flex flex-col items-center bg-center bg-fixed bg-no-repeat;
+  background-size: cover;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .cover {
+    background-size: auto 100vh;
+  }
+}
+
 .screen-button {
   @apply p-4 rounded-full transition ease-in-out cursor-pointer;
   &:hover {

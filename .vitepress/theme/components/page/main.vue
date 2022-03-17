@@ -20,12 +20,12 @@ const page = computed(() => routes.find(p => trailing(p.path) == route.path))
   page-header.w-full
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full(:key="route.path")
-      .cover.flex-auto.w-full.-z-30.flex.flex-col.items-center.bg-cover.bg-center.bg-fixed(
-        :style="{ backgroundImage: page?.cover ? `url(${page?.cover})` : '' }"
+      .flex-auto.w-full.-z-30.flex.flex-col.items-center.bg-contain.bg-center.bg-fixed(
+        :style="{ backgroundImage: page?.cover ? `url(${page.cover})` : 'none' }"
       )
         //- img.w-full.fixed.top-0(:src="page?.cover" v-if="page?.cover" alt="Page cover")
         img.max-w-62.rounded-lg.absolute.mt-8(v-if="page?.icon" :src="page.icon" alt="Page icon")
-        page-heading.max-w-3xl.w-full.shadow-lg(:style="{ marginTop: page?.cover || page?.icon ? '40vh' : '' }")
+        page-heading.max-w-3xl.w-full.shadow-lg(:style="{ marginTop: page?.cover || page?.icon ? '40vh' : '0' }")
       .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
         map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
 

@@ -47,17 +47,24 @@ export function generatePages({
           });
         }
 
-        sharp(path.join(root, filePath))
-          .resize({
-            width: media == 'icon' ? 300 : 1200,
-            height: media == 'icon' ? 300 : 1200,
-            fit: 'inside'
-          })
-          .toFile(path.join(publicPath, fileName), (err, info) => {
-            if (err) {
-              console.log(err, filePath)
-            }
-          })
+        if (filePath.endsWith('.svg')) {
+          fs.copyFileSync(
+            path.join(root, filePath),
+            path.join(publicPath, fileName)
+          );
+        } else {
+          sharp(path.join(root, filePath))
+            .resize({
+              width: media == 'icon' ? 300 : 1200,
+              height: media == 'icon' ? 300 : 1200,
+              fit: 'inside'
+            })
+            .toFile(path.join(publicPath, fileName), (err, info) => {
+              if (err) {
+                console.log(err, filePath)
+              }
+            })
+        }
 
       }
     }

@@ -8,6 +8,12 @@ import { routes, pages, trailing, getMediaPath } from '../../composables/pages.j
 
 const page = computed(() => routes.find(p => trailing(p.path) == route.path))
 
+const backgroundImage = computed(() => {
+  if (frontmatter.value.home) {
+    return `url(${frontmatter.value.cover})`
+  }
+  return page.value?.cover ? `url(${page.value.cover})` : 'none'
+})
 
 </script>
 
@@ -21,11 +27,11 @@ const page = computed(() => routes.find(p => trailing(p.path) == route.path))
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full(:key="route.path")
       .cover(
-        :style="{ backgroundImage: page?.cover ? `url(${page.cover})` : 'none' }"
+        :style="{ backgroundImage }"
       )
         //- img.w-full.fixed.top-0(:src="page?.cover" v-if="page?.cover" alt="Page cover")
         img.max-w-62.rounded-lg.absolute.mt-8(v-if="page?.icon" :src="page.icon" alt="Page icon")
-        page-heading.max-w-3xl.w-full.shadow-lg(:style="{ marginTop: page?.cover || page?.icon ? '40vh' : '0' }")
+        page-heading.max-w-3xl.w-full.shadow-lg(:style="{ marginTop: page?.cover || frontmatter.home || page?.icon ? '40vh' : '0' }")
       .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
         map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
 
@@ -53,7 +59,7 @@ const page = computed(() => routes.find(p => trailing(p.path) == route.path))
 <style lang="postcss">
 .cover {
   @apply flex-auto w-full -z-30 flex flex-col items-center bg-center bg-fixed bg-no-repeat;
-  background-size: cover;
+  background-size: auto 100vh;
 }
 
 @supports (-webkit-touch-callout: none) {

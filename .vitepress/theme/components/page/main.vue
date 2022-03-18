@@ -27,7 +27,7 @@ const backgroundImage = computed(() => {
   transition(name="fade" mode="out-in")
     main.flex.flex-col.items-center.flex-1.w-full(:key="route.path")
       .cover(
-        :style="{ backgroundImage }"
+        :style="{ backgroundImage, backgroundColor: page?.color ? page.color : 'transparent' }"
       )
         //- img.w-full.fixed.top-0(:src="page?.cover" v-if="page?.cover" alt="Page cover")
         img.max-w-62.rounded-lg.absolute.mt-8(v-if="page?.icon" :src="page.icon" alt="Page icon")
@@ -50,7 +50,7 @@ const backgroundImage = computed(() => {
             )
         .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6
           nav-siblings
-          nav-parents.gap-4.flex-row-reverse
+          nav-parents.gap-4.flex-col-reverse
           nav-bar.w-full
       page-footer
     

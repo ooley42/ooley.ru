@@ -20,6 +20,7 @@ function getDate(timestamp) {
 a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
   style="flex: 1 1 280px;"
   :href="page.path + '/'"
+  :style="{ backgroundColor: page?.color ? page.color : 'transparent' }"
 ) 
   img.absolute.top-0.min-w-full.flex-1(
     :src="page?.cover"

@@ -1,5 +1,5 @@
 <script setup>
-import {  useRoute,  } from 'vitepress'
+import { useRoute, } from 'vitepress'
 
 const route = useRoute()
 
@@ -13,7 +13,7 @@ const siblings = computed(() => getSiblings(route.path))
   a.link.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.prev" 
     :href="trailing(siblings.prev.path)"
-    :style="{backgroundImage: `url(${siblings.prev.cover})`}"
+    :style="{ backgroundImage: `url(${siblings.prev.cover})`, backgroundColor: siblings.prev?.color ? siblings.prev.color : 'transparent' }"
     ) 
     .panel
       octicon-chevron-left.mr-2.text-xl
@@ -21,7 +21,7 @@ const siblings = computed(() => getSiblings(route.path))
   a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
     :href="trailing(siblings.next.path)"
-    :style="{backgroundImage: `url(${siblings.next.cover})`}"
+    :style="{ backgroundImage: `url(${siblings.next.cover})`, backgroundColor: siblings.next?.color ? siblings.next.color : 'transparent' }"
     ) 
     .panel
       h4.text-lg.-mt-1 {{ siblings.next.title }}
@@ -43,15 +43,14 @@ const siblings = computed(() => getSiblings(route.path))
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: hsla(0,0%,100%,0.6);
+  background-color: hsla(0, 0%, 100%, 0.6);
 }
 .dark .link::before {
-  background-color: hsla(0,0%,0%,0.6);
+  background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 .link:hover::before {
   backdrop-filter: blur(0px);
-  background-color: hsla(0,0%,0%,0);
+  background-color: hsla(0, 0%, 0%, 0);
 }
-
 </style>

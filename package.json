@@ -12,9 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@vueuse/core": "8.0.0",
+    "fuse.js": "^6.5.3",
     "ol": "^6.13.0",
-    "vue": "^3.2.31",
-    "fuse.js": "^6.5.3"
+    "vue": "^3.2.31"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.14",

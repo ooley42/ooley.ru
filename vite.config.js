@@ -8,12 +8,12 @@ import Pages from "vite-plugin-pages";
 import { generatePages } from "./.vitepress/pages.js";
 
 
-
 export default defineConfig({
   server: {
     port: 3342,
   },
   plugins: [
+
     AutoImport({
       // targets to transform
       include: [

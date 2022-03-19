@@ -1,6 +1,6 @@
 ---
 title: Администратор
-cover: admin.svg
+icon: admin.svg
 date: 2017-07-01
 color: "#13007C33"
 ---

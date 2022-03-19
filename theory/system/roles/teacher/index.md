@@ -1,6 +1,6 @@
 ---
 title: Преподаватель
-cover: teacher.svg
+icon: teacher.svg
 date: 2017-05-01
 color: "#4FA0CA33"
 ---

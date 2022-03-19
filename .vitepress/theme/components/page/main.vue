@@ -58,13 +58,12 @@ const backgroundImage = computed(() => {
 
 <style lang="postcss">
 .cover {
-  @apply flex-auto w-full -z-30 flex flex-col items-center bg-center bg-fixed bg-no-repeat;
-  background-size: auto 100vh;
+  @apply flex-auto w-full -z-30 flex flex-col items-center bg-center bg-cover bg-fixed bg-no-repeat;
 }
 
 @supports (-webkit-touch-callout: none) {
   .cover {
-    background-size: auto 100vh;
+    @apply bg-scroll;
   }
 }
 

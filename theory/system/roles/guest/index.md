@@ -1,6 +1,6 @@
 ---
 title: Гость
-cover: guest.svg
+icon: guest.svg
 date: 2017-08-01
 color: "#FF000033"
 ---

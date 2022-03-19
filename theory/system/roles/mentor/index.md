@@ -1,6 +1,6 @@
 ---
 title: Куратор
-cover: mentor.svg
+icon: mentor.svg
 date: 2017-02-01
 color: "#80C41C33"
 ---

@@ -1,6 +1,6 @@
 ---
 title: Ученик
-cover: learner.svg
+icon: learner.svg
 date: 2017-06-01
 color: "#F9C71633"
 ---

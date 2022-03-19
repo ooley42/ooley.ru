@@ -1,6 +1,6 @@
 ---
 title: Умелец
-cover: maker.svg
+icon: maker.svg
 date: 2017-03-01
 color: "#FF4F0033"
 ---

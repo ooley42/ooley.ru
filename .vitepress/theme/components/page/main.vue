@@ -45,7 +45,7 @@ const backgroundImage = computed(() => {
         .flex.flex-wrap.gap-8.my-10.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
           item-card(
             v-for="page in pages[route.path]"
-            :key= "page.path"
+            :key="page.path"
             :page="page"
             )
         .max-w-3xl.w-full.flex.flex-col.gap-4.mb-6

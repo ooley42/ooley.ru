@@ -1,10 +1,16 @@
 <script setup>
 import { useData, useRoute } from 'vitepress'
-
+import { routes, pages, trailing, getMediaPath } from '../../composables/pages.js'
 const { site, frontmatter, theme } = useData();
+
 
 const props = defineProps({
   page: Object
+})
+
+const children = computed(() => {
+  let p = pages[trailing(props.page.path)]
+  return p ? p.length : null
 })
 
 // const pages = computed(() => theme.value.pages[props.page.data?.list])
@@ -44,12 +50,12 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
   )
 
     .date.absolute.bottom-2.right-1.rounded-lg.bg-light-300.dark_bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs(v-if="page?.date") {{ page?.date.slice(0, 10) }}
-    .flex.w-full
+    .flex.w-full.items-center
       .flex.flex-col
         item-type(:type="page.data?.type")
         h3.text-2xl.font-bold.md_text-2xl {{ page.title }} 
       .flex-1
-      //- .font-bold(v-if="countPages > 0") {{ countPages }} 
+      .ml-2.text-md.dark_bg-light-300.dark_bg-opacity-10.bg-dark-50.bg-opacity-10.rounded-md.px-6px(v-if="children > 0") {{ children }}
     .text-md.mt-1.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
     .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
 

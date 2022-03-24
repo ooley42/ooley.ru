@@ -3,13 +3,13 @@ title: "Истоки"
 date: "2020-05-26"
 icon: W6YXbr3mE08.jpg
 subtitle: Центр художественного творчества и дизайна
-city: Артём
+city: г. Артём
 address: ул. Баумана, 2
-place: остановка автобуса "Станция Угловая" 
+place: остановка автобуса "Станция Угловая"
 url: https://istoki.ucoz.net
 email: vladimir_vasilev@mail.ru
 vk: istoki_centr
-tel: 89147152581 
+tel: 89147152581
 coord: [43.332278879647696, 132.11509296930333]
 status: open
 hours: Вт-вс по предварительной записи

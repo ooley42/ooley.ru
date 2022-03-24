@@ -5,10 +5,10 @@ date: "2015-03-15"
 cover: "a5ffa2997ed39f639c17c2106bbea36b.png"
 address: 1-я ул. Бухвостова 12/11 корп. 53
 place: м. Преображенская площадь
-city: Москва
+city: г. Москва
 email: reception@mipap.ru
 url: https://mipap.ru
-tel: +7 495 233-27-85 
+tel: +7 495 233-27-85
 facebook: photoinstitute
 vk: russpressphotoinstitute
 status: closed
@@ -24,7 +24,6 @@ youtube-channel: UCyyHHcb48zV8aTK2bMhiY2w
 ![](./8E5B0559.jpg)
 ![](./Untitled_Panorama1.jpg)
 ![](./_6.jpg)
-
 
 ### Фотолаборатория
 

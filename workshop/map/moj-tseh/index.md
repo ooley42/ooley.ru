@@ -2,7 +2,7 @@
 title: "Мой цех"
 date: "2019-08-26"
 cover: "3CZ9Q4Vzgp4.jpg"
-city: Санкт-Петербург
+city: г. Санкт-Петербург
 place: Завод "Красный химик"
 address: Трефолева ул., 1П
 url: https://www.myworkshop.ru

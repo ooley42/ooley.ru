@@ -7,13 +7,13 @@ cover: cover.jpg
 url: https://hackerspace.by
 telegram: Hackerspace@Minsk
 instagram: byhackerspace
-vk: hackerspace_minsk 
-facebook: hs.minsk 
-address: ул. Алибегова, 24, пом. 153 
-city: Минск
+vk: hackerspace_minsk
+facebook: hs.minsk
+address: ул. Алибегова, 24, пом. 153
+city: г. Минск
 place: Юго-Запад
 tel: +375 29 8 647 647
-email: info@hackerspace.by 
+email: info@hackerspace.by
 youtube: https://youtu.be/FOig7xGjfsQ
 youtube-channel: UCoRCmZJBL-zV3-U5e6iB2gQ
 status: open
@@ -34,7 +34,6 @@ coord: [53.87311779318168, 27.478048442986015]
 ## Чем мы здесь занимаемся? Мы творим.
 
 Мы паяем, программируем, вырезаем из металла, пластика и дерева. Мы делаем роботов, дронов и строим станки ЧПУ. Мы собираем 3D-принтеры. Мы делаем печатные платы. Мы делимся опытом и совершаем ошибки. Придумываем новые [проекты](https://hackerspace.by/projects) и улучшаем старые.
-
 
 ## Как к нам присоединиться? Сколько это стоит?
 

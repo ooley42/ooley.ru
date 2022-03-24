@@ -4,7 +4,7 @@ subtitle: Швейное пространство
 date: "2018-05-17"
 icon: logo.png
 cover: cover.jpg
-city: Москва
+city: г. Москва
 address: мкр. Северное Чертаново, 1А
 place: м. Чертановская, ТЦ Авентура, 2 этаж
 url: http://www.sewplace.ru

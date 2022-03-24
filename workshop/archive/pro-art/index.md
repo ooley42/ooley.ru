@@ -3,7 +3,7 @@ title: "PRO-ART"
 subtitle: Центр сотрудничества
 date: "2016-01-25"
 icon: logo.jpg
-city: Самара
+city: г. Самара
 place: м. Юнгородок
 address: Корсунский переулок, 28 Б
 url: http://samara.center

@@ -7,7 +7,7 @@ cover: a0zDk5rBtHc.jpg
 vk: hlebfabrika
 instagram: hleb_fabrika_kostroma
 facebook: hleb44
-city: Кострома
+city: г. Кострома
 place: Остановка Маслозавод
 address: Воскресенский пер., 14
 tel: 7 (4942) 30-14-13

@@ -6,7 +6,7 @@ cover: cover.jpg
 url: https://www.masterkarl.ru
 address: ул. Большая Ордынка 13/9, стр.1
 place: м. Третьяковская
-city: Москве
+city: г. Москве
 tel: +7 (909) 636-36-31
 email: Master.karl@inbox.ru
 vk: workshopkarl

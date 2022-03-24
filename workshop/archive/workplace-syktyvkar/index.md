@@ -3,8 +3,8 @@ title: "Дом моды"
 subtitle: Workplace в Сыктывкаре
 date: "2016-11-10"
 icon: logo.png
-address: ул. Орджоникидзе, 16 
-city: Сыктывкар
+address: ул. Орджоникидзе, 16
+city: г. Сыктывкар
 place: Напротив Пушкинской гимназии
 url: https://workplace.land
 tel: +7 (912) 197-78-48

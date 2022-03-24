@@ -4,12 +4,12 @@ date: "2017-05-18"
 cover: cover.jpg
 icon: logo.jpg
 subtitle: Открытая столярная мастерская
-city: Владивосток
+city: г. Владивосток
 place: Эгершельд
 address: ул. Крыгина, дом 77
 vk: club145978359
 email: pure_decadence@mail.ru
-tel: +8 (914) 966-91-91 
+tel: +8 (914) 966-91-91
 coord: [43.084801529814655, 131.85542809998225]
 status: closed
 ---

@@ -121,6 +121,9 @@ a:hover {
   blockquote {
     @apply bg-light-600 p-4 m-2 rounded-lg dark_bg-dark-600
   }
+  .button {
+    @apply py-2 px-4 bg-orange-300 shadow-md hover_shadow-lg rounded-lg inline-block dark_bg-orange-800 filter contrast-80 hover_contrast-100 transition active_contrast-120 active_shadow-sm;
+  }
 }
 
 

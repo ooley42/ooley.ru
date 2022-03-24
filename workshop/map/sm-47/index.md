@@ -4,7 +4,7 @@ date: "2016-10-18"
 icon: "logo-black.png"
 cover: "place.webp"
 subtitle: Открытая столярная мастерская
-city: Москва
+city: г. Москва
 address: просп. Мира, 119, строение 47
 place: ВДНХ
 url: https://www.sm-47.ru

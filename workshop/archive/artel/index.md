@@ -4,9 +4,9 @@ subtitle: Ремесленный коворкинг
 date: "2016-01-07"
 cover: "0ewfcmltgPk.jpg"
 status: closed
-address: ул. Варварская, 32 
+address: ул. Варварская, 32
 place: Нижполиграф
-city: Нижний Новгород
+city: г. Нижний Новгород
 vk: artel_place
 ---
 

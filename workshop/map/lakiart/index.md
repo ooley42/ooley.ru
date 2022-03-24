@@ -10,7 +10,7 @@ facebook: lakiartcraft
 url: https://lakiart-lampwork.ru
 address: Сретенский бульвар, 6/1с1
 place: м. Чистые пруды
-city: Москва
+city: г. Москва
 tel: +7 (985) 687-83-65
 status: open
 ---

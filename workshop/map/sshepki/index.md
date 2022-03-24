@@ -7,7 +7,7 @@ cover: FnhZulILLzg.jpg
 url: https://schepki-coworking.by
 email: schepki.coworking@gmail.com
 youtube: https://youtu.be/P7zpZ3gljAU
-city: Минск
+city: г. Минск
 address: ул. Минина 1
 tel: +375293774413
 facebook: artelschepki

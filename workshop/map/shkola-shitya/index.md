@@ -4,7 +4,7 @@ subtitle: Школа шитья
 date: "2017-12-05"
 icon: logo.png
 cover: KIV2048.jpeg
-city: Нижний Новгород
+city: г. Нижний Новгород
 place: за а/c Сенной
 address: Ул. Печёрский съезд 24а
 url: https://shkola-shitya52.ru/

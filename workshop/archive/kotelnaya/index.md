@@ -3,10 +3,10 @@ title: "Котельная"
 subtitle: Открытая мастерская
 date: "2016-05-23"
 icon: logo.jpg
-city: Москва
+city: г. Москва
 address: Волгоградский проспект, 32к14
 place: м. Волгоградский проспект
-tel: +7 (926) 186-82-46 
+tel: +7 (926) 186-82-46
 coord: [55.72433030939063, 37.688715356345554]
 vk: m_kotelnaya
 facebook: masterskaya.kotelnaya

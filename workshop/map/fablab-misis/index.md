@@ -5,7 +5,7 @@ date: "2015-04-26"
 icon: "fab.png"
 cover: replicator.jpg
 address: Крымский вал, д. 3
-city: Москва
+city: г. Москва
 place: м. Октябрьская
 coord: [55.729524440313234, 37.60889885467958]
 vk: fablabmoscow

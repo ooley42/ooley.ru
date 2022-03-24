@@ -8,7 +8,7 @@ vk: manufactura_saratov
 tel: +7-927-915-48-60
 email: kashenina-anna@yandex.ru
 address: Чапаева 59, зал 19А
-city: Саратов
+city: г. Саратов
 place: Площадь Кирова
 status: closed
 ---

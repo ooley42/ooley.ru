@@ -8,10 +8,10 @@ instagram: flappersworkshop
 vk: vk.flappers
 status: open
 tel: +7 (999) 095-41-20
-city: Москва
+city: г. Москва
 address: Новодмитровская Б. ул., 36
 place: Дизайн-завод Флакон
-hours: Пн-Вс — с 10 до 22 
+hours: Пн-Вс — с 10 до 22
 coord: [55.80592183152701, 37.584330214198715]
 ---
 

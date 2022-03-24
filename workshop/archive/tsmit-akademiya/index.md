@@ -10,7 +10,7 @@ email: info@academylab.ru
 vk: kids_a
 tel: +7 (929) 592-05-91
 hours: сб, вс 15:00 — 20:00
-city: Москва
+city: г. Москва
 address: ул. Удальцова д.6
 place: м. Проспект Вернадского
 status: closed

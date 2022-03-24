@@ -3,7 +3,7 @@ title: "Реформа"
 date: "2017-05-08"
 icon: logo.jpg
 address: Смоленская 12
-city: Екатеринбург
+city: г. Екатеринбург
 place: ст. Уктус
 url: https://reforma.su
 email: mail@reforma.su

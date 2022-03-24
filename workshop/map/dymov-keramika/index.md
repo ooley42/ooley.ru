@@ -4,7 +4,7 @@ date: "2016-10-18"
 cover: "cover.jpg"
 icon: circle.jpg
 subtitle: Школа керамики в Москве
-city: Москва
+city: г. Москва
 address: проспект Мира, д. 119 стр. 186
 place: ВДНХ
 url: https://dymovceramicschool.ru/moscow
@@ -13,7 +13,7 @@ vk: dymovceramicschool
 instagram: dymovceramicschool
 facebook: dymovceramicschool
 telegram: Open_drevrika
-tel:  +7 (495) 500-01-71
+tel: +7 (495) 500-01-71
 coord: [55.837245353547566, 37.626679735418826]
 status: open
 hours: понедельник-воскресение с 11:00 до 20:00

@@ -5,7 +5,7 @@ date: "2020-07-29"
 icon: to-see.jpg
 cover: cover.jpg
 instagram: shkola_dryzhbi_vl
-city: Владивосток
+city: г. Владивосток
 place: Вторая речка
 address: ул. Кутузова, 10
 url: https://школа-дружбы.рф

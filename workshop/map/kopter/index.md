@@ -7,7 +7,7 @@ cover: 1.jpg
 url: https://ru.coex.tech/cmit
 tel: +7 (926) 357-21-21
 email: shishkin@coex.tech
-city: Москва
+city: г. Москва
 place: Технополис «Москва»
 address: Волгоградский проспект, дом 42к5
 coord: [55.710384234435615, 37.725180385361]

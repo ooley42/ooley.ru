@@ -9,7 +9,7 @@ instagram: antareslabmsk
 vk: cmit_antares
 email: info+tecai@antareslab.ru
 url: http://www.antareslab.ru
-city: Москва
+city: г. Москва
 address: Хорошевское шоссе 38а
 place: м. Беговая
 hours: пн-пт 10.00 - 19.00

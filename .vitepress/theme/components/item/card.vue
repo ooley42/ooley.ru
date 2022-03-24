@@ -49,7 +49,7 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
     :style="{ marginTop: page.cover && !page.icon ? '240px' : '0' }"
   )
 
-    .date.absolute.bottom-2.right-1.rounded-lg.bg-light-300.dark_bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs(v-if="page?.date") {{ page?.date.slice(0, 10) }}
+    //- .date.absolute.bottom-2.right-1.rounded-lg.bg-light-300.dark_bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs(v-if="page?.date") {{ page?.date.slice(0, 10) }}
     .flex.w-full.items-center
       .flex.flex-col
         item-type(:type="page.data?.type")
@@ -58,10 +58,7 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
       .ml-2.text-md.dark_bg-light-300.dark_bg-opacity-10.bg-dark-50.bg-opacity-10.rounded-md.px-6px(v-if="children > 0") {{ children }}
     .text-md.mt-1.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
     .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
-
-  .absolute.right-8px.bottom-4px.opacity-10.text-xs.flex.items-center.transition-all.duration-400.hover_opacity-90
-    ic-round-update.mr-1
-    .p-0 {{ getDate(page.date) }}
+    .text-md.text-sm(v-if="page?.place") {{ page.place }}
 </template>
 
 

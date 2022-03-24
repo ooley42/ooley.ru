@@ -8,7 +8,7 @@ status: open
 url: https://1кузня.рф
 address: Большая Новодмитровская д.36, стр.26
 place: Флакон
-city: Москва
+city: г. Москва
 tel: +7 (495) 120-12-16
 email: pkuznya@gmail.com
 instagram: 1kuznya

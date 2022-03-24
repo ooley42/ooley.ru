@@ -5,7 +5,7 @@ date: "2017-05-18"
 icon: "zxfPR5b_WYE-e1495106277215.jpg"
 cover: zYctV7BzfEA.jpg
 address: ул. Фабричная 17А
-city: Новосибирск
+city: г. Новосибирск
 tel: +7 (962) 838-58-48
 vk: promzona_nsk
 email: promzonansk@gmail.ru
@@ -13,7 +13,6 @@ status: closed
 ---
 
 ➡ Столярные мастер-классы. ➡ Курсы столярного дела. ➡ Индивидуальное обучение. ➡ Общественная столярная площадка.
-
 
 ---
 

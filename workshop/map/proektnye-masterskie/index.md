@@ -6,7 +6,7 @@ icon: "logo.png"
 cover: cover.jpg
 address: Дербеневская улица, дом 20, Бизнес-парк «Кожевники»
 place: м. Павелецкая
-city: Москва
+city: г. Москва
 tel: +7 (499) 550-24-23
 email: friends@promasterskie.com
 url: https://www.promasterskie.com
@@ -29,7 +29,6 @@ youtube: https://youtu.be/wNJ4j2oZhpQ
 ![](./images/CMITPM180118DEN55ISLEO.jpg)
 ![](./images/CMITPM180118DENISLE5O.jpg)
 ![](./images/CMITPM180118DENISLEO.jpg)
-
 
 ## УСЛУГИ И СЕРВИСЫ
 
@@ -84,12 +83,10 @@ youtube: https://youtu.be/wNJ4j2oZhpQ
 
 Удобное расположение в центре Москвы и парковка на территории бизнес-парка.
 
-
 ![](./images/1.jpg)
 ![](./images/3.jpg)
 ![](./images/5.jpg)
 ![](./images/15.jpg)
-
 
 ## Оборудование
 

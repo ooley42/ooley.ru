@@ -5,8 +5,8 @@ date: "2016-07-14"
 icon: "logo.jpg"
 tel: +7(968)766-07-29
 email: dashafedotovadasha@gmail.com
-address: улица Правды, д.24, стр. 7 
-city: Москва
+address: улица Правды, д.24, стр. 7
+city: г. Москва
 place: м. Белорусская
 cover: f0e68d75f2727496474f212ca2c8e358.jpg
 status: closed

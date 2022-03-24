@@ -4,7 +4,7 @@ subtitle: Лаборатория столярного дела
 date: "2020-11-26"
 icon: pk.png
 cover: epoxy.jpg
-city: Москва
+city: г. Москва
 place: м. Волгоградский проспект
 address: Остаповский проезд, д.3 к.8
 url: https://whiteforests.com

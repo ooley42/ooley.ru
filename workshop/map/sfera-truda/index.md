@@ -4,12 +4,12 @@ subtitle: Открытая ремесленная мастерская
 date: "2016-12-23"
 icon: logo.jpg
 cover: cover.jpg
-city: Новороссийск
-address: Видова, 172 
+city: г. Новороссийск
+address: Видова, 172
 place: Цемесская роща
 vk: sfera_truda
 instagram: sferatruda
-tel: +7 (960) 471-59-17 
+tel: +7 (960) 471-59-17
 coord: [44.7339131756649, 37.737131798328406]
 status: open
 ---
@@ -27,6 +27,5 @@ status: open
 Мы предлагаем дружить и сотрудничать. Гарантируем внимание, позитив и сердечность. Добро пожаловать!
 
 ![](./Lk4IOAvXmwA.jpg)
-
 
 ![](./5bFdu_wr-oc.jpg)

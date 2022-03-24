@@ -3,7 +3,7 @@ title: "TechnoHub"
 subtitle: Открытая мастерская
 date: "2018-02-26"
 icon: logo.jpg
-city: Казань
+city: г. Казань
 address: ул.Мусина 61В
 place: Навигатор Кампус
 vk: technohubcowork

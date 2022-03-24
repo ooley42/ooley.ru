@@ -5,10 +5,10 @@ date: "2018-12-06"
 cover: "STfBs3wIVqo.jpg"
 address: ул. Малая Семеновская д 3а, стр 1
 place: м. Электрозаводская
-city: Москва
+city: г. Москва
 email: naturamesto@mail.ru
 url: https://natura-mesto.ru
-tel: +7 (926) 281-49-01 
+tel: +7 (926) 281-49-01
 facebook: naturamesto
 vk: natura_mesto
 instagram: natura_mesto
@@ -28,7 +28,6 @@ coord: [55.785541166481195, 37.70591099867569]
 
 ![](./images/500-23158369f95976b96151fdc7024cb6a0.jpg)
 
-
 ### ДУБОВЫЙ ЗАЛ
 
 10 ЧЕЛОВЕК | 50 кв м
@@ -36,7 +35,6 @@ coord: [55.785541166481195, 37.70591099867569]
 
 ![](./images/500-6290a9a41bd6390c41ec12bfb1ae5aa4.jpg)
 
-	
 ### БЕЛЫЙ ЗАЛ
 
 10 ЧЕЛОВЕК | 30 кв м

@@ -1,14 +1,14 @@
 ---
 title: "Sandler"
-subtitle: Craft Training Center 
+subtitle: Craft Training Center
 date: "2016-12-22"
 icon: "logo2016-.png"
 cover: 002.jpg
-city: Нарва
-address: A. Pushkin Str. 11 - М1 
+city: г. Нарва
+address: A. Pushkin Str. 11 - М1
 place: Нарвский замок
 url: http://www.sctc.eu
-tel: +372 35 91200 
+tel: +372 35 91200
 status: closed
 ---
 

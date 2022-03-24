@@ -4,7 +4,7 @@ subtitle: Школа деревообработки
 date: "2016-11-07"
 icon: "keepwork.png"
 cover: photo.jpg
-city: Москва
+city: г. Москва
 address: Электролитный проезд, д.3, стр.2.
 place: м. Нагорная
 tel: + 7 (968) 069-82-18

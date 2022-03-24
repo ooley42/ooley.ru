@@ -3,7 +3,7 @@ title: "Colab"
 date: "2019-12-18"
 icon: "ulLwsJQF3w0-1.jpg"
 cover: pzdeW1rL0MA.jpg
-city: Москва
+city: г. Москва
 place: м. Семеновская
 address: Кирпичная ул., 24
 status: closed

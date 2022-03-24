@@ -13,6 +13,8 @@ vk: artchaos_academ
 instagram: artchaos_academ
 url: https://litsky.ru/artchaos
 hours: Ежедневно с 10.00 до 21.00 по предварительной записи
+youtube: https://www.youtube.com/watch?v=XdAq6hJx6v4
+youtube-channel: UCnA4IhQUqN5Ae5gOuld2vrw
 ---
 
 ## О проекте

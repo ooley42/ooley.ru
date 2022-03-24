@@ -1,5 +1,6 @@
 ---
 title: Гость
+subtitle: Любой человек, вошедший в мастерскую
 icon: guest.svg
 date: 2017-08-01
 color: "#FF000033"

@@ -4,7 +4,7 @@ date: "2015-11-26"
 cover: "JaE5cOIqa0I.jpg"
 ---
 
-## [Открытые Мастерские](http://ooley.ru/places/otkrytye-masterskie/) — проект МЦБС им. М.Ю.Лермонтова
+## [Открытые Мастерские](/workshop/map/otkrytye-masterskie/) — проект МЦБС им. М.Ю.Лермонтова
 
 ## Отчетная выставка за минувшие шесть месяцев
 

@@ -2,10 +2,8 @@
 title: Дело техники
 subtitle: Мастерская-коворкинг на Флаконе
 date: "2021-04-23"
-categories:
-  - "video"
 youtube: https://youtu.be/4d3JtwZkq9Q
-url: https://ooley.ru/map/delo-tehniki/
+url: https://delotech.space/
 cover: delo.jpg
 icon: logo600.png
 ---

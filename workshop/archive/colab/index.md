@@ -1,5 +1,6 @@
 ---
 title: "Colab"
+subtitle: Музыкальный коворкинг
 date: "2019-12-18"
 icon: "ulLwsJQF3w0-1.jpg"
 cover: pzdeW1rL0MA.jpg

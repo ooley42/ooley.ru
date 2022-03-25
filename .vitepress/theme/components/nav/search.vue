@@ -33,12 +33,15 @@ onClickOutside(target, (event) => open.value = false)
     .absolute.right-4.top-4.z-200(v-if="open")
       input.p-4.rounded-lg.z-20.w-xs.bg-light-100.dark_bg-dark-100(v-model="input" ref="target")
       .flex.flex-col.max-h-80vh.overflow-y-scroll.shadow-lg.mt-2.rounded-lg
-        a.px-3.py-3.bg-light-400.dark_bg-dark-400.hover_bg-light-100.dark_hover_bg-dark-600(
+        a.px-3.py-3.bg-light-400.dark_bg-dark-400.hover_bg-light-100.dark_hover_bg-dark-600.border-1.border-light-100.border-opacity-20(
           :href="trailing(candidate.item.path)"
           @click="input = ''"
           v-for="candidate in candidates" :key="candidate"
           :style="{ opacity: 1 - candidate.score / 2 }"
         ) 
-          .font-bold {{ candidate.item.title }}
-          .text-sm {{ candidate.item.subtitle }} 
+          .font-bold {{ candidate.item?.title }}
+          .text-sm {{ candidate.item?.subtitle }} 
+          .text-sm.inline-flex(v-if="candidate.item?.city || candidate.item?.place")
+            .font-bold.whitespace-nowrap {{ candidate.item?.city }} 
+            .ml-2 {{ candidate.item?.place }}
 </template> 

@@ -73,5 +73,5 @@ import Fuse from "fuse.js";
 export const fuse = new Fuse(routes, {
   includeScore: true,
   ignoreLocation: true,
-  keys: ["title", 'subtitle'],
+  keys: ["title", 'subtitle', 'city', 'place'],
 });

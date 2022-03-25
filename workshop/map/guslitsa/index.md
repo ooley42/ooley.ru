@@ -6,7 +6,7 @@ icon: "logo1.jpg"
 cover: cover.jpg
 email: info@art-guslitsa.com
 url: https://art-guslitsa.ru
-city: г. Московская область
+city: Московская область
 place: Орехово-Зуевский район
 address: Ильинский Погост, ул. Митрохинская, д. 8
 tel: +7 (929) 599-32-98

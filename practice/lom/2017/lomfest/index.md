@@ -101,7 +101,6 @@ cover: fon.jpg
 ![](./images/d8vJoNCnpm8.jpg)
 ![](./images/eahZ9J01ORo.jpg)
 ![](./images/ef3bK-i7KpY.jpg)
-![](./images/fon.jpg)
 ![](./images/FXUOY5Igo0c.jpg)
 ![](./images/FzwW2Bky6Bk.jpg)
 ![](./images/G9TpXRdmn0.jpg)

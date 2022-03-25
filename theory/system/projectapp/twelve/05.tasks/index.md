@@ -1,6 +1,6 @@
 ---
 title: Задачи
-cover: tasks.svg
+icon: tasks.svg
 date: 2020-08-01
 color: "#AFD796"
 ---

@@ -1,6 +1,6 @@
 ---
 title: Улучшение
-cover: enhancement.svg
+icon: enhancement.svg
 date: 2020-04-01
 color: "#967EBA"
 ---

@@ -6,6 +6,18 @@ const route = useRoute()
 import { getSiblings, trailing } from '../../composables/pages.js'
 
 const siblings = computed(() => getSiblings(route.path))
+
+
+function getImage(side) {
+  if (siblings.value[side]?.cover) {
+    return `url(${siblings.value[side].cover})`
+  } else if (siblings.value[side]?.icon) {
+    return `url(${siblings.value[side].icon})`
+  } else {
+    return 'transparent'
+  }
+}
+
 </script>
 
 <template lang='pug'>
@@ -13,7 +25,7 @@ const siblings = computed(() => getSiblings(route.path))
   a.link.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.prev" 
     :href="trailing(siblings.prev.path)"
-    :style="{ backgroundImage: `url(${siblings.prev.cover})`, backgroundColor: siblings.prev?.color ? siblings.prev.color : 'transparent' }"
+    :style="{ backgroundImage: getImage('prev'), backgroundColor: siblings.prev?.color ? siblings.prev.color : 'transparent' }"
     ) 
     .panel
       octicon-chevron-left.mr-2.text-xl
@@ -21,7 +33,7 @@ const siblings = computed(() => getSiblings(route.path))
   a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
     :href="trailing(siblings.next.path)"
-    :style="{ backgroundImage: `url(${siblings.next.cover})`, backgroundColor: siblings.next?.color ? siblings.next.color : 'transparent' }"
+    :style="{ backgroundImage: getImage('next'), backgroundColor: siblings.next?.color ? siblings.next.color : 'transparent' }"
     ) 
     .panel
       h4.text-lg.-mt-1 {{ siblings.next.title }}

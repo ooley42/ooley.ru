@@ -1,6 +1,6 @@
 ---
 title: Представление
-cover: presentation.svg
+icon: presentation.svg
 date: 2020-02-01
 color: "#F06FAA"
 ---

@@ -1,6 +1,7 @@
 ---
 title: Идея
-cover: idea.svg
+subtitle: Мысль, предлагаемая к реализации
+icon: idea.svg
 date: 2020-12-01
 color: "#FBAD56"
 ---

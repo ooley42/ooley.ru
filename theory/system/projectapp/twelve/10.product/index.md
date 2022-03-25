@@ -1,6 +1,6 @@
 ---
 title: Произведение
-cover: product.svg
+icon: product.svg
 date: 2020-03-01
 color: "#ED8DBA"
 ---

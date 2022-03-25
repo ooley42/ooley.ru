@@ -1,6 +1,6 @@
 ---
 title: Возможности
-cover: supplies.svg
+icon: supplies.svg
 date: 2020-07-01
 color: "#B5E4FA"
 ---

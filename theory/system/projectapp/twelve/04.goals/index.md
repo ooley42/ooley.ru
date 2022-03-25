@@ -1,6 +1,6 @@
 ---
 title: Цели
-cover: goals.svg
+icon: goals.svg
 date: 2020-09-01
 color: "#A8D26D"
 ---

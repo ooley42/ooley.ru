@@ -1,6 +1,6 @@
 ---
 title: Радость
-cover: joy.svg
+icon: joy.svg
 date: 2020-01-01
 color: "#F26849"
 ---

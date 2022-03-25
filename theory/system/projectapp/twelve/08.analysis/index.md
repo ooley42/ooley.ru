@@ -1,6 +1,6 @@
 ---
 title: Анализ
-cover: analysis.svg
+icon: analysis.svg
 date: 2020-05-01
 color: "#8E91C7"
 ---

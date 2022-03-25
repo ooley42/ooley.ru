@@ -7,6 +7,16 @@ const route = useRoute();
 import { getParents, trailing } from '../../composables/pages.js'
 
 const parents = computed(() => getParents(route.path))
+
+function getImage(page) {
+  if (page?.cover) {
+    return `url(${page?.cover})`
+  } else if (page?.icon) {
+    return `url(${page?.icon})`
+  } else {
+    return 'transparent'
+  }
+}
 </script>
 
 <template lang='pug'>  
@@ -24,7 +34,7 @@ const parents = computed(() => getParents(route.path))
     v-for="(page, p) in parents" 
     :key="page.title" 
     :href="trailing(page.path)"
-    :style="{ backgroundImage: `url(${page?.cover})` }"
+    :style="{ backgroundImage: getImage(page) }"
     )
     .panel.flex
       h4.text-lg.w-full.-mt-1 {{ page.title }}

@@ -1,6 +1,6 @@
 ---
 title: Процесс
-cover: process.svg
+icon: process.svg
 date: 2020-06-01
 color: "#7AA6D8"
 ---

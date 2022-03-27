@@ -18,13 +18,10 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.1.17",
-    "app-root-path": "^3.0.0",
-    "gray-matter": "^4.0.3",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^3.0.0",
     "markdown-it-external-links": "^0.0.6",
     "pug": "3.0.2",
-    "sharp": "^0.30.3",
     "unplugin-auto-import": "^0.6.6",
     "unplugin-icons": "^0.14.0",
     "unplugin-vue-components": "^0.18.3",

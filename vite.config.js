@@ -36,7 +36,7 @@ export default defineConfig({
           { dir: "contact", baseRoute: "contact" },
         ],
       }),
-      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://ooley.ru' })),
+      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://ooley.ru/' })),
     }),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],

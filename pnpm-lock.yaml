@@ -3,15 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify/json': ^2.1.17
   '@vueuse/core': 8.1.2
-  app-root-path: ^3.0.0
   fuse.js: ^6.5.3
-  gray-matter: ^4.0.3
   markdown-it-classy: ^0.2.0
   markdown-it-container: ^3.0.0
   markdown-it-external-links: ^0.0.6
   ol: ^6.13.0
   pug: 3.0.2
-  sharp: ^0.30.3
   unplugin-auto-import: ^0.6.6
   unplugin-icons: ^0.14.0
   unplugin-vue-components: ^0.18.3
@@ -32,13 +29,10 @@ dependencies:
 
 devDependencies:
   '@iconify/json': 2.1.17
-  app-root-path: 3.0.0
-  gray-matter: 4.0.3
   markdown-it-classy: 0.2.0
   markdown-it-container: 3.0.0
   markdown-it-external-links: 0.0.6
   pug: 3.0.2
-  sharp: 0.30.3
   unplugin-auto-import: 0.6.6_@vueuse+core@8.1.2+vite@2.8.6
   unplugin-icons: 0.14.0_vite@2.8.6
   unplugin-vue-components: 0.18.3_vite@2.8.6+vue@3.2.31
@@ -500,11 +494,6 @@ packages:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
-    dev: true
-
-  /app-root-path/3.0.0:
-    resolution: {integrity: sha512-qMcx+Gy2UZynHjOHOIXPNvpf+9cjvk3cWrBBK7zg4gH9+clobJRb9NGzcT7mQTcV/6Gm/1WelUtqxVXnNlrwcw==}
-    engines: {node: '>= 6.0.0'}
     dev: true
 
   /aproba/1.2.0:

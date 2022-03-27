@@ -5,7 +5,8 @@ import IconsResolver from "unplugin-icons/resolver";
 import WindiCSS from "vite-plugin-windicss";
 import AutoImport from "unplugin-auto-import/vite";
 import Pages from "vite-plugin-pages";
-import { generatePages } from "./.vitepress/pages.js";
+import { generatePages } from "vitepress-pages";
+import generateSitemap from 'vite-plugin-pages-sitemap'
 
 
 export default defineConfig({
@@ -13,7 +14,6 @@ export default defineConfig({
     port: 3342,
   },
   plugins: [
-
     AutoImport({
       // targets to transform
       include: [
@@ -22,20 +22,22 @@ export default defineConfig({
       ],
       imports: ["vue"],
     }),
-    Pages(generatePages({
-      hostname: 'https://ooley.ru/',
-      dirs: [
-        { dir: "post", baseRoute: "post" },
-        { dir: "event", baseRoute: "event" },
-        { dir: "theory", baseRoute: "theory" },
-        { dir: "overview", baseRoute: "overview" },
-        { dir: "report", baseRoute: "report" },
-        { dir: "workshop", baseRoute: "workshop" },
-        { dir: "practice", baseRoute: "practice" },
-        { dir: "research", baseRoute: "research" },
-        { dir: "contact", baseRoute: "contact" },
-      ],
-    })),
+    Pages({
+      ...generatePages({
+        dirs: [
+          { dir: "post", baseRoute: "post" },
+          { dir: "event", baseRoute: "event" },
+          { dir: "theory", baseRoute: "theory" },
+          { dir: "overview", baseRoute: "overview" },
+          { dir: "report", baseRoute: "report" },
+          { dir: "workshop", baseRoute: "workshop" },
+          { dir: "practice", baseRoute: "practice" },
+          { dir: "research", baseRoute: "research" },
+          { dir: "contact", baseRoute: "contact" },
+        ],
+      }),
+      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://ooley.ru' })),
+    }),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],
       extensions: ["vue", "ts"],

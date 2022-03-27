@@ -1,6 +1,6 @@
 <script setup>
 import { useData, useRoute } from 'vitepress'
-import { routes, pages, trailing, getMediaPath } from '../../composables/pages.js'
+import { routes, pages, trailing } from '../../composables/pages.js'
 const { site, frontmatter, theme } = useData();
 
 

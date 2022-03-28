@@ -15,7 +15,7 @@
     "fuse.js": "^6.5.3",
     "ol": "^6.13.0",
     "vue": "^3.2.31",
-    "vitepress-pages": "^0.6.7"
+    "vitepress-pages": "^0.7.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.17",

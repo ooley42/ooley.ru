@@ -1,6 +1,15 @@
 <script setup>
-import { fuse, trailing } from '../../composables/pages'
 import { useFocus, onClickOutside } from '@vueuse/core'
+import { trailSlash } from 'vitepress-pages/browser'
+import Fuse from "fuse.js";
+import routes from '~pages'
+
+
+const fuse = new Fuse(routes, {
+  includeScore: true,
+  ignoreLocation: true,
+  keys: ["title", 'subtitle', 'city', 'place'],
+});
 
 const open = ref()
 const input = ref('')
@@ -34,7 +43,7 @@ onClickOutside(target, (event) => open.value = false)
       input.p-4.rounded-lg.z-20.w-xs.bg-light-100.dark_bg-dark-100(v-model="input" ref="target")
       .flex.flex-col.max-h-80vh.overflow-y-scroll.shadow-lg.mt-2.rounded-lg
         a.px-3.py-3.bg-light-400.dark_bg-dark-400.hover_bg-light-100.dark_hover_bg-dark-600.border-1.border-light-100.border-opacity-20(
-          :href="trailing(candidate.item.path)"
+          :href="trailSlash(candidate.item.path)"
           @click="input = ''"
           v-for="candidate in candidates" :key="candidate"
           :style="{ opacity: 1 - candidate.score / 2 }"

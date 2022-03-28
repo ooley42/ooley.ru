@@ -1,16 +1,20 @@
 <script setup>
+
 import { useData, useRoute } from 'vitepress'
 
-const { site, frontmatter, theme } = useData();
+const { frontmatter } = useData();
+
+import routes from '~pages'
+import { getPage, getPages } from 'vitepress-pages/browser'
+
 const route = useRoute();
 
-import { routes, pages, trailing, getMediaPath } from '../../composables/pages.js'
-
-const page = computed(() => routes.find(p => trailing(p.path) == route.path))
+const page = computed(() => getPage(route.path, routes))
+const pages = getPages(routes)
 
 const backgroundImage = computed(() => {
   if (frontmatter.value.home) {
-    return `url(${frontmatter.value.cover})`
+    return frontmatter.value?.cover ? `url(${frontmatter.value.cover})` : 'none'
   }
   return page.value?.cover ? `url(${page.value.cover})` : 'none'
 })

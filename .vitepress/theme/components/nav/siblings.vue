@@ -1,11 +1,11 @@
 <script setup>
-import { useRoute, } from 'vitepress'
+import { useRoute } from 'vitepress'
+import routes from '~pages'
+import { trailSlash, getSiblings } from 'vitepress-pages/browser'
 
-const route = useRoute()
+const route = useRoute();
 
-import { getSiblings, trailing } from '../../composables/pages.js'
-
-const siblings = computed(() => getSiblings(route.path))
+const siblings = computed(() => getSiblings(route.path, routes))
 
 
 function getImage(side) {
@@ -24,7 +24,7 @@ function getImage(side) {
 .flex.flex-wrap.gap-4.items-stretch.justify-stretch.w-full(v-if="siblings")
   a.link.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.prev" 
-    :href="trailing(siblings.prev.path)"
+    :href="trailSlash(siblings.prev.path)"
     :style="{ backgroundImage: getImage('prev'), backgroundColor: siblings.prev?.color ? siblings.prev.color : 'transparent' }"
     ) 
     .panel
@@ -32,7 +32,7 @@ function getImage(side) {
       h4.text-lg.-mt-1 {{ siblings.prev.title }}
   a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
-    :href="trailing(siblings.next.path)"
+    :href="trailSlash(siblings.next.path)"
     :style="{ backgroundImage: getImage('next'), backgroundColor: siblings.next?.color ? siblings.next.color : 'transparent' }"
     ) 
     .panel

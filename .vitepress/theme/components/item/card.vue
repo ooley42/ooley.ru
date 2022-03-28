@@ -1,20 +1,17 @@
 <script setup>
-import { useData, useRoute } from 'vitepress'
-import { routes, pages, trailing } from '../../composables/pages.js'
-const { site, frontmatter, theme } = useData();
+import routes from '~pages'
+import { trailSlash, getPages } from 'vitepress-pages/browser'
 
+const pages = getPages(routes)
 
 const props = defineProps({
   page: Object
 })
 
 const children = computed(() => {
-  let p = pages[trailing(props.page.path)]
+  let p = pages[trailSlash(props.page.path)]
   return p ? p.length : null
 })
-
-// const pages = computed(() => theme.value.pages[props.page.data?.list])
-// const countPages = computed(() => Object.keys(pages.value || {}).length)
 
 function getDate(timestamp) {
   let date = new Date(timestamp)

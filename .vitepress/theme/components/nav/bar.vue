@@ -1,16 +1,11 @@
 <script setup>
-import { useData, useRoute } from 'vitepress'
+import { useRoute } from 'vitepress'
+import routes from '~pages'
+import { getPages } from 'vitepress-pages/browser'
 
-const { site, frontmatter, theme } = useData();
 const route = useRoute();
+const pages = getPages(routes)
 
-import { pages, routes, trailing, getMediaPath } from '../../composables/pages.js'
-
-
-const page = computed(() => routes.find(p => {
-  return trailing(p.path) == route.path
-})
-)
 
 </script>
 

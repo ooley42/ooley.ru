@@ -1,12 +1,11 @@
 <script setup>
-import { useData, useRoute } from 'vitepress'
+import { useRoute } from 'vitepress'
+import routes from '~pages'
+import { trailSlash, getParents } from 'vitepress-pages/browser'
 
-const { site } = useData();
 const route = useRoute();
 
-import { getParents, trailing } from '../../composables/pages.js'
-
-const parents = computed(() => getParents(route.path))
+const parents = computed(() => getParents(route.path, routes))
 
 function getImage(page) {
   if (page?.cover) {
@@ -33,7 +32,7 @@ function getImage(page) {
     style="flex: 1 1 auto" 
     v-for="(page, p) in parents" 
     :key="page.title" 
-    :href="trailing(page.path)"
+    :href="trailSlash(page.path)"
     :style="{ backgroundImage: getImage(page) }"
     )
     .panel.flex

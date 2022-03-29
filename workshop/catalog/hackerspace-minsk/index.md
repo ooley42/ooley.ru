@@ -55,7 +55,7 @@ coord: [53.87311779318168, 27.478048442986015]
 
 ## Как нас найти? Приходите.
 
-Мы находимся по адресу: ул. Беды, 45 ([карта](https://www.mapillary.com/map/im/98iGzWktd9tuLs-agQWy2w/photo)). Вход со двора. Наш подвальчик – слева от третьего подъезда и салона "Slim". Важно! У нас нет вахтёра, а, значит, попасть к нам можно только вместе с кем-нибудь или в день открытых дверей. Поэтому, прежде чем приходить в первый раз, уточните время в [календаре](https://hackerspace.by/calendar), [рассылке](https://groups.google.com/d/forum/hackerspace-minsk), группе [Facebook](https://www.facebook.com/hs.minsk), [Вконтакте](https://vk.com/hackerspace_minsk) или в чате [Telegram](https://telegram.me/joinchat/Bxa3CT7ai59igvC1dP95Aw).
+Мы находимся по адресу: ул. Беды, 45 ([карта](https://www.mapillary.com/catalog/im/98iGzWktd9tuLs-agQWy2w/photo)). Вход со двора. Наш подвальчик – слева от третьего подъезда и салона "Slim". Важно! У нас нет вахтёра, а, значит, попасть к нам можно только вместе с кем-нибудь или в день открытых дверей. Поэтому, прежде чем приходить в первый раз, уточните время в [календаре](https://hackerspace.by/calendar), [рассылке](https://groups.google.com/d/forum/hackerspace-minsk), группе [Facebook](https://www.facebook.com/hs.minsk), [Вконтакте](https://vk.com/hackerspace_minsk) или в чате [Telegram](https://telegram.me/joinchat/Bxa3CT7ai59igvC1dP95Aw).
 
 И не забудьте почитать [правила](/theory/research/minsk-rules/).
 

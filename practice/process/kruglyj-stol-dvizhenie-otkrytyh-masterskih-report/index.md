@@ -26,12 +26,12 @@ cover: "DSCN2174.jpg"
 
 Во встрече приняли участие:
 
-- Константин Скворцов, [ПК "Дар Труда"](/workshop/map/dar-truda/)
+- Константин Скворцов, [ПК "Дар Труда"](/workshop/catalog/dar-truda/)
 - Денис Старов, [OOLEY.ru](https://ooley.ru/)
 - Сергей Царев, [Механические Деревянные Шестеренки](http://woodgears.ru)
 - Владимир Христофоров, [Crafts Station](/workshop/tour/crafts-station/)
 - Татьяна Брусова, [Бюро Находок](http://buro-nahodok.ru)
-- Георгий Дудайти, [Про.Движение](/workshop/map/pro-dvizhenie/)
+- Георгий Дудайти, [Про.Движение](/workshop/catalog/pro-dvizhenie/)
 - Ирина Дорожкова, [Гуслица](http://art-guslitsa.ru)
 - Владимир Самойлов, [Designet.ru](http://designet.ru/)
 - Оксана Королёва, Департамент культуры г. Москвы

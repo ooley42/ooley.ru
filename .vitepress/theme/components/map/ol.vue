@@ -1,4 +1,5 @@
 <script setup>
+import { useStorage } from '@vueuse/core'
 import 'ol/ol.css'
 import { Map, View } from 'ol';
 import OSM from 'ol/source/OSM';
@@ -26,7 +27,7 @@ const props = defineProps({
   page: { type: Object },
 })
 
-const sel = ref(props.page)
+const sel = useStorage('map-sel', null)
 
 const places = computed(() => {
   const pl = []
@@ -173,7 +174,7 @@ onMounted(() => {
 
 <template lang="pug">
 div.relative
-  #map.h-820px.max-h-75vh.overflow-hidden.cursor-pointer(tabindex="1")
+  #map.h-820px.max-h-80vh.overflow-hidden.cursor-pointer(tabindex="1")
   transition(name="fade" mode="out-in")
     a.flex.flex-wrap.absolute.bottom-0.z-2.bg-light-200.w-full.bg-opacity-80.dark_bg-dark-200.dark_bg-opacity-80.backdrop-filter.backdrop-blur-sm(v-if="place" :key="place" :href="place.path + '/'") 
       .p-2.flex-1.justify-center.flex.items-center

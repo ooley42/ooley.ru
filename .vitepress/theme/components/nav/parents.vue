@@ -1,7 +1,7 @@
 <script setup>
 import { useRoute } from 'vitepress'
 import routes from '~pages'
-import { trailSlash, getParents } from 'vitepress-pages/browser'
+import { normalize, getParents } from 'vitepress-pages/browser'
 
 const route = useRoute();
 
@@ -32,7 +32,7 @@ function getImage(page) {
     style="flex: 1 1 auto" 
     v-for="(page, p) in parents" 
     :key="page.title" 
-    :href="trailSlash(page.path)"
+    :href="normalize(page.path)"
     :style="{ backgroundImage: getImage(page) }"
     )
     .panel.flex

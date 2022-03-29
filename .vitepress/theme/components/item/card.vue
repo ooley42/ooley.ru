@@ -1,6 +1,6 @@
 <script setup>
 import routes from '~pages'
-import { trailSlash, getPages } from 'vitepress-pages/browser'
+import { normalize, getPages } from 'vitepress-pages/browser'
 
 const pages = getPages(routes)
 
@@ -9,7 +9,7 @@ const props = defineProps({
 })
 
 const children = computed(() => {
-  let p = pages[trailSlash(props.page.path)]
+  let p = pages[normalize(props.page.path)]
   return p ? p.length : null
 })
 

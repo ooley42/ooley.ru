@@ -1,5 +1,5 @@
 ---
-title: «Ангар»
+title: Ангар
 subtitle: Общественные мастерские
 date: 2020-10-20
 icon: logo.jpg

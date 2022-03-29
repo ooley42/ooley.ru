@@ -37,7 +37,7 @@ const backgroundImage = computed(() => {
         img.min-w-50.max-w-62.rounded-lg.absolute.mt-12(v-if="page?.icon" :src="page.icon" alt="Page icon")
         page-heading.max-w-3xl.w-full.shadow-lg(:style="{ marginTop: page?.cover || frontmatter.home || page?.icon ? '40vh' : '0' }")
       .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
-        map-ol.w-full(v-if="page?.map" :routes="routes" :route="route.path" :key="route.path")
+        map-ol.w-full(v-if="page?.map" :routes="routes" :route="page.map" :key="route.path")
 
         .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
           page-info

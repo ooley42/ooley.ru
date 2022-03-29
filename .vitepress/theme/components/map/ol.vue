@@ -173,9 +173,9 @@ onMounted(() => {
 
 <template lang="pug">
 div.relative
-  #map.h-420px.overflow-hidden.cursor-pointer(tabindex="1")
+  #map.h-820px.max-h-75vh.overflow-hidden.cursor-pointer(tabindex="1")
   transition(name="fade" mode="out-in")
-    .flex.flex-wrap.absolute.bottom-0.z-2.bg-light-200.w-full.bg-opacity-80.dark_bg-dark-200.dark_bg-opacity-80.backdrop-filter.backdrop-blur-sm(v-if="place" :key="place" :href="place.path + '/'") 
+    a.flex.flex-wrap.absolute.bottom-0.z-2.bg-light-200.w-full.bg-opacity-80.dark_bg-dark-200.dark_bg-opacity-80.backdrop-filter.backdrop-blur-sm(v-if="place" :key="place" :href="place.path + '/'") 
       .p-2.flex-1.justify-center.flex.items-center
         img.w-20.max-w-40vw(:src="place.icon")
       .px-2.py-6.flex-auto.gap-1.flex.flex-col

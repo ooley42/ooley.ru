@@ -1,0 +1,38 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke: #eddb12;
+      }
+
+      .cls-2 {
+        stroke: #52bb7f;
+      }
+
+      .cls-3 {
+        stroke: #f05a25;
+      }
+
+      .cls-4 {
+        stroke: #6dcef5;
+      }
+
+      .cls-5 {
+        stroke: #93278f;
+      }
+    </style>
+  </defs>
+  <title>Artboard 24</title>
+  <rect class="cls-1" x="44.32" y="45.45" width="11.37" height="11.37"/>
+  <path class="cls-2" d="M50,40.26a10.35,10.35,0,0,1,9,5.43,11.28,11.28,0,0,1,0,10.87,10.21,10.21,0,0,1-18,0A11.28,11.28,0,0,1,41,45.7,10.35,10.35,0,0,1,50,40.26Z"/>
+  <polygon class="cls-3" points="50 23.22 74.77 66.12 25.23 66.12 50 23.22"/>
+  <polygon class="cls-4" points="77.69 67.93 50 83.92 22.31 67.93 22.31 35.96 50 19.97 77.69 35.96 77.69 67.93"/>
+  <polygon class="cls-5" points="50 10.12 89.69 40.59 74.53 89.88 25.47 89.88 10.31 40.59 50 10.12"/>
+</svg>

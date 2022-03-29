@@ -15,7 +15,7 @@ const pages = getPages(routes)
     a.link.no-underline.transition-all.duration-300.text-xl.justify-center(
       v-for="page in pages['/']"
       :key= "page.path"
-      :href="page.path + '/'"
+      :href="page.path"
       :class="{ active: route.path.includes(page.path) }"
       )
       h4.text-lg {{ page.title }} 

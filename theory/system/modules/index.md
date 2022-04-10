@@ -10,3 +10,5 @@ cover: zdaniya-05.png
 ![](./zdaniya-04.png)
 ![](./zdaniya-05.png)
 ![](./zdaniya-06.png)
+
+![](./circle.jpg)

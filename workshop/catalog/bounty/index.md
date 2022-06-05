@@ -1,6 +1,7 @@
 ---
 title: Баунти
-date: Ремесленный центр
+subtitle: Ремесленный центр
+date: 2022-06-04
 icon: logo.jpg
 cover: 25.jpg
 youtube: https://www.youtube.com/watch?v=_0WXlaDTZ0s

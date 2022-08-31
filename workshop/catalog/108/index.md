@@ -1,9 +1,9 @@
 ---
 title: Цех 108
-date: Столярный коворкинг
-date: 2022-06-05
+subtitle: Столярный коворкинг
+date: 2022-06-29
 icon: logo.jpg
-cover: cover.jpeg
+cover: cover.jpg
 status: open
 address: Дачная улица, 1с12
 place: ОРС

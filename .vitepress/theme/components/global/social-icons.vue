@@ -12,7 +12,7 @@ const props = defineProps({
     ion-at
   a(v-if="links?.instagram" :href="`https://instagram.com/${links.instagram}`" target="_blank" title="Instagram")
     ion-logo-instagram
-  a(v-if="links?.telegram" :href="`https://t.me/${links.instagram}`" target="_blank" title="Telegram")
+  a(v-if="links?.telegram" :href="`https://t.me/${links.telegram}`" target="_blank" title="Telegram")
     mdi-telegram
   a(v-if="links?.vk" :href="`https://vk.com/${links.vk}`" target="_blank" title="VK")
     ion-logo-vk

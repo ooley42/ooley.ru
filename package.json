@@ -12,23 +12,23 @@
 		"serve": "vitepress serve --port 5055"
 	},
 	"dependencies": {
-		"@vueuse/core": "9.3.0",
+		"@vueuse/core": "9.3.1",
 		"fuse.js": "^6.6.2",
 		"ol": "^7.1.0",
 		"vitepress-pages": "^0.8.5",
 		"vue": "^3.2.41"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.1.122",
+		"@iconify/json": "^2.1.124",
 		"markdown-it-classy": "^0.2.0",
 		"markdown-it-container": "^3.0.0",
 		"markdown-it-external-links": "^0.0.6",
 		"pug": "3.0.2",
 		"unplugin-auto-import": "^0.11.2",
-		"unplugin-icons": "^0.14.11",
+		"unplugin-icons": "^0.14.12",
 		"unplugin-vue-components": "^0.22.8",
 		"vite": "3.1.8",
-		"vite-plugin-pages": "^0.26.0",
+		"vite-plugin-pages": "^0.27.0",
 		"vite-plugin-pages-sitemap": "^1.4.0",
 		"vite-plugin-windicss": "^1.8.8",
 		"vitepress": "1.0.0-alpha.21",

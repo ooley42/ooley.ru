@@ -1,11 +1,9 @@
 <script setup>
-
+import routes from '~pages'
+import { getPage, getPages } from 'vitepress-pages/browser'
 import { useData, useRoute } from 'vitepress'
 
 const { frontmatter } = useData();
-
-import routes from '~pages'
-import { getPage, getPages } from 'vitepress-pages/browser'
 
 const route = useRoute();
 
@@ -41,7 +39,6 @@ const backgroundImage = computed(() => {
 
         .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
           page-info
-          //- map-ol.w-full(v-if="page?.coord" :showCenter="true" :page="page" :center="page?.coord" :route="route.path" :key="route.path")
           youtube-embed(v-if="page?.youtube" :link="page?.youtube")
           vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
 
@@ -73,6 +70,7 @@ const backgroundImage = computed(() => {
 
 .screen-button {
   @apply p-4 rounded-full transition ease-in-out cursor-pointer;
+
   &:hover {
     @apply bg-light-100 shadow-lg dark_bg-dark-800;
   }
@@ -80,8 +78,10 @@ const backgroundImage = computed(() => {
 
 a.link {
   @apply bg-cover bg-center flex-auto relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark_(bg-dark-100/10) hover_(bg-light-100 dark_bg-dark-100);
+
   &.active {
     @apply bg-light-100 bg-opacity-70 z-2 dark_bg-dark-200 dark_bg-opacity-70;
+
     &:hover {
       @apply bg-opacity-100 dark_bg-opacity-100;
     }

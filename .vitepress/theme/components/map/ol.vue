@@ -48,10 +48,10 @@ onMounted(() => {
       geometry: new Point(fromLonLat([city.coord[1], city.coord[0]])),
       title: city.title,
       path: city.path,
-      icon: city.icon
+      icon: city.icon,
     })
 
-    if (city.icon) {
+    if (false && city.icon) {
 
       const image = new Icon({
         anchor: [0.5, 0.5],
@@ -66,23 +66,23 @@ onMounted(() => {
     } else {
       feature.setStyle(new Style({
         image: new Circle({
-          radius: 6,
-          stroke: new Stroke({ color: '#f80', width: 2 }),
-          fill: new Stroke({ color: '#f80' }),
+          radius: 12,
+          stroke: new Stroke({ color: '#f80', width: 8 }),
+          fill: new Stroke({ color: '#f805' }),
         }),
       }))
     }
     return feature
   })
 
-  cities.forEach((city, c) => {
-    const size = 80
-    const img = new Image()
-    img.src = city.getProperties()?.icon
-    img.onload = () => {
-      cities[c].getStyle().getImage().setScale(size / img.width)
-    }
-  })
+  // cities.forEach((city, c) => {
+  //   const size = 80
+  //   const img = new Image()
+  //   img.src = city.getProperties()?.icon
+  //   img.onload = () => {
+  //     cities[c].getStyle().getImage().setScale(size / img.width)
+  //   }
+  // })
 
   const pointSource = new VectorSource({
     features: cities,
@@ -130,7 +130,7 @@ onMounted(() => {
   ]
 
   if (props.showLines) {
-    layers.push(linesLayer)
+    layers.push(lineLayer)
   }
 
   const map = new Map({
@@ -140,7 +140,6 @@ onMounted(() => {
       zoom: 4,
     }),
     target: 'map',
-
   });
 
   const selected = new Style({
@@ -186,4 +185,5 @@ div.relative
 </template>
 
 <style scoped>
+
 </style>

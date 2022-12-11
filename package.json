@@ -19,19 +19,19 @@
 		"vue": "^3.2.45"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.1.143",
+		"@iconify/json": "^2.1.150",
 		"markdown-it-classy": "^0.2.0",
 		"markdown-it-container": "^3.0.0",
 		"markdown-it-external-links": "^0.0.6",
 		"pug": "3.0.2",
-		"unplugin-auto-import": "^0.11.5",
+		"unplugin-auto-import": "^0.12.0",
 		"unplugin-icons": "^0.14.14",
 		"unplugin-vue-components": "^0.22.11",
-		"vite": "3.2.4",
+		"vite": "4.0.0",
 		"vite-plugin-pages": "^0.27.1",
 		"vite-plugin-pages-sitemap": "^1.4.0",
 		"vite-plugin-windicss": "^1.8.8",
-		"vitepress": "1.0.0-alpha.29",
+		"vitepress": "1.0.0-alpha.31",
 		"windicss": "^3.5.6"
 	}
 }

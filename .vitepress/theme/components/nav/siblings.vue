@@ -42,7 +42,7 @@ function getImage(side) {
 
 <style lang="postcss" scoped>
 .link .panel {
-  @apply z-10 p-4 m-2 shadow-md bg-light-200 bg-opacity-90 dark_bg-dark-200 dark_bg-opacity-90 rounded flex items-center flex-wrap;
+  @apply z-10 p-4 m-2 shadow-md bg-light-200 bg-opacity-90 dark-bg-dark-200 dark-bg-opacity-90 rounded flex items-center flex-wrap;
 }
 
 .link::before {
@@ -57,6 +57,7 @@ function getImage(side) {
   left: 0px;
   background-color: hsla(0, 0%, 100%, 0.6);
 }
+
 .dark .link::before {
   background-color: hsla(0, 0%, 0%, 0.6);
 }

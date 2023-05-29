@@ -34,7 +34,7 @@ const backgroundImage = computed(() => {
         //- img.w-full.fixed.top-0(:src="page?.cover" v-if="page?.cover" alt="Page cover")
         img.min-w-50.max-w-62.rounded-lg.absolute.mt-12(v-if="page?.icon" :src="page.icon" alt="Page icon")
         page-heading.max-w-3xl.w-full.shadow-lg(:style="{ marginTop: page?.cover || frontmatter.home || page?.icon ? '40vh' : '0' }")
-      .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark_bg-dark-500.dark_bg-opacity-99(style="flex: 1000 1 420px")
+      .shadow-xl.relative.flex.flex-col.gap-6.w-full.backdrop-filter.backdrop-blur-lg.items-center.bg-light-500.bg-opacity-99.z-2.dark-bg-dark-500.dark-bg-opacity-99(style="flex: 1000 1 420px")
         map-ol.w-full(v-if="page?.map" :routes="routes" :route="page.map" :key="route.path")
 
         .flex.flex-col.items-stretch.max-w-3xl.w-full.shadow-lg
@@ -42,7 +42,7 @@ const backgroundImage = computed(() => {
           youtube-embed(v-if="page?.youtube" :link="page?.youtube")
           vimeo-embed(v-if="page?.vimeo" :link="page.vimeo")
 
-          content.content.bg-light-200.dark_bg-dark-300(v-if="!page?.empty")
+          content.content.bg-light-200.dark-bg-dark-300(v-if="!page?.empty")
         .flex.flex-wrap.gap-8.my-10.w-full.max-w-3xl(style="flex: 1 1 100%" v-if="pages[route.path] && Object.keys(pages[route.path]).length > 0")
           item-card(
             v-for="page in pages[route.path]"
@@ -70,21 +70,21 @@ const backgroundImage = computed(() => {
 
 .screen-button {
   @apply p-4 rounded-full transition ease-in-out cursor-pointer;
+}
 
-  &:hover {
-    @apply bg-light-100 shadow-lg dark_bg-dark-800;
-  }
+.screen-button:hover {
+  @apply bg-light-100 shadow-lg dark-bg-dark-800;
 }
 
 a.link {
-  @apply bg-cover bg-center flex-auto relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark_(bg-dark-100/10) hover_(bg-light-100 dark_bg-dark-100);
+  @apply bg-cover bg-center flex-auto relative flex items-center text-sm text-center transition-all duration-500 no-underline bg-light-500/60 dark-(bg-dark-100/10) hover_(bg-light-100 dark-bg-dark-100);
+}
 
-  &.active {
-    @apply bg-light-100 bg-opacity-70 z-2 dark_bg-dark-200 dark_bg-opacity-70;
+a.link.active {
+  @apply bg-light-100 bg-opacity-70 z-2 dark-bg-dark-200 dark-bg-opacity-70;
+}
 
-    &:hover {
-      @apply bg-opacity-100 dark_bg-opacity-100;
-    }
-  }
+a.link.active:hover {
+  @apply bg-opacity-100 dark-bg-opacity-100;
 }
 </style>

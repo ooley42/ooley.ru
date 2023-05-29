@@ -25,6 +25,6 @@ header {
 }
 
 .info {
-  @apply flex flex-col items-center gap-2 w-full p-4 bg-light-600 dark_bg-dark-500;
+  @apply flex flex-col items-center gap-2 w-full p-4 bg-light-600 dark-bg-dark-500;
 }
 </style>

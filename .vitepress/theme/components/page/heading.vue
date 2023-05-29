@@ -14,9 +14,10 @@ const { frontmatter } = useData();
 <style lang="postcss" scoped>
 .info {
   flex: 1 1 100%;
-  @apply shadow-2xl flex p-8 md_p-16 flex-col gap-2 z-2 items-center text-center rounded-t-sm backdrop-filter backdrop-blur-md bg-light-200 bg-opacity-90 dark_bg-dark-200 dark_bg-opacity-90;
-  & .link {
-    @apply p-4;
-  }
+  @apply shadow-2xl flex p-8 md-p-16 flex-col gap-2 z-2 items-center text-center rounded-t-sm backdrop-filter backdrop-blur-md bg-light-200 bg-opacity-90 dark-bg-dark-200 dark-bg-opacity-90;
+}
+
+.info .link {
+  @apply p-4;
 }
 </style>

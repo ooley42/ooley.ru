@@ -8,7 +8,7 @@ const page = computed(() => getPage(route.path, routes))
 </script>
 
 <template lang='pug'>
-.bg-light-700.dark_bg-dark-400.p-6.border-dark-200.dark_border-light-400.rounded-lg.flex.flex-col.gap-2.items-center(
+.bg-light-700.dark-bg-dark-400.p-6.border-dark-200.dark-border-light-400.rounded-lg.flex.flex-col.gap-2.items-center(
   v-if="page?.city || page?.place || page?.address || page?.tel || page?.status || page?.hours || frontmatter?.url"
 )
   .font-bold.text-2xl(v-if="page?.city") {{ page.city }}
@@ -26,5 +26,4 @@ const page = computed(() => getPage(route.path, routes))
 
       
 </template>
-<style lang="postcss" scoped>
-</style>
+<style lang="postcss" scoped></style>

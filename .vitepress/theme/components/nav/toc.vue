@@ -16,7 +16,7 @@ onClickOutside(target, (event) => open.value = false)
   button.screen-button.absolute.text-2xl.self-start.z-30.left-4.top-4.z-400(@mousedown="open = !open")
     ph-list-bullets
   transition(name="fade")
-    .rounded-lg.leading-tight.shadow-lg.absolute.top-18.left-4.z-20.gap-2.flex.flex-col.py-6.px-4.text-left.gap-1.bg-light-500.dark_bg-dark-100.w-xs.max-h-90vh.overflow-y-scroll(
+    .rounded-lg.leading-tight.shadow-lg.absolute.top-18.left-4.z-20.gap-2.flex.flex-col.py-6.px-4.text-left.gap-1.bg-light-500.dark-bg-dark-100.w-xs.max-h-90vh.overflow-y-scroll(
       v-if="open"
       ref="target"
       )

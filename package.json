@@ -12,29 +12,28 @@
 		"serve": "vitepress serve --port 5055"
 	},
 	"dependencies": {
-		"@unocss/reset": "0.52.4",
 		"@unocss/extractor-pug": "^0.52.4",
-		"@vueuse/core": "9.11.1",
+		"@unocss/reset": "0.52.4",
+		"@vueuse/core": "10.1.2",
 		"fuse.js": "^6.6.2",
-		"ol": "^7.2.2",
+		"ol": "^7.3.0",
 		"unocss": "^0.52.4",
-		"vitepress-pages": "^1.0.3",
-		"vue": "^3.2.45"
+		"vitepress-pages": "^1.0.5",
+		"vue": "^3.3.4"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.12",
+		"@iconify/json": "^2.2.71",
+		"@vue/language-plugin-pug": "1.7.0",
 		"markdown-it-classy": "^0.2.0",
 		"markdown-it-container": "^3.0.0",
 		"markdown-it-external-links": "^0.0.6",
 		"pug": "3.0.2",
-		"unplugin-auto-import": "^0.12.2",
-		"unplugin-icons": "^0.15.1",
-		"unplugin-vue-components": "^0.22.12",
-		"vite": "4.0.4",
-		"vite-plugin-pages": "^0.28.0",
-		"vite-plugin-pages-sitemap": "^1.4.5",
-		"vite-plugin-windicss": "^1.8.10",
-		"vitepress": "1.0.0-alpha.40",
-		"@vue/language-plugin-pug": "1.7.0"
+		"unplugin-auto-import": "^0.16.2",
+		"unplugin-icons": "^0.16.1",
+		"unplugin-vue-components": "^0.24.1",
+		"vite": "4.0.5",
+		"vite-plugin-pages": "^0.30.1",
+		"vite-plugin-pages-sitemap": "^1.5.0",
+		"vitepress": "1.0.0-beta.1"
 	}
 }

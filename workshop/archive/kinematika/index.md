@@ -1,6 +1,6 @@
 ---
 title: "Кинематика"
-subtitle: Механообрабатывающий коворкинг
+description: Механообрабатывающий коворкинг
 date: "2018-10-28"
 icon: logo.png
 cover: cover.jpg

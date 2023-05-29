@@ -1,6 +1,6 @@
 ---
 title: Музыка
-subtitle:
+description:
 date: 2022-03-03
 cover: wes-hicks.jpg
 ---

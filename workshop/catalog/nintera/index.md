@@ -1,6 +1,6 @@
 ---
 title: "Нинтера"
-subtitle: Кузня
+description: Кузня
 date: "2017-09-12"
 cover: kuznya.jpg
 tel: +7 966 342-0966

@@ -1,6 +1,6 @@
 ---
 title: Keep work
-subtitle: Школа деревообработки
+description: Школа деревообработки
 date: "2016-11-07"
 icon: "keepwork.png"
 cover: photo.jpg

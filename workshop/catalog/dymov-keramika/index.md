@@ -3,7 +3,7 @@ title: "Дымов керамика"
 date: "2016-10-18"
 cover: "cover.jpg"
 icon: circle.jpg
-subtitle: Школа керамики в Москве
+description: Школа керамики в Москве
 city: г. Москва
 address: проспект Мира, д. 119 стр. 186
 place: ВДНХ

@@ -1,6 +1,6 @@
 ---
 title: "Злой Лофт"
-subtitle: Трудовой коворкинг
+description: Трудовой коворкинг
 date: "2018-12-20"
 icon: logo.jpg
 city: г. Санкт-Петербург

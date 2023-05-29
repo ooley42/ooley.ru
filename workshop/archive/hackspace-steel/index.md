@@ -1,6 +1,6 @@
 ---
 title: "Сталь"
-subtitle: Хакспейс
+description: Хакспейс
 date: "2015-07-23"
 icon: logo.jpg
 email: steelhackspace@gmail.com

@@ -1,6 +1,6 @@
 ---
 title: "Sandler"
-subtitle: Craft Training Center
+description: Craft Training Center
 date: "2016-12-22"
 icon: "logo2016-.png"
 cover: 002.jpg

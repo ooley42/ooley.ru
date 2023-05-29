@@ -1,6 +1,6 @@
 ---
 title: Дизайн студия
-subtitle: Макетная мастерская и печатный салон
+description: Макетная мастерская и печатный салон
 date: 2020-05-05
 cover: jo-szczepanska.jpg
 ---

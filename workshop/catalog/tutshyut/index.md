@@ -1,6 +1,6 @@
 ---
 title: "ТутШьют"
-subtitle: Швейное пространство
+description: Швейное пространство
 date: "2018-05-17"
 icon: logo.png
 cover: cover.jpg

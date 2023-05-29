@@ -1,6 +1,6 @@
 ---
 title: "Антарес"
-subtitle: ЦМИТ
+description: ЦМИТ
 date: "2018-07-18"
 icon: "Logo_big3.png"
 cover: cover.jpg

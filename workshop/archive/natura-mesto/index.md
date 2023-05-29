@@ -1,6 +1,6 @@
 ---
 title: "НАТУРА МЕСТО"
-subtitle: Студия
+description: Студия
 date: "2018-12-06"
 cover: "STfBs3wIVqo.jpg"
 address: ул. Малая Семеновская д 3а, стр 1

@@ -1,6 +1,6 @@
 ---
 title: "Дом моды"
-subtitle: Workplace в Сыктывкаре
+description: Workplace в Сыктывкаре
 date: "2016-11-10"
 icon: logo.png
 address: ул. Орджоникидзе, 16

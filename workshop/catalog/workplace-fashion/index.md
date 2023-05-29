@@ -1,6 +1,6 @@
 ---
 title: "Workplace fashion"
-subtitle: Коворкинг для дизайнеров одежды
+description: Коворкинг для дизайнеров одежды
 date: "2021-03-30"
 icon: "full_logo.png"
 cover: plan.png

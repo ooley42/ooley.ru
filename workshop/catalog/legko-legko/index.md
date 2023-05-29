@@ -1,6 +1,6 @@
 ---
 title: "Легко-Легко"
-subtitle: Пространство
+description: Пространство
 date: "2015-03-30"
 icon: "legko-map.png"
 cover: logo_ver_20_07_16.png

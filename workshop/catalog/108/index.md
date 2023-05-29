@@ -1,6 +1,6 @@
 ---
 title: Цех 108
-subtitle: Столярный коворкинг
+description: Столярный коворкинг
 date: 2022-06-29
 icon: logo.jpg
 cover: cover.jpg

@@ -3,7 +3,7 @@ title: "Бревно"
 date: "2017-05-18"
 cover: cover.jpg
 icon: logo.jpg
-subtitle: Открытая столярная мастерская
+description: Открытая столярная мастерская
 city: г. Владивосток
 place: Эгершельд
 address: ул. Крыгина, дом 77

@@ -1,6 +1,6 @@
 ---
 title: "Академия"
-subtitle: ЦМИТ
+description: ЦМИТ
 date: "2015-05-28"
 icon: logo.jpg
 cover: place.jpg

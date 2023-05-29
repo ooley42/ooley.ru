@@ -1,6 +1,6 @@
 ---
 title: "Минский хакерспейс"
-subtitle: Мастерская-клуб
+description: Мастерская-клуб
 date: "2018-08-30"
 icon: "4TWzXIjpsdg.jpg"
 cover: cover.jpg

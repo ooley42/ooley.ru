@@ -1,6 +1,6 @@
 ---
 title: "ОМ"
-subtitle: Открытая мастерская
+description: Открытая мастерская
 date: "2020-01-13"
 cover: "YuFW2ZTyaD4.jpg"
 city: г. Калуга

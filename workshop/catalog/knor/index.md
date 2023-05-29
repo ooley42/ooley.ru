@@ -1,6 +1,6 @@
 ---
 title: "KNOR"
-subtitle: Гончарная мастерская
+description: Гончарная мастерская
 date: "2016-11-07"
 icon: "image.png"
 cover: photo.jpg

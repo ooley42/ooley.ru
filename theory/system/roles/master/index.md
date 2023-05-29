@@ -1,6 +1,6 @@
 ---
 title: Мастер
-subtitle: Самодостаточный творец
+description: Самодостаточный творец
 icon: master.svg
 date: 2017-01-01
 color: "#6B168733"

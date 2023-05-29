@@ -8,7 +8,7 @@ const { frontmatter } = useData();
 <template lang='pug'>
 .info
   h1.text-4xl.mt-4.mb-6.font-bold {{ frontmatter.title }}
-  .text-xl(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
+  .text-xl(v-if="frontmatter.description") {{ frontmatter.description }}
        
 </template>
 <style lang="postcss" scoped>

@@ -3,7 +3,7 @@ title: "Древрика"
 date: "2019-09-29"
 cover: "cover.jpg"
 icon: logo.png
-subtitle: Открытая столярная мастерская
+description: Открытая столярная мастерская
 city: г. Владивосток
 address: Океанский проспект, 66
 place: Фрунзенский район

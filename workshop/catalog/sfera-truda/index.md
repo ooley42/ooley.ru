@@ -1,6 +1,6 @@
 ---
 title: "Сфера труда"
-subtitle: Открытая ремесленная мастерская
+description: Открытая ремесленная мастерская
 date: "2016-12-23"
 icon: logo.jpg
 cover: cover.jpg

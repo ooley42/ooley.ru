@@ -1,6 +1,6 @@
 ---
 title: "Проектные мастерские"
-subtitle: ЦМИТ
+description: ЦМИТ
 date: "2019-10-16"
 icon: "logo.png"
 cover: cover.jpg

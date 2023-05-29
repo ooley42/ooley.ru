@@ -1,6 +1,6 @@
 ---
 title: Ангар
-subtitle: Общественные мастерские
+description: Общественные мастерские
 date: 2020-10-20
 icon: logo.jpg
 address: Большая Монетная, 24АБ

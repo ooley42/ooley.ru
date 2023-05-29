@@ -1,6 +1,6 @@
 ---
 title: Карта
-subtitle: Атлас открытых мастерских России и ближнего зарубежья
+description: Атлас открытых мастерских России и ближнего зарубежья
 date: 2022-03-23
 map: /workshop/catalog/
 cover: waldemar-brandt.jpg

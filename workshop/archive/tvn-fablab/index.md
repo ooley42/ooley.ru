@@ -1,6 +1,6 @@
 ---
 title: "ТВН"
-subtitle: Фаблаб
+description: Фаблаб
 date: "2016-12-23"
 icon: "tvn_logo.png"
 youtube: https://youtu.be/3YDk9G3qk-o

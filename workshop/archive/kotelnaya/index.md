@@ -1,6 +1,6 @@
 ---
 title: "Котельная"
-subtitle: Открытая мастерская
+description: Открытая мастерская
 date: "2016-05-23"
 icon: logo.jpg
 city: г. Москва

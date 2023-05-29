@@ -3,7 +3,7 @@ title: Mastergrad
 date: "2016-11-07"
 icon: "signet-copy.png"
 cover: ac.webp
-subtitle: Академия
+description: Академия
 city: г. Москва
 address: Алтуфьевское ш., д.1, БЦ "Бета-Центр"
 place: м.Владыкино

@@ -1,6 +1,6 @@
 ---
 title: "Академия стекла"
-subtitle: Творческое пространство
+description: Творческое пространство
 date: "2015-03-31"
 cover: "Czv3YST8Zoc.jpg"
 icon: logo.png

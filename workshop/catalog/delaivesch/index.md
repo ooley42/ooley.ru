@@ -1,6 +1,6 @@
 ---
 title: "Делай вещь"
-subtitle: Центр производственной культуры
+description: Центр производственной культуры
 date: "2016-01-07"
 icon: "logo.jpg"
 cover: cover.jpg

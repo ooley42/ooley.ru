@@ -1,7 +1,7 @@
 ---
 title: "Fashion Art"
 date: "2017-11-12"
-subtitle: Швейный коворкинг
+description: Швейный коворкинг
 type: workshop
 cover: slide2.jpg
 icon: logo.jpg

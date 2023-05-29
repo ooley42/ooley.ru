@@ -7,7 +7,7 @@ import routes from '~pages'
 const fuse = new Fuse(routes, {
   includeScore: true,
   ignoreLocation: true,
-  keys: ["title", 'subtitle', 'city', 'place'],
+  keys: ["title", 'description', 'city', 'place'],
 });
 
 const open = ref()
@@ -48,7 +48,7 @@ onClickOutside(target, (event) => open.value = false)
           :style="{ opacity: 1 - candidate.score / 2 }"
         ) 
           .font-bold {{ candidate.item?.title }}
-          .text-sm {{ candidate.item?.subtitle }} 
+          .text-sm {{ candidate.item?.description }} 
           .text-sm.inline-flex(v-if="candidate.item?.city || candidate.item?.place")
             .font-bold.whitespace-nowrap {{ candidate.item?.city }} 
             .ml-2 {{ candidate.item?.place }}

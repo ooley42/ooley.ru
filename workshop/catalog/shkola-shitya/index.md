@@ -1,6 +1,6 @@
 ---
 title: "Женская школа кройки и шитья"
-subtitle: Школа шитья
+description: Школа шитья
 date: "2017-12-05"
 icon: logo.png
 cover: KIV2048.jpeg

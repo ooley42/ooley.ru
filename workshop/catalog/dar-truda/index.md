@@ -1,6 +1,6 @@
 ---
 title: "Дар труда"
-subtitle: Производственный коворкинг
+description: Производственный коворкинг
 date: "2014-11-13"
 icon: "logo.png"
 cover: cover.jpg

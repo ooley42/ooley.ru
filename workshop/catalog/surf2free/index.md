@@ -1,6 +1,6 @@
 ---
 title: "Сёрфлагерь"
-subtitle: База отдыха
+description: База отдыха
 date: "2018-07-19"
 icon: logo.png
 url: https://surf2free.ru

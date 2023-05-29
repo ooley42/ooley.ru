@@ -1,6 +1,6 @@
 ---
 title: Швейная
-subtitle: Работа с тканями и фурнитурой
+description: Работа с тканями и фурнитурой
 date: 2021-05-13
 cover: annie-spratt.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 title: Artchaos
-subtitle: Творческий коворкинг
+description: Творческий коворкинг
 date: 2022-03-24
 city: г. Новосибирск
 place: Академгородок

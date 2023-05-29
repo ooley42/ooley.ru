@@ -1,6 +1,6 @@
 ---
 title: "Своими руками"
-subtitle: Пространство для творчества
+description: Пространство для творчества
 date: "2018-04-22"
 icon: logo.jpg
 cover: place.jpeg

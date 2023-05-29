@@ -1,6 +1,6 @@
 ---
 title: "LoVelo"
-subtitle: Профессиональная спортивная мастерская
+description: Профессиональная спортивная мастерская
 date: "2018-11-04"
 icon: logo.jpg
 cover: cover.jpg

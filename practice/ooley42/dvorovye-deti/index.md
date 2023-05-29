@@ -1,6 +1,6 @@
 ---
 title: "Дворовые дети и сторож"
-subtitle: Местные жители
+description: Местные жители
 date: "2015-07-01"
 cover: "cctL3aesNEQ.jpg"
 ---

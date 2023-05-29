@@ -1,6 +1,6 @@
 ---
 title: "Библиотека инструментов Торонто"
-subtitle: История и принципы работы
+description: История и принципы работы
 date: "2016-07-25"
 icon: "logo.png"
 youtube: https://youtu.be/zPw3KzrGLCA

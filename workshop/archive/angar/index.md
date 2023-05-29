@@ -1,6 +1,6 @@
 ---
 title: "Ангар"
-subtitle: Фаблаб
+description: Фаблаб
 date: "2016-12-22"
 icon: "logo-1.png"
 address: ул. Затонская, 44г

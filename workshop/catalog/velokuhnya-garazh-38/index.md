@@ -1,6 +1,6 @@
 ---
 title: "Гараж 38"
-subtitle: Велокухня
+description: Велокухня
 date: "2015-05-28"
 cover: cover.jpg
 icon: logo.jpg

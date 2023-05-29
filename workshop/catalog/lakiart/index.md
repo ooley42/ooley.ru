@@ -1,6 +1,6 @@
 ---
 title: "LAKIART"
-subtitle: Лэмпворк студия
+description: Лэмпворк студия
 date: "2018-07-19"
 icon: logo.jpg
 cover: cover.jpg

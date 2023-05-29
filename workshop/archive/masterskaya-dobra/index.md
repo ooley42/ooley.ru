@@ -1,6 +1,6 @@
 ---
 title: "Мастерская Добра"
-subtitle: Общественная столярная
+description: Общественная столярная
 date: "2016-12-19"
 cover: "E8VDkoUrN8s.jpg"
 city: г. Симферополь

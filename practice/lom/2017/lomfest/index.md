@@ -1,6 +1,6 @@
 ---
 title: "Приглашение"
-subtitle: "на Фестиваль свободного творчества"
+description: "на Фестиваль свободного творчества"
 date: "2017-07-10"
 youtube: https://youtu.be/S24ljzGZSLA
 icon: surf-logo.png

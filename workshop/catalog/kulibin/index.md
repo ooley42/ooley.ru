@@ -2,7 +2,7 @@
 title: "Кулибин"
 date: "2017-03-17"
 cover: "cover.webp"
-subtitle: Открытая мастерская
+description: Открытая мастерская
 icon: logo.jpg
 city: г. Уфа
 address: ул. 50 лет СССР, 39/11

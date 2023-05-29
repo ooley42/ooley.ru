@@ -1,6 +1,6 @@
 ---
 title: "Щепки"
-subtitle: Столярный коворкинг
+description: Столярный коворкинг
 date: "2019-10-16"
 icon: "haLRqcNiguU.png"
 cover: FnhZulILLzg.jpg

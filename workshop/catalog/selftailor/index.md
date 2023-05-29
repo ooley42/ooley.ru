@@ -4,7 +4,7 @@ date: "2018-07-10"
 icon: "logo.jpg"
 cover: cover.jpg
 type: workshop
-subtitle: Школа кройки и шитья
+description: Школа кройки и шитья
 city: г. Москва
 address: ул. Электрозаводская 21, 4 проходная, 4 этаж, офис 413
 place: м. Электрозаводская

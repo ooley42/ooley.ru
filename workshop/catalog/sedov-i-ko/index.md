@@ -1,6 +1,6 @@
 ---
 title: "Седов и Ко"
-subtitle: Мебельная мастерская и столярный коворкинг
+description: Мебельная мастерская и столярный коворкинг
 date: "2016-12-22"
 logoe: "LOGO512.png"
 url: https://sedoviko.ru

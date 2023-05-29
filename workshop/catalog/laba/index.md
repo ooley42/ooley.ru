@@ -1,6 +1,6 @@
 ---
 title: "Лаба"
-subtitle: Лаборатория проектирования
+description: Лаборатория проектирования
 date: "2017-09-12"
 icon: logo.jpg
 cover: cover.webp

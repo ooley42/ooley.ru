@@ -1,6 +1,6 @@
 ---
 title: Делай Сам/а
-subtitle: Дом культуры
+description: Дом культуры
 date: "2016-07-14"
 icon: "logo.jpg"
 tel: +7(968)766-07-29

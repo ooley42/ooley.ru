@@ -1,6 +1,6 @@
 ---
 title: "МИСиС"
-subtitle: Фаблаб
+description: Фаблаб
 date: "2015-04-26"
 icon: "fab.png"
 cover: replicator.jpg

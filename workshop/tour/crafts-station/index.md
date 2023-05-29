@@ -1,6 +1,6 @@
 ---
 title: "Crafts Station"
-subtitle: Коворкинг для мастеров
+description: Коворкинг для мастеров
 date: "2015-03-12"
 cover: "IMG_8967.jpg"
 ---

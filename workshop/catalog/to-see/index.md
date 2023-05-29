@@ -1,6 +1,6 @@
 ---
 title: "Школа дружбы"
-subtitle: Гончарная мастерская
+description: Гончарная мастерская
 date: "2020-07-29"
 icon: to-see.jpg
 cover: cover.jpg

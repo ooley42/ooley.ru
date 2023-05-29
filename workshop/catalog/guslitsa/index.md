@@ -1,6 +1,6 @@
 ---
 title: "Гуслица"
-subtitle: Творческая усадьба
+description: Творческая усадьба
 date: "2016-01-25"
 icon: "logo1.jpg"
 cover: cover.jpg

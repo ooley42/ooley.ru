@@ -1,6 +1,6 @@
 ---
 title: "Хлебъ"
-subtitle: Фабрика
+description: Фабрика
 date: "2018-01-16"
 icon: "pjFgjahtTzA-e1516136230378.jpg"
 cover: a0zDk5rBtHc.jpg

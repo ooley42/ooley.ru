@@ -1,6 +1,6 @@
 ---
 title: "DIY академия"
-subtitle: Общественная столярная мастерская
+description: Общественная столярная мастерская
 date: "2014-11-19"
 icon: diy-logo-color.png
 cover: cover.jpg

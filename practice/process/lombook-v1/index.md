@@ -1,6 +1,6 @@
 ---
 title: "Книжки умений ЛОМ v.1"
-subtitle: Печать и сборка прототипов
+description: Печать и сборка прототипов
 date: "2017-12-13"
 cover: Pasted-Graphic.jpg
 vimeo: https://vimeo.com/247502745

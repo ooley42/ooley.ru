@@ -1,6 +1,6 @@
 ---
 title: Название
-subtitle: Текстовая формулировка идеи
+description: Текстовая формулировка идеи
 icon: name.svg
 date: 2020-11-01
 color: "#EBDC61"

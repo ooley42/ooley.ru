@@ -1,6 +1,6 @@
 ---
 title: Дело техники
-subtitle: Мастерская-коворкинг на Флаконе
+description: Мастерская-коворкинг на Флаконе
 date: "2021-04-23"
 youtube: https://youtu.be/4d3JtwZkq9Q
 url: https://delotech.space/

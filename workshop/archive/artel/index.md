@@ -1,6 +1,6 @@
 ---
 title: "Артель"
-subtitle: Ремесленный коворкинг
+description: Ремесленный коворкинг
 date: "2016-01-07"
 cover: "0ewfcmltgPk.jpg"
 status: closed

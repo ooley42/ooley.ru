@@ -1,6 +1,6 @@
 ---
 title: Воздух
-subtitle: Тихая кропотливая работа с тонкими материалами
+description: Тихая кропотливая работа с тонкими материалами
 icon: Air.svg
 cover: rodion-kutsaev.jpg
 date: 2020-05-01

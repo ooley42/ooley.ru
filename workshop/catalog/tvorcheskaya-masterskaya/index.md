@@ -1,6 +1,6 @@
 ---
 title: "Творческая мастерская"
-subtitle: Творческий коворкинг
+description: Творческий коворкинг
 date: "2018-09-19"
 icon: logo.jpg
 cover: cover.jpg

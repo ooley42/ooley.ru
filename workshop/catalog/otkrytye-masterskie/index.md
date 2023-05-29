@@ -1,6 +1,6 @@
 ---
 title: "Открытые мастерские"
-subtitle: «Лиговская» библиотека
+description: «Лиговская» библиотека
 date: "2015-11-26"
 icon: "tQBfy7DCQtg.jpg"
 cover: h3bmnygfLvs.jpg

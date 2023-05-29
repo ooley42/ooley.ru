@@ -1,6 +1,6 @@
 ---
 title: "Нейрон"
-subtitle: Хакспейс
+description: Хакспейс
 date: "2015-04-26"
 icon: "G5xZ4RHik2M.jpg"
 cover: IMG_0103.jpg

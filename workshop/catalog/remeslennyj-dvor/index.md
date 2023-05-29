@@ -1,6 +1,6 @@
 ---
 title: "Ремесленный двор"
-subtitle: Общественная мастерская
+description: Общественная мастерская
 date: "2016-04-25"
 logo: "UzonyWtisc.jpg"
 cover: -KSe2BTASw8.jpg

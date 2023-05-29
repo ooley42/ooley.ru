@@ -1,6 +1,6 @@
 ---
 title: Идея
-subtitle: Мысль, предлагаемая к реализации
+description: Мысль, предлагаемая к реализации
 icon: idea.svg
 date: 2020-12-01
 color: "#FBAD56"

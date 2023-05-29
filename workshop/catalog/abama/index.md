@@ -1,6 +1,6 @@
 ---
 title: "Абама"
-subtitle: Прокат инструментов
+description: Прокат инструментов
 date: "2017-10-22"
 icon: "logo.png"
 cover: enter.jpg

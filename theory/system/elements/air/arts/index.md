@@ -1,6 +1,6 @@
 ---
 title: Изостудия
-subtitle: Художественная мастерская
+description: Художественная мастерская
 date: 2021-05-15
 cover: khara-woods.jpg
 ---

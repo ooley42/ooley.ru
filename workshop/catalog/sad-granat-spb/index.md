@@ -1,6 +1,6 @@
 ---
 title: "Сад гранат"
-subtitle: Школа мозаики
+description: Школа мозаики
 date: "2018-09-19"
 icon: logo.jpg
 cover: cover.jpg

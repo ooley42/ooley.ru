@@ -1,6 +1,6 @@
 ---
 title: "White Forests"
-subtitle: Лаборатория столярного дела
+description: Лаборатория столярного дела
 date: "2020-11-26"
 icon: pk.png
 cover: epoxy.jpg

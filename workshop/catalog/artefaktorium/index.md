@@ -1,6 +1,6 @@
 ---
 title: "Артефакториум"
-subtitle: Ювелирная мастерская и коворкинг
+description: Ювелирная мастерская и коворкинг
 date: "2015-03-23"
 icon: cropped-LOGO-1.png
 cover: 5H6A8815.jpg

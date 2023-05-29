@@ -1,6 +1,6 @@
 ---
 title: Круг радости
-subtitle: Песня и клип про проектный подход в творчестве
+description: Песня и клип про проектный подход в творчестве
 date: 2021-04-05
 cover: cover-s.jpg
 youtube: https://www.youtube.com/watch?v=5aSf6ik05aY

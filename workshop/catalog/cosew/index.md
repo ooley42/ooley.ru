@@ -1,6 +1,6 @@
 ---
 title: "СоШью"
-subtitle: Швейный коворкинг
+description: Швейный коворкинг
 date: "2016-09-15"
 cover: "TLX-cDtNBIU.jpg"
 city: г.  Москва

@@ -1,6 +1,6 @@
 ---
 title: "Chamotte bakery"
-subtitle: Студия керамики
+description: Студия керамики
 date: "2019-01-26"
 icon: logo.jpg
 cover: cover.jpg

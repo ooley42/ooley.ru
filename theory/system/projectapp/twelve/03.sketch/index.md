@@ -1,6 +1,6 @@
 ---
 title: Эскиз
-subtitle: Зарисовка общих контуров идеи
+description: Зарисовка общих контуров идеи
 icon: sketch.svg
 date: 2020-10-01
 color: "#CFDF68"

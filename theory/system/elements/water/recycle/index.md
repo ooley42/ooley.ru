@@ -1,6 +1,6 @@
 ---
 title: Переработка
-subtitle: Мастерская вторичной переработки
+description: Мастерская вторичной переработки
 date: 2022-03-02
 cover: jasmin-sessler.jpg
 ---

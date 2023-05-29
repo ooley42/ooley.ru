@@ -1,6 +1,6 @@
 ---
 title: "Проектный подход в творчестве"
-subtitle: Цикл самомотивированной деятельности
+description: Цикл самомотивированной деятельности
 date: "2017-10-25"
 cover: "Project-wheel.png"
 youtube: https://www.youtube.com/watch?v=5aSf6ik05aY

@@ -1,6 +1,6 @@
 ---
 title: "PRO-ART"
-subtitle: Центр сотрудничества
+description: Центр сотрудничества
 date: "2016-01-25"
 icon: logo.jpg
 city: г. Самара

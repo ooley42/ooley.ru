@@ -1,6 +1,6 @@
 ---
 title: The Clay Studio
-subtitle: Студия Академии Керамики
+description: Студия Академии Керамики
 date: "2018-09-19"
 icon: logo.jpg
 cover: table.jpg

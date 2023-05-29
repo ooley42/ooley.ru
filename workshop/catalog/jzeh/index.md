@@ -1,6 +1,6 @@
 ---
 title: "Ювелирный цех"
-subtitle: Ювелирный коворкинг
+description: Ювелирный коворкинг
 date: "2015-10-24"
 cover: "cover.jpg"
 icon: logo.png

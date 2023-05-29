@@ -1,6 +1,6 @@
 ---
 title: "Делай Саммит 2015"
-subtitle: Двухдневная открытая мастерская OOLEY42 на Флаконе
+description: Двухдневная открытая мастерская OOLEY42 на Флаконе
 date: "2015-06-04"
 cover: "pre.jpg"
 youtube: https://youtu.be/ympeMMrv_4w

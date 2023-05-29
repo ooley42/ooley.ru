@@ -1,6 +1,6 @@
 ---
 title: "TechnoHub"
-subtitle: Открытая мастерская
+description: Открытая мастерская
 date: "2018-02-26"
 icon: logo.jpg
 city: г. Казань

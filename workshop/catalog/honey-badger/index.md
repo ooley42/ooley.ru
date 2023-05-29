@@ -1,6 +1,6 @@
 ---
 title: Honey badger
-subtitle: Столярный коворкинг
+description: Столярный коворкинг
 date: "2019-12-10"
 icon: "3.png"
 cover: cover.jpg

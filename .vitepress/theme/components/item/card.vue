@@ -53,7 +53,7 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
         h3.text-2xl.font-bold.md-text-2xl {{ page.title }} 
       .flex-1
       .ml-2.text-md.dark-bg-light-300.dark-bg-opacity-10.bg-dark-50.bg-opacity-10.rounded-md.px-6px(v-if="children > 0") {{ children }}
-    .text-md.mt-1.line-clamp-4(v-if="page?.subtitle") {{ page.subtitle }}
+    .text-md.mt-1.line-clamp-4(v-if="page?.description") {{ page.description }}
     .text-md.mt-2.font-bold(v-if="page?.city") {{ page.city }}
     .text-md.text-sm(v-if="page?.place") {{ page.place }}
 </template>

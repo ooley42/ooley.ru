@@ -180,7 +180,7 @@ div.relative
         img.w-20.max-w-40vw(:src="place.icon")
       .px-2.py-6.flex-auto.gap-1.flex.flex-col
         .text-xl.font-bold {{ place.title }}
-        .text-md {{ place.subtitle }}
+        .text-md {{ place.description }}
         .text-sm.font-bold {{ place.city }}
 </template>
 

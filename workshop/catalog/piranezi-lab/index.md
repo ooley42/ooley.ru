@@ -1,6 +1,6 @@
 ---
 title: "ПиранезиLAB"
-subtitle: Лаборатория экспериментальной печати
+description: Лаборатория экспериментальной печати
 date: "2016-03-16"
 icon: logo.jpg
 cover: cover.jpg

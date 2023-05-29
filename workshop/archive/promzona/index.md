@@ -1,6 +1,6 @@
 ---
 title: "Промзона"
-subtitle: Столярная школа
+description: Столярная школа
 date: "2017-05-18"
 icon: "zxfPR5b_WYE-e1495106277215.jpg"
 cover: zYctV7BzfEA.jpg

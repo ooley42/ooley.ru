@@ -1,6 +1,6 @@
 ---
 title: Speak & Film
-subtitle: Интерактивная мастерская
+description: Интерактивная мастерская
 date: "2022-08-01"
 cover: 1.jpg
 icon: logo.jpg

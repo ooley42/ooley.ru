@@ -1,6 +1,6 @@
 ---
 title: "Мастерская №1"
-subtitle: Производственный коворкинг
+description: Производственный коворкинг
 date: "2018-05-17"
 icon: icon.png
 cover: cover.png

@@ -1,6 +1,6 @@
 ---
 title: "Основание OOLEY.ru"
-subtitle: Центр открытых мастерских
+description: Центр открытых мастерских
 date: "2014-10-31"
 cover: "ooley.ru-big.jpg"
 ---

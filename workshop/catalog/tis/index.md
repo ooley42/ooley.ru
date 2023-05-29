@@ -1,6 +1,6 @@
 ---
 title: "TIS"
-subtitle: Мастерская керамики
+description: Мастерская керамики
 date: "2015-04-06"
 icon: logo.png
 cover: ceramics.jpg

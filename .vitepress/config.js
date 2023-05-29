@@ -7,6 +7,9 @@ import mdLinks from "markdown-it-external-links";
 import mdClass from "markdown-it-classy";
 import mdContainer from "markdown-it-container";
 
+const isProd = process.env.NODE_ENV === "production";
+const site = isProd ? "https://ooley.ru/" : "http://localhost:3000";
+
 export default defineConfig({
   title: metaData.title,
   description: metaData.description,
@@ -25,6 +28,25 @@ export default defineConfig({
       github: 'ooley42'
     }
   },
+  transformHead(ctx) {
+    const url = ctx.pageData.relativePath.split('index.md')[0]
+    let image = metaData?.image
+    if (ctx.pageData.frontmatter?.cover) {
+      image = 'media_files/cover/' + url.split('/').join('-') + ctx.pageData.frontmatter?.cover
+    }
+    return [
+      ['meta', { property: 'og:title', content: ctx.pageData?.title + ' | OOLEY' }],
+      ['meta', { property: 'og:description', content: ctx.pageData?.description }],
+      ['meta', { property: 'og:url', content: site + url }],
+      ['meta', { property: 'og:image', content: site + image }],
+      ['meta', { name: 'twitter:title', content: ctx.pageData.title + ' | OOLEY' }],
+      ['meta', { name: 'twitter:description', content: ctx.pageData.description }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:site', content: `@${metaData?.author}` }],
+      ['meta', { name: 'twitter:creator', content: `@${metaData?.author}` }],
+      ['meta', { name: 'twitter:image', content: site + image }],
+    ]
+  },
   vite: {
     build: {
       chunkSizeWarningLimit: 300000,
@@ -34,7 +56,7 @@ export default defineConfig({
     config: (md) => {
       // md.use(mdClass);
       md.use(mdLinks, {
-        internalDomains: ["localhost", "frkt.ru"],
+        internalDomains: ["localhost", "ooley.ru"],
       });
 
       md.use(mdContainer, "slides", {

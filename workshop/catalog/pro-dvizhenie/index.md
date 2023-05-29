@@ -1,6 +1,6 @@
 ---
 title: "Про.Движение"
-subtitle: Мастерские проекта
+description: Мастерские проекта
 date: "2015-04-05"
 icon: logo.jpg
 cover: stanok.jpg

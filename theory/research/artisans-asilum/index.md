@@ -1,6 +1,6 @@
 ---
 title: "Бизнес-план общественной мастерской"
-subtitle: На примере MakerSpace Artisan's Asylum, США
+description: На примере MakerSpace Artisan's Asylum, США
 date: "2015-06-10"
 cover: "ArtisanAsylumCoFounder.jpg"
 youtube: https://youtu.be/R3wiLVN9g_4

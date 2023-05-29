@@ -1,6 +1,6 @@
 ---
 title: Мастерские
-subtitle: Каталог общественных мастерских
+description: Каталог общественных мастерских
 date: 2022-01-01
 cover: devin-berko.jpg
 ---

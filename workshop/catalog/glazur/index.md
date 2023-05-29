@@ -1,6 +1,6 @@
 ---
 title: "Глазурь"
-subtitle: Гончарная мастерская
+description: Гончарная мастерская
 date: "2020-05-06"
 icon: "logo.png"
 cover: cover.jpg

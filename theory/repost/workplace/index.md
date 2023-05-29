@@ -1,6 +1,6 @@
 ---
 title: Workplace fashion
-subtitle: История развития коворкинга для дизайнеров одежды
+description: История развития коворкинга для дизайнеров одежды
 date: 2022-02-28
 cover: workplace-things-big.webp
 toc: true

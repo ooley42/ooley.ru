@@ -3,7 +3,7 @@ title: "Михайлов и К"
 date: "2019-11-01"
 icon: "logo.jpg"
 cover: cover.jpg
-subtitle: Столярный коворкинг
+description: Столярный коворкинг
 city: г. Боровичи
 address: ул 9 января д 28
 place: Новгородская область

@@ -1,6 +1,6 @@
 ---
 title: "Мануфактура"
-subtitle: Открытая мастерская
+description: Открытая мастерская
 date: "2019-10-16"
 icon: logo.png
 instagram: manufactura_saratov

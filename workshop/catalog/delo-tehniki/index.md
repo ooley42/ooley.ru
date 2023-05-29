@@ -1,6 +1,6 @@
 ---
 title: "Дело техники"
-subtitle: Продакшн студия
+description: Продакшн студия
 date: "2021-01-25"
 icon: "delotech-2x.png"
 cover: MTRN0096.jpg

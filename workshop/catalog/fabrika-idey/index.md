@@ -1,6 +1,6 @@
 ---
 title: Фабрика Идей Леруа Мерлен
-subtitle: Открытая мастерская
+description: Открытая мастерская
 date: 2020-04-06
 status: open
 icon: fabrika.jpg

@@ -1,6 +1,6 @@
 ---
 title: "ФАБРИКА"
-subtitle: Инженерный центр
+description: Инженерный центр
 date: "2017-02-26"
 icon: "1-copy.png"
 instagram: fabrika_ic

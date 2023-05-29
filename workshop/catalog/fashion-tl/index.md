@@ -1,6 +1,6 @@
 ---
 title: "Fashion Technologies"
-subtitle: Лаборатория
+description: Лаборатория
 date: "2017-02-27"
 cover: wall.webp
 icon: logo.png

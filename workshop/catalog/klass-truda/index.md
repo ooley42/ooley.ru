@@ -1,6 +1,6 @@
 ---
 title: "Класс труда"
-subtitle: Открытая мастерская
+description: Открытая мастерская
 date: "2014-11-13"
 icon: "0Yk7Li3l8lY.jpg"
 cover: kkxAaYij6ns.jpg

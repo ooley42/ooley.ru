@@ -1,6 +1,6 @@
 ---
 title: "OOLEY42"
-subtitle: Передвижная открытая мастерская
+description: Передвижная открытая мастерская
 date: "2014-10-22"
 icon: logo.png
 cover: cover.jpg

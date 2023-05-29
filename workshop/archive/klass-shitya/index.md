@@ -1,6 +1,6 @@
 ---
 title: "Класс шитья"
-subtitle: Швейный коворкинг
+description: Швейный коворкинг
 date: "2018-09-19"
 icon: logo.jpg
 cover: K2Qzyp6P6GI.jpg

@@ -1,6 +1,6 @@
 ---
 title: "WoodSpace"
-subtitle: Столярный коворкинг
+description: Столярный коворкинг
 date: "2019-07-21"
 icon: logo.png
 cover: space.jpg

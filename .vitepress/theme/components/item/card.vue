@@ -42,7 +42,7 @@ a.card.flex.flex-col.justify-between.items-center.bg-cover.bg-center.relative(
     :style="{ marginTop: page?.frontmatter?.cover && !page?.frontmatter?.icon ? '240px' : '0' }"
   )
 
-    .date.absolute.bottom-2.right-1.rounded-lg.bg-light-300.dark-bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs(v-if="page?.frontmatter?.date") {{ page?.frontmatter?.date.slice(0, 10) }}
+    //- .date.absolute.bottom-2.right-1.rounded-lg.bg-light-300.dark-bg-dark-400.pb-4px.px-2.opacity-30.transition.duration-200ms.ease-in.text-xs(v-if="page?.frontmatter?.date") {{ page?.frontmatter?.date.slice(0, 10) }}
     .flex.w-full.items-center
       .flex.flex-col
         item-type(:type="page?.frontmatter?.data?.type")

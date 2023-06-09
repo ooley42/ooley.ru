@@ -1,11 +1,10 @@
 <script setup>
-import { useRoute } from 'vitepress'
-import routes from '~pages'
-import { getParents } from 'vitepress-pages/browser'
+import { useData, useRoute } from 'vitepress'
+import { data } from '../../../../pages.data.js'
+import { cleanLink, useParents } from 'vitepress-pages'
 
 const route = useRoute();
-
-const parents = computed(() => getParents(route.path, routes))
+const parents = useParents(route, data)
 
 function getImage(page) {
   if (page?.cover) {
@@ -31,12 +30,12 @@ function getImage(page) {
   a.link.p-4.active.relative.text-center.flex-auto.shadow-lg(
     style="flex: 1 1 auto" 
     v-for="(page, p) in parents" 
-    :key="page.title" 
-    :href="page.path"
-    :style="{ backgroundImage: getImage(page) }"
+    :key="page.url" 
+    :href="page.url"
+    :style="{ backgroundImage: getImage(page?.frontmatter) }"
     ) 
     .panel.flex
-      h4.text-lg.w-full.-mt-1 {{ page.title }}
+      h4.text-lg.w-full.-mt-1 {{ page?.frontmatter?.title }}
       octicon-chevron-up.right-4.text-2xl
 </template>
 

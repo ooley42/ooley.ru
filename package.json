@@ -1,10 +1,11 @@
 {
 	"name": "ooley.ru",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"private": "true",
 	"description": "OOLEY.ru static site build",
 	"license": "ISC",
 	"author": "Davay42",
+	"type": "module",
 	"scripts": {
 		"build": "vitepress build",
 		"deploy": "sh deploy.sh",
@@ -16,7 +17,7 @@
 		"@vueuse/core": "10.1.2",
 		"fuse.js": "^6.6.2",
 		"ol": "^7.3.0",
-		"vitepress-pages": "^1.0.5",
+		"vitepress-pages": "2.0.0-beta.12",
 		"vue": "^3.3.4"
 	},
 	"devDependencies": {
@@ -32,8 +33,7 @@
 		"unplugin-icons": "^0.16.1",
 		"unplugin-vue-components": "^0.24.1",
 		"vite": "4.0.5",
-		"vite-plugin-pages": "^0.30.1",
-		"vite-plugin-pages-sitemap": "^1.5.0",
-		"vitepress": "1.0.0-beta.1"
+		"vitepress": "1.0.0-beta.1",
+		"sitemap": "7.1.1"
 	}
 }

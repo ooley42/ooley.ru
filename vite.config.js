@@ -3,11 +3,6 @@ import Components from "unplugin-vue-components/vite";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import AutoImport from "unplugin-auto-import/vite";
-import Pages from "vite-plugin-pages";
-import { extendRoutes } from "vitepress-pages";
-import generateSitemap from 'vite-plugin-pages-sitemap'
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 import Unocss from 'unocss/vite'
 import { transformerDirectives, presetIcons, presetUno, extractorSplit } from 'unocss'
@@ -25,17 +20,6 @@ export default defineConfig({
         /\.vue\??/, // .vue
       ],
       imports: ["vue"],
-    }),
-    Pages({
-      dirs: [
-        { dir: ".", baseRoute: "." },
-      ],
-      exclude: ['**/node_modules/**/*.*', '**/!(index).md'],
-      extensions: ['md'],
-      ...extendRoutes({
-        root: path.dirname(fileURLToPath(import.meta.url)),
-      }),
-      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://ooley.ru/' })),
     }),
     Components({
       dirs: [".vitepress/theme/components", ".vitepress/comps"],

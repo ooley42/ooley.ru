@@ -33,25 +33,25 @@ const places = computed(() => {
   const pl = []
   if (props.showCenter) pl.push(props.page)
   for (let r of props.routes) {
-    if (r.path.includes(props.route) && r.coord) {
+    if (r.url.includes(props.route) && r.frontmatter?.coord) {
       pl.push(r)
     }
   }
   return pl
 })
 
-const place = computed(() => places.value.find(el => el.path == sel.value))
+const place = computed(() => places.value.find(el => el.frontmatter.url == sel.value))
 
 onMounted(() => {
   const cities = places.value.map((city, c) => {
     let feature = new Feature({
-      geometry: new Point(fromLonLat([city.coord[1], city.coord[0]])),
-      title: city.title,
-      path: city.path,
-      icon: city.icon,
+      geometry: new Point(fromLonLat([city.frontmatter?.coord[1], city.frontmatter?.coord[0]])),
+      title: city.frontmatter?.title,
+      url: city.frontmatter?.url,
+      icon: city.frontmatter?.icon,
     })
 
-    if (false && city.icon) {
+    if (false && city.frontmatter?.icon) {
 
       const image = new Icon({
         anchor: [0.5, 0.5],
@@ -94,7 +94,7 @@ onMounted(() => {
 
   const lines = places.value.map((city, c) => {
     let line = new Feature({
-      geometry: new LineString([fromLonLat(props.center), fromLonLat([city.coord[1], city.coord[0]])])
+      geometry: new LineString([fromLonLat(props.center), fromLonLat([city.frontmatter.coord[1], city.frontmatter.coord[0]])])
     })
     line.setStyle(new Style({
       stroke: new Stroke({
@@ -159,7 +159,8 @@ onMounted(() => {
       sel.value = null
     }
     if (!e.selected?.[0]) return
-    sel.value = e?.selected?.[0].getProperties().path
+    console.log(e?.selected?.[0].getProperties())
+    sel.value = e?.selected?.[0].getProperties().url
 
   })
 
@@ -175,13 +176,13 @@ onMounted(() => {
 div.relative
   #map.h-820px.max-h-80vh.overflow-hidden.cursor-pointer(tabindex="1")
   transition(name="fade" mode="out-in")
-    a.flex.flex-wrap.absolute.bottom-0.z-2.bg-light-200.w-full.bg-opacity-80.dark-bg-dark-200.dark-bg-opacity-80.backdrop-filter.backdrop-blur-sm(v-if="place" :key="place" :href="place.path") 
+    a.flex.flex-wrap.absolute.bottom-0.z-2.bg-light-200.w-full.bg-opacity-80.dark-bg-dark-200.dark-bg-opacity-80.backdrop-filter.backdrop-blur-sm(v-if="place" :key="place" :href="place?.url")
       .p-2.flex-1.justify-center.flex.items-center
-        img.w-20.max-w-40vw(:src="place.icon")
+        img.w-20.max-w-40vw(:src="place?.frontmatter?.icon")
       .px-2.py-6.flex-auto.gap-1.flex.flex-col
-        .text-xl.font-bold {{ place.title }}
-        .text-md {{ place.description }}
-        .text-sm.font-bold {{ place.city }}
+        .text-xl.font-bold {{ place?.frontmatter?.title }}
+        .text-md {{ place?.frontmatter?.description }}
+        .text-sm.font-bold {{ place?.frontmatter?.city }}
 </template>
 
 <style scoped></style>

@@ -1,10 +1,10 @@
 <script setup>
-import { useRoute } from 'vitepress'
-import routes from '~pages'
-import { getPages } from 'vitepress-pages/browser'
+import { useData, useRoute } from 'vitepress'
+import { data } from '../../../../pages.data.js'
+import { cleanLink, usePages } from 'vitepress-pages'
 
 const route = useRoute();
-const pages = getPages(routes)
+const { children } = usePages({ path: '/' }, data)
 
 
 </script>
@@ -13,12 +13,12 @@ const pages = getPages(routes)
 .m-0
   .flex.flex-wrap.w-full.flex-1
     a.link.no-underline.transition-all.duration-300.text-xl.justify-center(
-      v-for="page in pages['/']"
-      :key= "page.path"
-      :href="page.path"
-      :class="{ active: route.path.includes(page.path) }"
+      v-for="page in children"
+      :key= "page.url"
+      :href="page.url"
+      :class="{ active: route.path.includes(cleanLink(page.url)) }"
       )
-      h4.text-lg {{ page.title }} 
+      h4.text-lg {{ page?.frontmatter?.title }} 
 </template>
 
 <style lang="postcss" scoped>

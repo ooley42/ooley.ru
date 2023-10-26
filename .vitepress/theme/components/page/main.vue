@@ -1,7 +1,7 @@
 <script setup>
 import { useData, useRoute } from 'vitepress'
 import { data } from '../../../../pages.data.js'
-import { cleanLink, usePages, usePage } from 'vitepress-pages'
+import { cleanLink, usePages, usePage } from '../../composables/pages.js'
 
 const route = useRoute();
 const { pages, children } = usePages(route, data)

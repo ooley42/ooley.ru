@@ -1,6 +1,6 @@
 import { createContentLoader } from 'vitepress'
 
-import VPMedia from 'vitepress-pages/media'
+import VPMedia from './.vitepress/media'
 
 export default createContentLoader('./**/*/*.md', {
   transform: VPMedia({

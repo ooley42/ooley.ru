@@ -7,7 +7,7 @@ import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
 
-import generateMeta from 'vitepress-pages/head'
+import generateMeta from './meta.js'
 
 const links = []
 

@@ -1,8 +1,10 @@
 import { createContentLoader } from 'vitepress'
 
 import VPMedia from './.vitepress/media'
+// import { getPages } from './.vitepress/theme/composables/pages.js'
 
-export default createContentLoader('./**/*/*.md', {
+const pages = createContentLoader('./**/*/*.md', {
+  // includeSrc: true,
   transform: VPMedia({
     root: new URL('./', import.meta.url),
     mediaTypes: {
@@ -11,3 +13,8 @@ export default createContentLoader('./**/*/*.md', {
     }
   })
 })
+
+// import fs from 'node:fs'
+// fs.writeFileSync('./pages.json', JSON.stringify(await pages.load(), null, 2))
+
+export default pages

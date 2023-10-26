@@ -33,7 +33,7 @@ onClickOutside(target, (event) => open.value = false)
 
 <template lang='pug'>
 .fixed.top-0.right-0.z-200
-  button.screen-button.absolute.right-4.top-4.z-400(@mousedown="toggle()" aria-label="Search")
+  button.screen-button.absolute.right-4.top-4.z-400(@click="toggle()" aria-label="Search")
     la-search.text-2xl
   button.absolute.right-16.top-9.z-400(v-if="open && input" @click="input = ''")
     la-times.text-lg
@@ -51,5 +51,5 @@ onClickOutside(target, (event) => open.value = false)
           .text-sm {{ candidate.item?.frontmatter?.description }} 
           .text-sm.inline-flex(v-if="candidate.item?.frontmatter?.city || candidate.item?.frontmatter?.place")
             .font-bold.whitespace-nowrap {{ candidate.item?.frontmatter?.city }} 
-            .ml-2 {{ candidate?.frontmatter.item?.frontmatter?.place }}
+            .ml-2 {{ candidate.item?.frontmatter?.place }}
 </template> 

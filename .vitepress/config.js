@@ -16,7 +16,7 @@ export const metaData = {
   description: "Центр открытых мастерских",
   site: "ooley.ru",
   url: "https://ooley.ru/",
-  repo: "https://github.com/DeFUCC/fondfrukt.ru",
+  repo: "https://github.com/ooley/ooley.ru",
   locale: "ru",
   icon: "favicon.svg",
   logo: "/logo/pill.svg",
@@ -40,10 +40,9 @@ export default defineConfig({
     logo: metaData.logo,
     color: '#f9a02c',
     social: {
-      tel: '+7 (963) 979-02-04',
-      email: 'o@ooley.ru',
       vk: 'ooley42',
-      instagram: 'ooley42',
+      email: 'o@ooley.ru',
+      // instagram: 'ooley42',
       github: 'ooley42'
     }
   },

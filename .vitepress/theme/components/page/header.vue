@@ -13,7 +13,7 @@ header#start
     .flex.flex-col.w-full.justify-center.max-w-3xl
 
       nav-bar
-      nav-parents
+      //- nav-parents
       
       
 </template>

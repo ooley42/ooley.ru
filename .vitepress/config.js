@@ -25,8 +25,8 @@ export const metaData = {
   mediaFolder: 'media_files',
   author: "davay42",
   tags: "мастерская, коворкинг, каталог, карта, творчество, проекты, общественная мастерская, открытая мастерская, свободное творчество",
-  umamiId: "c6241f96-da4c-4083-8868-74834541e839",
-  umamiScript: "https://stats.defucc.me/umami.js"
+  umamiId: "20afb038-33d8-44a9-8f28-27dd5b2c5399",
+  umamiScript: "https://stat.defucc.me/script.js"
 };
 
 

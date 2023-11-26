@@ -5,7 +5,7 @@ date: "2015-05-28"
 cover: inside-3.jpg
 icon: logo.jpg
 vk: vtd.fond
-telegram: "vtoroemoscow"
+telegram: master_vtoroe
 tel: +7(499) 110-32-30
 url: https://vtoroe.ru/
 email: workshop@vtoroe.ru

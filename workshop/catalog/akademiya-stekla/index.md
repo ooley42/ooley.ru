@@ -8,7 +8,7 @@ youtube: https://youtu.be/PkTffwL5trQ
 tel: +7 (926) 065-64-57
 instagram: Glass_academy_russia
 email: glassacademyrussia@gmail.com
-url: https://glassacademyrussia.com
+url: https://glassacademyrussia.ru
 city: г. Москва
 address: ул. Балтийская 13
 place: м. Сокол

@@ -27,7 +27,7 @@ function getImage(side) {
     :style="{ backgroundImage: getImage('prev'), backgroundColor: siblings.prev?.frontmatter?.color ? siblings.prev?.frontmatter.color : 'transparent' }"
     ) 
     .panel
-      octicon-chevron-left.mr-2.text-xl
+      .i-octicon-chevron-left.mr-2.text-xl
       h4.text-lg.-mt-1 {{ siblings.prev?.frontmatter?.title }}
   a.link.justify-end.px-4.pt-28.pb-4.shadow-lg(
     v-if="siblings.next" 
@@ -36,7 +36,7 @@ function getImage(side) {
     ) 
     .panel
       h4.text-lg.-mt-1 {{ siblings.next?.frontmatter.title }}
-      octicon-chevron-right.ml-2.text-xl
+      .i-octicon-chevron-right.ml-2.text-xl
 </template>
 
 <style lang="postcss" scoped>

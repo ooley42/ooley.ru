@@ -36,7 +36,7 @@ function getImage(page) {
     ) 
     .panel.flex
       h4.text-lg.w-full.-mt-1 {{ page?.frontmatter?.title }}
-      octicon-chevron-up.right-4.text-2xl
+      .i-octicon-chevron-up.right-4.text-2xl
 </template>
 
 

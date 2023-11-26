@@ -7,7 +7,8 @@ cover: photo.jpg
 city: г. Москва
 address: Москва, Колодезный пер. 2а с9
 place: м. Сокольники
-url: https://www.glinyanyi.com
+tel: +7-926-280-0449
+url: https://производствокерамики.рф/
 email: knoraleks@mail.ru
 instagram: knor_ceramics
 coord: [55.79906170164423, 37.693913692866026]

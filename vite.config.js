@@ -1,14 +1,11 @@
-import { defineConfig } from "vite";
 import Components from "unplugin-vue-components/vite";
-import Icons from "unplugin-icons/vite";
-import IconsResolver from "unplugin-icons/resolver";
 import AutoImport from "unplugin-auto-import/vite";
 
 import Unocss from 'unocss/vite'
 import { transformerDirectives, presetIcons, presetUno, extractorSplit } from 'unocss'
 import extractorPug from '@unocss/extractor-pug'
 
-export default defineConfig({
+export default {
   server: {
     port: 3342,
   },
@@ -28,14 +25,6 @@ export default defineConfig({
       globalNamespaces: ["global"],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       exclude: [/node_modules/, /\.git/],
-      resolvers: [
-        IconsResolver({
-          componentPrefix: "",
-        }),
-      ],
-    }),
-    Icons({
-      defaultStyle: "vertical-align: middle;",
     }),
     Unocss({
       transformers: [
@@ -43,6 +32,7 @@ export default defineConfig({
       ],
       presets: [
         presetIcons({
+          cdn: 'https://esm.sh/',
           scale: 1.2,
           extraProperties: {
             'vertical-align': 'middle'
@@ -62,4 +52,4 @@ export default defineConfig({
   ssr: {
     noExternal: ["ol"],
   },
-});
+};

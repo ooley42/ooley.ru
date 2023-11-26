@@ -31,7 +31,7 @@ cover: "DSCN2174.jpg"
 - Сергей Царев, [Механические Деревянные Шестеренки](http://woodgears.ru)
 - Владимир Христофоров, [Crafts Station](/workshop/tour/crafts-station/)
 - Татьяна Брусова, [Бюро Находок](http://buro-nahodok.ru)
-- Георгий Дудайти, [Про.Движение](/workshop/catalog/pro-dvizhenie/)
+- Георгий Дудайти, [Про.Движение](/workshop/archive/pro-dvizhenie/)
 - Ирина Дорожкова, [Гуслица](http://art-guslitsa.ru)
 - Владимир Самойлов, [Designet.ru](http://designet.ru/)
 - Оксана Королёва, Департамент культуры г. Москвы

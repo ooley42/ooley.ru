@@ -34,9 +34,9 @@ onClickOutside(target, (event) => open.value = false)
 <template lang='pug'>
 .fixed.top-0.right-0.z-200
   button.screen-button.absolute.right-4.top-4.z-400(@click="toggle()" aria-label="Search")
-    la-search.text-2xl
+    .i-la-search.text-2xl
   button.absolute.right-16.top-9.z-400(v-if="open && input" @click="input = ''")
-    la-times.text-lg
+    .i-la-times.text-lg
   transition(name="fade")
     .absolute.right-4.top-4.z-200(v-if="open")
       input.p-4.rounded-lg.z-20.w-xs.bg-light-100.dark-bg-dark-100(autofocus v-model="input" ref="target")

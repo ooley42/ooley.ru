@@ -5,8 +5,8 @@ date: "2017-09-12"
 icon: logo.jpg
 cover: cover.webp
 city: г. Москва
-address: Мясницкая д. 13 стр. 20
-place: м. Чистые Пруды
+address: Академика Королева 13с1
+place: ВДНХ
 tel: +7 (916) 706-54-42
 email: admin@laba.space
 url: https://laba.space
@@ -15,7 +15,7 @@ vk: labaspace
 instagram: labaspace
 telegram: laba_space
 hours: по предварительной записи
-coord: [55.763899810876985, 37.63429645608736]
+coord: [55.82004604466737, 37.617839870716374]
 status: open
 ---
 

@@ -27,8 +27,8 @@ cover: "viktor-talashuk-05HLFQu8bFw-unsplash-scaled.jpg"
 
 ### Образцы документов в формате docx
 
-<a href="/doc/safety.docx" download>Правила безопасности</a>
+<a href="/doc/safety.docx" target="_blank" download>Правила безопасности</a>
 
-<a href="/doc/soglasie.docx" download>Согласие на обработку персональных данных</a>
+<a href="/doc/soglasie.docx" target="_blank" download>Согласие на обработку персональных данных</a>
 
-<a href="/doc/zayavlenie.docx" download>Заявление посетителя</a>
+<a href="/doc/zayavlenie.docx" target="_blank" download>Заявление посетителя</a>

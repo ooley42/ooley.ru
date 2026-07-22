@@ -6,7 +6,7 @@
 	"license": "ISC",
 	"author": "Davay42",
 	"type": "module",
-	"packageManager": "pnpm@9.10.0",
+	"packageManager": "pnpm@11.15.1",
 	"scripts": {
 		"build": "vitepress build",
 		"deploy": "sh deploy.sh",
@@ -14,24 +14,24 @@
 		"serve": "vitepress serve --port 5055"
 	},
 	"dependencies": {
-		"@unocss/reset": "^0.62.4",
-		"@vueuse/core": "^11.1.0",
-		"fuse.js": "^7.0.0",
+		"@unocss/reset": "^66.7.5",
+		"@vueuse/core": "^14.3.0",
+		"fuse.js": "^7.5.0",
 		"ol": "7.3.0",
-		"vue": "^3.5.6"
+		"vue": "^3.5.40"
 	},
 	"devDependencies": {
-		"@unocss/extractor-pug": "^0.62.4",
-		"@vue/language-plugin-pug": "^2.1.6",
+		"@unocss/extractor-pug": "^66.7.5",
+		"@vue/language-plugin-pug": "^3.3.7",
 		"markdown-it-classy": "^0.2.0",
 		"markdown-it-container": "^4.0.0",
 		"markdown-it-external-links": "^0.0.6",
-		"pug": "^3.0.3",
-		"sharp": "^0.33.5",
-		"sitemap": "^8.0.0",
-		"unocss": "^0.62.4",
-		"unplugin-auto-import": "^0.18.3",
-		"unplugin-vue-components": "^0.27.4",
+		"pug": "^3.0.4",
+		"sharp": "^0.35.3",
+		"sitemap": "^9.0.1",
+		"unocss": "^66.7.5",
+		"unplugin-auto-import": "^21.0.0",
+		"unplugin-vue-components": "^32.1.0",
 		"vitepress": "1.0.2"
 	}
 }

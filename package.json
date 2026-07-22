@@ -7,6 +7,9 @@
 	"author": "Davay42",
 	"type": "module",
 	"packageManager": "pnpm@11.15.1",
+	"engines": {
+		"node": "^24.x"
+	},
 	"scripts": {
 		"build": "vitepress build",
 		"deploy": "sh deploy.sh",
